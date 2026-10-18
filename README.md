@@ -1,4 +1,4 @@
-<h2>ADS401 groupJ project</h2> which aims to evaluate XJTLU postgraduate students’ perceptions of LibAI
+<h2>ADS401 groupJ project</h2> <i>which aims to evaluate XJTLU postgraduate students’ perceptions of LibAI</i>
 <br>
 <p>If you want to check description of our group project in detail, you can just
 <a href="https://mirroringmohe.github.io/ADS_GroupJ_WR.github.io/ADS401_GroupJ_Report.html">CLICK HERE</a></p>
