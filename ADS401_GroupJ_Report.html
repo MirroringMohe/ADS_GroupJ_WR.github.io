@@ -3,347 +3,607 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>[Research Title] - ADS401 Group J Web Report</title>
-<meta name="description" content="[One-sentence description of this evaluation project.]" />
+<title>From Awareness to Adoption: XJTLU Postgraduate Students' Perceptions of LibAI</title>
+<meta name="description" content="An ADS401 evaluation of XJTLU postgraduate students' awareness, use, preferences and improvement priorities for the Library AI tool LibAI." />
 <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to main content</a>
 
-<!-- ============================================================
-     HEADER: title, group facts, anchor navigation
-     Fill in every [ ... ] placeholder. Keep the 8 sections in order:
-     the coursework sheet requires this exact structure.
-     ============================================================ -->
-<header class="site-header">
-  <div class="wrap">
-    <p class="eyebrow">ADS401 Evaluation Methods and Statistics &middot; Group J</p>
-    <h1>How students use AI to search for and read academic literature <span class="subtle">(working title)</span></h1>
-    <p class="lede"><span class="tbc">[Write 2-3 sentences: which AI system or AI-supported activity you evaluated, in which XJTLU context, with which method, and what the headline result was.]</span></p>
+<header class="site-header" id="top">
+  <div class="wrap header-inner">
+    <div class="header-copy">
+      <p class="eyebrow">ADS401 Evaluation Methods and Statistics <span aria-hidden="true">/</span> Group J</p>
+      <p class="status-line"><span class="status-dot" aria-hidden="true"></span> Evaluation design and pilot evidence <span class="status-sep">|</span> Updated 18 October 2026</p>
+      <h1>From awareness to adoption: XJTLU postgraduate students&rsquo; perceptions of LibAI</h1>
+      <p class="lede">A mixed-methods questionnaire study of how XJTLU postgraduate students discover, use and judge LibAI for literature search and reading&mdash;and what would make the library&rsquo;s AI assistant a credible alternative to external tools.</p>
+      <p class="header-note"><strong>Reading note.</strong> The evidence on this page comes from a seven-response pilot. Percentages describe only those seven responses and are not population estimates.</p>
+    </div>
 
-    <dl class="fact-grid">
-      <div><dt>Group ID</dt><dd>Group J</dd></div>
-      <div><dt>Members</dt><dd class="tbc">[Name 1, Name 2, Name 3]</dd></div>
-      <div><dt>Evaluated system</dt><dd class="tbc">[System name]</dd></div>
-      <div><dt>Intended users</dt><dd>ADS401 students</dd></div>
-      <div><dt>Participants</dt><dd class="tbc">[N = 12+, population]</dd></div>
-      <div><dt>Method</dt><dd class="tbc">[e.g. task-based usability test + questionnaire]</dd></div>
-      <div><dt>Last updated</dt><dd class="tbc">[dd Month yyyy]</dd></div>
-      <div><dt>Repository</dt><dd><a href="https://github.com/MirroringMohe/ADS_GroupJ_WR.github.io">ADS_GroupJ_WR.github.io</a></dd></div>
-    </dl>
+    <aside class="project-badge" aria-label="Project summary">
+      <p class="badge-kicker">Project snapshot</p>
+      <p class="badge-number">N = 7</p>
+      <p class="badge-label">pilot responses</p>
+      <div class="badge-rule"></div>
+      <dl class="badge-facts">
+        <div><dt>Group</dt><dd>J</dd></div>
+        <div><dt>Users</dt><dd>Postgraduate students</dd></div>
+        <div><dt>System</dt><dd>LibAI</dd></div>
+        <div><dt>Method</dt><dd>Online questionnaire</dd></div>
+      </dl>
+    </aside>
   </div>
 
-  <nav class="toc" aria-label="Report sections">
-    <div class="wrap">
-      <ul>
-        <li><a href="#overview">1. Project at a glance</a></li>
-        <li><a href="#problem">2. Problem &amp; research questions</a></li>
-        <li><a href="#background">3. Background</a></li>
-        <li><a href="#design">4. Evaluation design</a></li>
-        <li><a href="#analysis">5. Data &amp; analysis</a></li>
-        <li><a href="#findings">6. Findings</a></li>
-        <li><a href="#discussion">7. Discussion</a></li>
-        <li><a href="#transparency">8. Transparency &amp; references</a></li>
-      </ul>
-    </div>
-  </nav>
+  <dl class="wrap fact-grid" aria-label="Project details">
+    <div><dt>Members</dt><dd>Fengyi Guo, Jingyu Li, Liyutong Gao, Yuyang Long</dd></div>
+    <div><dt>Context</dt><dd>XJTLU Library academic support</dd></div>
+    <div><dt>Evaluated system</dt><dd><a href="https://libai.xjtlu.edu.cn/" target="_blank" rel="noopener">LibAI Portal</a></dd></div>
+    <div><dt>Study status</dt><dd>Pilot complete; main wave planned</dd></div>
+  </dl>
 </header>
 
-<main id="main">
+<nav class="toc" aria-label="Report sections">
+  <div class="wrap">
+    <ul>
+      <li><a href="#overview">1. At a glance</a></li>
+      <li><a href="#problem">2. Problem &amp; questions</a></li>
+      <li><a href="#background">3. Background</a></li>
+      <li><a href="#design">4. Evaluation design</a></li>
+      <li><a href="#analysis">5. Data &amp; analysis</a></li>
+      <li><a href="#findings">6. Pilot findings</a></li>
+      <li><a href="#discussion">7. Discussion</a></li>
+      <li><a href="#transparency">8. Transparency</a></li>
+    </ul>
+  </div>
+</nav>
 
-<!-- ============================================================
-     1. PROJECT AT A GLANCE
-     ============================================================ -->
+<main id="main">
 <section id="overview" class="section">
   <div class="wrap">
-    <h2><span class="num">1</span> Project at a glance</h2>
+    <div class="section-heading">
+      <p class="section-label">01 / Project at a glance</p>
+      <h2>Access is not the same as adoption</h2>
+    </div>
+
+    <div class="two-col overview-grid">
+      <div>
+        <p class="lead-paragraph">LibAI gives XJTLU students a route into literature search, reading and synthesis through the library&rsquo;s own AI portal. Yet a subscription does not guarantee use. Students may not know it exists, may compare it with familiar external assistants, or may find its answers slow or poorly attuned to their question.</p>
+        <p>This project evaluates that gap between availability and meaningful use. We surveyed XJTLU postgraduate students about their awareness of LibAI, their literature-related AI practices, their preference between LibAI and external AI, and the improvements they consider most important. The pilot shows a consistent need for AI support, but limited conversion from that need into LibAI use.</p>
+        <p>The study does <strong>not</strong> ask whether AI is &ldquo;good&rdquo; or &ldquo;bad.&rdquo; It asks where an institutional literature assistant fits students&rsquo; existing workflows and which credibility and usability problems limit reliance on it.</p>
+      </div>
+
+      <aside class="card system-card">
+        <p class="card-kicker">Selected system</p>
+        <h3>LibAI Portal</h3>
+        <p class="system-url"><a href="https://libai.xjtlu.edu.cn/" target="_blank" rel="noopener">libai.xjtlu.edu.cn</a></p>
+        <dl class="detail-list">
+          <div><dt>Owner</dt><dd>XJTLU Library</dd></div>
+          <div><dt>Access</dt><dd>University account via the LibAI Portal</dd></div>
+          <div><dt>Core AI role</dt><dd>Retrieval, literature Q&amp;A and report generation grounded in a user&rsquo;s sources</dd></div>
+          <div><dt>Evaluated interaction</dt><dd>Asking a literature question, inspecting retrieved sources, then reading and judging the answer</dd></div>
+        </dl>
+      </aside>
+    </div>
+
+    <div class="evidence-strip" role="group" aria-label="Four main pilot observations">
+      <div class="evidence-item">
+        <p class="evidence-number">7 / 7</p>
+        <p>used AI for literature search or reading</p>
+      </div>
+      <div class="evidence-item">
+        <p class="evidence-number">3 / 7</p>
+        <p>had used LibAI; two more had only heard of it and two did not know it</p>
+      </div>
+      <div class="evidence-item">
+        <p class="evidence-number">2 / 3</p>
+        <p>LibAI users preferred an external AI tool</p>
+      </div>
+      <div class="evidence-item">
+        <p class="evidence-number">4</p>
+        <p>recurring improvement themes in open comments</p>
+      </div>
+    </div>
+
+    <figure class="system-figure">
+      <div class="system-flow" role="img" aria-label="The evaluated workflow has four stages: ask a literature question in LibAI, retrieve and inspect sources, read or scan a source, and judge whether the answer is relevant, traceable and trustworthy.">
+        <div class="flow-step">
+          <span class="flow-index">1</span>
+          <strong>Ask</strong>
+          <span>Frame a literature question in natural language</span>
+        </div>
+        <div class="flow-arrow" aria-hidden="true">&rarr;</div>
+        <div class="flow-step">
+          <span class="flow-index">2</span>
+          <strong>Retrieve</strong>
+          <span>Inspect the papers and sources returned</span>
+        </div>
+        <div class="flow-arrow" aria-hidden="true">&rarr;</div>
+        <div class="flow-step">
+          <span class="flow-index">3</span>
+          <strong>Read</strong>
+          <span>Open a source and locate the supporting passage</span>
+        </div>
+        <div class="flow-arrow" aria-hidden="true">&rarr;</div>
+        <div class="flow-step">
+          <span class="flow-index">4</span>
+          <strong>Judge</strong>
+          <span>Decide whether the answer is relevant and credible</span>
+        </div>
+      </div>
+      <figcaption><strong>Figure 1.</strong> The evaluated LibAI interaction. The study focuses on the full question-to-evidence loop, not only answer generation. Source: interface inspection of the public LibAI Portal, October 2026.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="problem" class="section alt">
+  <div class="wrap">
+    <div class="section-heading">
+      <p class="section-label">02 / Problem, motivation and questions</p>
+      <h2>A familiar AI habit, an unfamiliar institutional tool</h2>
+    </div>
+
+    <div class="three-col problem-grid">
+      <article>
+        <p class="mini-label">Users and context</p>
+        <h3>Postgraduate literature work</h3>
+        <p>XJTLU postgraduate students search for papers, screen abstracts, read long PDFs and synthesise evidence for assignments and research. External assistants are already embedded in this work. LibAI enters the same workflow from inside the university library.</p>
+      </article>
+      <article>
+        <p class="mini-label">Evaluation problem</p>
+        <h3>The awareness-to-use gap</h3>
+        <p>A tool can be available, free and well connected to licensed sources yet remain underused. The important uncertainty is not whether students like AI in general, but whether they know LibAI, choose it over familiar alternatives, and trust the evidence it returns.</p>
+      </article>
+      <article>
+        <p class="mini-label">Why it matters</p>
+        <h3>Credible academic support</h3>
+        <p>The library can offer traceable, licensed sources and institutional accountability. If those advantages are invisible or difficult to experience, students may default to tools that are faster but less grounded in academic collections.</p>
+      </article>
+    </div>
+
+    <div class="callout research-questions">
+      <p class="card-kicker">Research questions</p>
+      <ol>
+        <li><strong>RQ1.</strong> What is the awareness and usage level of LibAI among XJTLU postgraduate students, and how does it relate to their wider use of AI for literature search and reading?</li>
+        <li><strong>RQ2.</strong> When completing literature-related tasks, do students prefer LibAI or external AI, and what reasons explain that preference?</li>
+        <li><strong>RQ3.</strong> What do students expect from an academic AI assistant, and which improvements should LibAI prioritise?</li>
+      </ol>
+    </div>
+
+    <div class="two-col hypothesis-grid">
+      <div>
+        <h3>Working propositions</h3>
+        <p>Because the study is exploratory and the pilot is small, we treat the following as propositions for the main wave rather than confirmatory hypotheses.</p>
+        <ul class="proposition-list">
+          <li><strong>P1.</strong> General AI use for literature work will exceed specific awareness and use of LibAI.</li>
+          <li><strong>P2.</strong> Preference for LibAI will be associated with access to university literature and perceived academic reliability; preference for external AI will be associated with speed and comprehension of the user&rsquo;s request.</li>
+          <li><strong>P3.</strong> Improvement priorities will concentrate on source traceability, relevance and concise synthesis rather than on additional interface features.</li>
+        </ul>
+      </div>
+      <aside class="scope-box">
+        <h3>Scope of claims</h3>
+        <p>The pilot uses non-probability convenience and snowball sampling. It can reveal response patterns, terminology problems and candidate themes, but cannot estimate prevalence among all XJTLU postgraduates.</p>
+        <p>All usage and preference measures are self-reported, not system logs or observed performance. No inferential test is reported.</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section id="background" class="section">
+  <div class="wrap">
+    <div class="section-heading">
+      <p class="section-label">03 / Background and related work</p>
+      <h2>Library AI promises grounding; students reward usefulness</h2>
+    </div>
+
+    <div class="narrative-columns">
+      <div>
+        <h3>From library systems to conversational support</h3>
+        <p>Academic libraries have moved from back-office automation to services that interact directly with users. Cox frames AI as a general-purpose change to library work, while Lund and Wang show how conversational tools could reshape reference and discovery [1], [2]. Aisha, a library chatbot built with the ChatGPT API, illustrates both natural-language help and the need to connect model output with local services and collections [3].</p>
+
+        <h3>Students already see value in generative AI</h3>
+        <p>Student evidence points the same way. Chan and Hu report perceived learning benefits alongside concerns about accuracy, ethics and dependency [4]. Kasneci et al. identify opportunities for explanation and feedback, but warn about factual errors, bias and plausible language being mistaken for knowledge [5]. A polished answer is not necessarily an evidence-based answer.</p>
+      </div>
+
+      <div>
+        <h3>Credibility is the binding constraint</h3>
+        <p>Bibliographic work exposes the limits of ungrounded generation. Walters and Wilder found fabricated or erroneous citation details in ChatGPT-generated references [6], and Bhattacharyya et al. reported high rates of inaccurate references in medical content [7]. For a library assistant this is central: if a source cannot be checked quickly, the institutional advantage disappears.</p>
+
+        <h3>Adoption depends on more than access</h3>
+        <p>Technology acceptance research explains why availability is insufficient. Usefulness and ease of use shape intention [8]; performance expectancy, effort expectancy, social influence and facilitating conditions add constraints [9]. Trust adds a judgement about competence and risk [10], while AI literacy shapes whether students can evaluate outputs and recognise limitations [11], [12].</p>
+      </div>
+    </div>
+
+    <div class="gap-panel">
+      <p class="card-kicker">The gap this study addresses</p>
+      <p>Existing work establishes that academic libraries are adopting AI, students see value in generative tools, and fabricated sources are a serious risk. Less is known about a specific institutional integration: whether students know their library provides an AI assistant, how it competes with external tools, and which improvements they prioritise. A local evaluation is needed because adoption depends on the visibility, speed and perceived credibility of <em>this</em> service in <em>this</em> workflow.</p>
+    </div>
+
+    <div class="rationale-band">
+      <h3>Why a questionnaire with open responses?</h3>
+      <p>A survey can reach students across programmes and capture both the distribution of experiences and the reasons behind them. Closed questions make awareness, task use and preference comparable; open questions reveal unanticipated expectations. This exploratory mixed-methods design also provides a basis for later task-based usability testing. The qualitative analysis follows Braun and Clarke&rsquo;s reflexive thematic approach [13].</p>
+    </div>
+  </div>
+</section>
+
+<section id="design" class="section alt">
+  <div class="wrap">
+    <div class="section-heading">
+      <p class="section-label">04 / System and evaluation design</p>
+      <h2>Measuring awareness, preference and improvement priorities</h2>
+    </div>
+
+    <h3>4.1 System and evaluated interaction</h3>
+    <p>LibAI is the XJTLU Library&rsquo;s AI-supported research portal. Its public interface supports questions over collected literature, wider search, report generation, PDF import, full-text translation, reading support, notes and source relationships. The evaluation focuses on the core academic chain: formulate a question, inspect retrieved literature, read a source and judge whether the answer is grounded.</p>
+    <p>The inspection supplies context but not participant evidence; it defines the interaction that the questionnaire asks about.</p>
+
+    <div class="two-col design-top">
+      <div>
+        <h3>4.2 Participants and recruitment</h3>
+        <p>The target population is XJTLU postgraduate students who use AI for academic work. Convenience and snowball sampling produced seven pilot responses, enough to check wording and routing but not to compare subgroups or infer population prevalence.</p>
+        <p>Wenjuanxing hosted the anonymous questionnaire, which took about three to five minutes.</p>
+      </div>
+      <aside class="card">
+        <p class="card-kicker">Sampling summary</p>
+        <table class="compact-table">
+          <caption>Table 1. Pilot sampling information</caption>
+          <tbody>
+            <tr><th scope="row">Population</th><td>XJTLU postgraduate students</td></tr>
+            <tr><th scope="row">Approach</th><td>Convenience + snowball sampling</td></tr>
+            <tr><th scope="row">Pilot sample</th><td>N = 7 valid responses</td></tr>
+            <tr><th scope="row">Mode</th><td>Anonymous online questionnaire</td></tr>
+            <tr><th scope="row">Duration</th><td>Approximately 3&ndash;5 minutes</td></tr>
+          </tbody>
+        </table>
+      </aside>
+    </div>
+
+    <h3>4.3 Procedure and questionnaire logic</h3>
+    <div class="procedure-grid">
+      <div class="procedure-step">
+        <span>01</span>
+        <h4>Consent and context</h4>
+        <p>Participants read the study information and consented by continuing. The introduction defined the purpose, anonymity and expected duration.</p>
+      </div>
+      <div class="procedure-step">
+        <span>02</span>
+        <h4>Awareness and AI practice</h4>
+        <p>Q1&ndash;Q3 measured LibAI awareness, general AI use for literature work and usage frequency.</p>
+      </div>
+      <div class="procedure-step">
+        <span>03</span>
+        <h4>Tasks and preference</h4>
+        <p>Q4&ndash;Q7 measured task use, LibAI versus external AI preference, reasons for preference and perceived LibAI weaknesses.</p>
+      </div>
+      <div class="procedure-step">
+        <span>04</span>
+        <h4>Open expectations</h4>
+        <p>Optional open questions captured the biggest problem with current tools, surprising or disappointing LibAI experiences, and desired improvements.</p>
+      </div>
+    </div>
+    <p class="small muted">Routing note: Q6 was shown only to participants who preferred LibAI. Q7 was shown to participants who had used LibAI. Duplicate open questions (Q8/Q9 and Q13/Q14) were used because the survey platform&rsquo;s routing could reach the external-AI path through two different conditions.</p>
+
+    <h3>4.4 Measures and evidence</h3>
+    <div class="table-scroll">
+      <table>
+        <caption>Table 2. Operationalisation of the research questions</caption>
+        <thead>
+          <tr>
+            <th scope="col">Construct</th>
+            <th scope="col">Questionnaire evidence</th>
+            <th scope="col">Measurement</th>
+            <th scope="col">Use in this report</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">Awareness</th><td>Q1</td><td>Three categories: used, heard but not used, did not know / unsure</td><td>Frequency and percentage; identifies the awareness-to-use gap</td></tr>
+          <tr><th scope="row">AI-supported literature work</th><td>Q2&ndash;Q4</td><td>Binary use, three-level frequency, multiple task selections</td><td>Describes the existing workflow LibAI must enter</td></tr>
+          <tr><th scope="row">Preference</th><td>Q5</td><td>LibAI or external AI</td><td>Descriptive comparison among participants who used LibAI</td></tr>
+          <tr><th scope="row">Reasons and weaknesses</th><td>Q6&ndash;Q7</td><td>Multiple-choice reasons plus optional text</td><td>Explains preference rather than only counting it</td></tr>
+          <tr><th scope="row">Improvement priorities</th><td>Q8&ndash;Q14</td><td>Optional open text</td><td>Provisional thematic analysis</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Success is evaluated descriptively rather than against one pass/fail threshold. A useful result would show whether awareness approaches general AI use, whether LibAI is preferred for source-dependent tasks, and whether rejection points to solvable interaction problems. The study does not benchmark answer accuracy against a gold-standard literature set.</p>
+
+    <h3>4.5 Ethics and bias mitigation</h3>
+    <div class="ethics-grid">
+      <div><strong>Consent</strong><p>Voluntary participation, plain-language study information and consent by continuation. Participants could stop at any point.</p></div>
+      <div><strong>Privacy</strong><p>No names, student IDs or unnecessary personal details were requested. Responses are reported in aggregate.</p></div>
+      <div><strong>Storage</strong><p>Digital responses are held in the password-protected Wenjuanxing account and retained according to the course retention procedure.</p></div>
+      <div><strong>Bias</strong><p>The team reports the non-representative sample, avoids treating self-report as observed behaviour, preserves disconfirming comments and separates evidence from interpretation.</p></div>
+    </div>
+
+    <h3>4.6 Pilot changes and deviations</h3>
+    <p>The pilot exposed ambiguous terms and a platform-routing limitation. Planned revisions include clarifying &ldquo;literature search,&rdquo; &ldquo;reading&rdquo; and &ldquo;external AI,&rdquo; reducing duplicate questions where possible, and recruiting a broader main-wave sample. These are indicated revisions, not completed changes.</p>
+  </div>
+</section>
+
+<section id="analysis" class="section">
+  <div class="wrap">
+    <div class="section-heading">
+      <p class="section-label">05 / Data preparation and analysis</p>
+      <h2>Descriptive first, inferential only when justified</h2>
+    </div>
 
     <div class="two-col">
       <div>
-        <h3>Summary</h3>
-        <p class="tbc">[Short project summary: the problem, the system, the sample, the method, the one-sentence finding. Written for a reader who will only read this block.]</p>
+        <h3>Data types and preparation</h3>
+        <p>The pilot produced categorical responses, ordinal frequency data and optional free text. Responses were exported from Wenjuanxing and checked for incomplete submissions and impossible routing. Percentages use the valid responses to each question as the denominator, so it changes when a question was shown only to a subgroup. Counts appear alongside percentages because small denominators make a one-person difference look large.</p>
+        <p>No cases were removed. No inferential test, confidence interval or effect size is reported: several cells contain fewer than five cases and the sample is not probability-based. A p-value would imply more precision than the design supports.</p>
       </div>
-      <div class="card">
-        <h3>Selected system</h3>
-        <ul class="plain">
-          <li><strong>Name:</strong> <span class="tbc">[System or service name]</span></li>
-          <li><strong>Original page:</strong> <a href="#" class="tbc">[URL to the system or service page]</a></li>
-          <li><strong>AI component:</strong> <span class="tbc">[What the AI does: retrieval, summarising, question answering, ...]</span></li>
-          <li><strong>Access route:</strong> <span class="tbc">[How users reach it, e.g. XJTLU AI Agent Platform, Learning Mall]</span></li>
-        </ul>
-      </div>
+      <aside class="analysis-note">
+        <p class="card-kicker">Interpretation rule</p>
+        <p><strong>Counts before percentages.</strong> A result such as &ldquo;two of three&rdquo; is more honest than &ldquo;66.7%&rdquo; when only three people answered. Percentages are included for comparability but are always tied to their denominator.</p>
+        <p><strong>No p-values for the pilot.</strong> The main wave may support Fisher&rsquo;s exact tests for categorical associations if cell sizes and design permit; that decision will be made after the data are inspected.</p>
+      </aside>
     </div>
 
-    <figure class="figure-placeholder">
-      <div class="ph-box">Figure 1 placeholder<br><span>[Insert: annotated screenshot of the evaluated interface]</span></div>
-      <figcaption><strong>Figure 1.</strong> <span class="tbc">[Caption that lets the figure stand alone, with labelled parts.]</span></figcaption>
-    </figure>
+    <h3>Analysis plan</h3>
+    <div class="table-scroll">
+      <table>
+        <caption>Table 3. Analysis plan and rationale</caption>
+        <thead>
+          <tr>
+            <th scope="col">Research question</th>
+            <th scope="col">Analysis</th>
+            <th scope="col">Why appropriate</th>
+            <th scope="col">Current status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>RQ1</td><td>Frequency counts, percentages and cross-tabulation of awareness by AI use</td><td>Variables are categorical; the aim is description, not prediction</td><td>Pilot reported</td></tr>
+          <tr><td>RQ2</td><td>Preference counts by LibAI-use group; categorisation of reasons and weaknesses</td><td>Preserves the difference between users and non-users and explains choices</td><td>Pilot reported; subgroup n = 3</td></tr>
+          <tr><td>RQ3</td><td>Inductive coding of open responses into themes</td><td>Captures priorities that closed options may miss</td><td>Provisional themes; full dual coding pending</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Qualitative process</h3>
+    <p>Open comments were read repeatedly and grouped by the problem they described. The provisional categories were source integrity, request understanding and relevance, speed, and synthesis or knowledge connection. These are analytic summaries, not frequency claims. Full analysis will use independent coding, a coding frame, discussion of disagreements and an audit trail. The pilot export did not contain a clean, de-identified verbatim transcript, so comments are paraphrased.</p>
   </div>
 </section>
 
-<!-- ============================================================
-     2. PROBLEM, MOTIVATION AND RESEARCH QUESTIONS
-     ============================================================ -->
-<section id="problem" class="section alt">
+<section id="findings" class="section alt">
   <div class="wrap">
-    <h2><span class="num">2</span> Problem, motivation and research questions</h2>
+    <div class="section-heading">
+      <p class="section-label">06 / Pilot findings</p>
+      <h2>Demand is visible; differentiation is not yet convincing</h2>
+    </div>
 
-    <h3>Intended users and context</h3>
-    <p class="tbc">[Who the users are (ADS401 students), what task they are trying to complete, and where the AI sits in that task.]</p>
+    <div class="finding-block">
+      <div class="finding-copy">
+        <p class="mini-label">RQ1 / Awareness and use</p>
+        <h3>All participants used AI, but only three had used LibAI</h3>
+        <p>All seven participants used AI tools such as DeepSeek or ChatGPT for literature search and reading. Frequency was high for three and medium for four. Literature search was selected by all seven, reading or summarising by six, writing assistance by six and citation formatting by five.</p>
+        <p>Awareness of LibAI was lower: three had used it, two had heard of it, and two did not know or were unsure. The pilot shows an adoption gap within a group already comfortable with AI, but describes only seven responses.</p>
+      </div>
 
-    <h3>The evaluation problem</h3>
-    <p class="tbc">[What is uncertain or contested about this AI integration. Why does it matter for students and for XJTLU?]</p>
+      <figure class="chart-card">
+        <figcaption><strong>Figure 2.</strong> LibAI awareness and use in the pilot (N = 7). Percentages are shown to one decimal place; the underlying counts are three, two and two.</figcaption>
+        <div class="bar-chart" role="img" aria-label="Awareness of LibAI: 3 of 7 had used it, 42.9 percent; 2 had heard of it but not used it, 28.6 percent; 2 did not know or were unsure, 28.6 percent.">
+          <div class="bar-row">
+            <span class="bar-label">Used LibAI</span>
+            <div class="bar-track"><span class="bar-fill" style="--value:42.9%"></span></div>
+            <span class="bar-value">3 / 7 <small>42.9%</small></span>
+          </div>
+          <div class="bar-row">
+            <span class="bar-label">Heard, not used</span>
+            <div class="bar-track"><span class="bar-fill" style="--value:28.6%"></span></div>
+            <span class="bar-value">2 / 7 <small>28.6%</small></span>
+          </div>
+          <div class="bar-row">
+            <span class="bar-label">Did not know</span>
+            <div class="bar-track"><span class="bar-fill" style="--value:28.6%"></span></div>
+            <span class="bar-value">2 / 7 <small>28.6%</small></span>
+          </div>
+        </div>
+        <p class="chart-note">Pilot data, Wenjuanxing export. Non-probability sample; not generalisable.</p>
+      </figure>
+    </div>
 
-    <div class="callout">
-      <h3>Research questions</h3>
-      <ol>
-        <li><strong>RQ1.</strong> <span class="tbc">[e.g. How do ADS401 students currently search for and read academic literature?]</span></li>
-        <li><strong>RQ2.</strong> <span class="tbc">[e.g. In what ways does the AI system support or hinder that task?]</span></li>
-        <li><strong>RQ3.</strong> <span class="tbc">[e.g. Which usability and trust factors predict continued use?]</span></li>
-      </ol>
-      <h3>Hypotheses (if appropriate)</h3>
+    <div class="finding-block reverse">
+      <figure class="chart-card">
+        <figcaption><strong>Figure 3.</strong> Tasks for which participants used AI in the pilot (N = 7, multiple choice). Writing assistance overlaps with reading and citation work.</figcaption>
+        <div class="bar-chart" role="img" aria-label="Task use: literature search 7 of 7, 100 percent; reading or summarising 6 of 7, 85.7 percent; writing assistance 6 of 7, 85.7 percent; citation formats 5 of 7, 71.4 percent.">
+          <div class="bar-row">
+            <span class="bar-label">Search</span>
+            <div class="bar-track"><span class="bar-fill" style="--value:100%"></span></div>
+            <span class="bar-value">7 / 7 <small>100%</small></span>
+          </div>
+          <div class="bar-row">
+            <span class="bar-label">Read / summarise</span>
+            <div class="bar-track"><span class="bar-fill" style="--value:85.7%"></span></div>
+            <span class="bar-value">6 / 7 <small>85.7%</small></span>
+          </div>
+          <div class="bar-row">
+            <span class="bar-label">Writing support</span>
+            <div class="bar-track"><span class="bar-fill" style="--value:85.7%"></span></div>
+            <span class="bar-value">6 / 7 <small>85.7%</small></span>
+          </div>
+          <div class="bar-row">
+            <span class="bar-label">Citations</span>
+            <div class="bar-track"><span class="bar-fill" style="--value:71.4%"></span></div>
+            <span class="bar-value">5 / 7 <small>71.4%</small></span>
+          </div>
+        </div>
+        <p class="chart-note">Multiple selections were permitted; percentages are based on seven respondents.</p>
+      </figure>
+
+      <div class="finding-copy">
+        <p class="mini-label">RQ2 / Preference and reasons</p>
+        <h3>Two of the three LibAI users still preferred external AI</h3>
+        <p>Among three LibAI users, one preferred LibAI and two preferred an external tool. The LibAI preference was linked to institutional access, free use and perceived reliability. The external-AI preferences were explained by LibAI not understanding the actual request and by slow response.</p>
+        <p>Two of the three LibAI users selected &ldquo;cannot understand my actual requirements&rdquo; and two selected &ldquo;slow response&rdquo; as disadvantages. None selected inaccurate output, weak guidance or unfamiliarity. This does not prove accuracy; it means accuracy was not the selected complaint. Non-users also mentioned over-reliance, unstable results, long tasks going off track and trust concerns.</p>
+      </div>
+    </div>
+
+    <div class="preference-panel">
+      <div class="preference-visual" role="img" aria-label="Among three LibAI users, one preferred LibAI and two preferred external AI.">
+        <div class="preference-ring"><span><strong>3</strong> LibAI users</span></div>
+        <div class="preference-split">
+          <div class="split-row"><span class="split-swatch libai"></span><span>LibAI</span><strong>1 / 3</strong></div>
+          <div class="split-row"><span class="split-swatch external"></span><span>External AI</span><strong>2 / 3</strong></div>
+        </div>
+      </div>
+      <div class="preference-copy">
+        <p class="card-kicker">The tension in one sentence</p>
+        <p>LibAI&rsquo;s strongest asset is institutional access to academic sources; its immediate adoption barrier is the experience of asking a question and waiting for an answer that feels relevant.</p>
+      </div>
+    </div>
+
+    <div class="themes">
+      <div class="section-heading compact">
+        <p class="mini-label">RQ3 / Improvement priorities</p>
+        <h3>Four themes in the open responses</h3>
+      </div>
+      <div class="theme-grid">
+        <article>
+          <span class="theme-number">A</span>
+          <h4>Source integrity</h4>
+          <p>Do not invent answers or references when literature is available. Answers should be visibly tied to retrievable sources.</p>
+        </article>
+        <article>
+          <span class="theme-number">B</span>
+          <h4>Relevance and comprehension</h4>
+          <p>Understand the user&rsquo;s research intent, not only literal keywords, and return articles that fit the question.</p>
+        </article>
+        <article>
+          <span class="theme-number">C</span>
+          <h4>Synthesis, not just retrieval</h4>
+          <p>Use titles, abstracts and full text to show how papers relate, while keeping the answer deep and concise.</p>
+        </article>
+        <article>
+          <span class="theme-number">D</span>
+          <h4>Visible evidence paths</h4>
+          <p>Make connections between literature and supporting passages easy to inspect so students can judge trustworthiness.</p>
+        </article>
+      </div>
+      <p class="small muted">These themes paraphrase recurring open comments from the pilot. They are provisional coding categories, not prevalence estimates.</p>
+    </div>
+  </div>
+</section>
+
+<section id="discussion" class="section">
+  <div class="wrap">
+    <div class="section-heading">
+      <p class="section-label">07 / Discussion, limitations and recommendations</p>
+      <h2>Compete on evidence, not on novelty</h2>
+    </div>
+
+    <div class="two-col discussion-grid">
+      <div>
+        <h3>What the pattern means</h3>
+        <p>The pilot is too small for a general claim, but it exposes a coherent design problem. Students use AI for the tasks LibAI supports, yet awareness is incomplete and users who tried it did not consistently prefer it. Their reasons&mdash;speed, comprehension and evidence quality&mdash;are actionable.</p>
+        <p>This shifts attention from feature counting. Another button will not matter if the first answer is slow, misreads the question or cannot be checked. If students distrust unstable answers, a grounded library assistant has a credible niche.</p>
+      </div>
+      <div>
+        <h3>Alternative explanations</h3>
+        <p>Preference may reflect task familiarity rather than stable judgement. Daily external-AI users have more practice crafting prompts, and one salient bad experience may dominate recall. Self-report also cannot separate observed search success, reading time, citation accuracy or answer quality from perceived performance.</p>
+      </div>
+    </div>
+
+    <div class="limitations">
+      <h3>Limitations</h3>
       <ul>
-        <li><strong>H1.</strong> <span class="tbc">[Directional, testable statement with the variables named.]</span></li>
-        <li><strong>H2.</strong> <span class="tbc">[Directional, testable statement with the variables named.]</span></li>
+        <li><strong>Sample.</strong> Seven non-probability responses cannot represent the postgraduate population or support stable subgroup comparisons.</li>
+        <li><strong>Measurement.</strong> Self-reported awareness and preference are not system logs or observed behaviour; no accuracy benchmark was used.</li>
+        <li><strong>Design.</strong> The pilot tests a questionnaire, not a controlled comparison between LibAI and external AI. Order, demand and recall effects are plausible.</li>
+        <li><strong>Qualitative evidence.</strong> The available export does not provide a clean verbatim transcript, so themes are paraphrased and not count-based.</li>
       </ul>
     </div>
 
-    <h3>Scope of claims</h3>
-    <p class="tbc">[State explicitly what this study can and cannot claim: sample, setting, generalisability, self-report vs. observed behaviour.]</p>
+    <div class="recommendation-grid">
+      <article class="recommendation-card">
+        <p class="card-kicker">Recommendation 1</p>
+        <h3>Make the evidence path the default</h3>
+        <p>Expose the sources used, the supporting passage and the difference between retrieved evidence and generated interpretation. This turns the library&rsquo;s collection advantage into an observable benefit.</p>
+      </article>
+      <article class="recommendation-card">
+        <p class="card-kicker">Recommendation 2</p>
+        <h3>Reduce time to a useful first result</h3>
+        <p>Return a few highly relevant papers early and let students refine the question without restarting. Evaluate speed as time to a defensible source, not only response latency.</p>
+      </article>
+      <article class="recommendation-card">
+        <p class="card-kicker">Recommendation 3</p>
+        <h3>Design for the comparison students already make</h3>
+        <p>Explain in-product how LibAI differs through licensed access, traceability and library integration. Test whether the explanation is persuasive.</p>
+      </article>
+      <article class="recommendation-card">
+        <p class="card-kicker">Recommendation 4</p>
+        <h3>Run a task-based main study</h3>
+        <p>Combine the revised survey with a task: find a relevant paper, verify a claim and summarise two sources. Record success, time, errors and confidence against self-report.</p>
+      </article>
+    </div>
+    <p class="evidence-key"><strong>Evidence key.</strong> Counts and percentages above are observed pilot responses. Statements about what students &ldquo;need&rdquo; or what LibAI &ldquo;should&rdquo; do are interpretations and design recommendations, not established effects.</p>
   </div>
 </section>
 
-<!-- ============================================================
-     3. BACKGROUND AND RELATED WORK
-     ============================================================ -->
-<section id="background" class="section">
-  <div class="wrap">
-    <h2><span class="num">3</span> Background and related work</h2>
-
-    <h3>What is already known</h3>
-    <p class="tbc">[Focused synthesis of 5-10 key sources on AI-supported literature search and reading, grouped by theme rather than source-by-source.]</p>
-
-    <h3>The gap this study addresses</h3>
-    <p class="tbc">[One paragraph naming the specific uncertainty the study tests, and why existing studies do not settle it.]</p>
-
-    <h3>Rationale for the chosen evaluation</h3>
-    <p class="tbc">[Why this method and these measures follow from the literature - link back to the RQs and hypotheses.]</p>
-  </div>
-</section>
-
-<!-- ============================================================
-     4. SYSTEM AND EVALUATION DESIGN
-     ============================================================ -->
-<section id="design" class="section alt">
-  <div class="wrap">
-    <h2><span class="num">4</span> System and evaluation design</h2>
-
-    <h3>4.1 System and evaluated interaction</h3>
-    <p class="tbc">[What the system does, which interaction you evaluated, and how a user moves through it.]</p>
-
-    <h3>4.2 Participants and recruitment</h3>
-    <table>
-      <caption><span class="tbc">[Table 1. Sampling information]</span></caption>
-      <thead>
-        <tr><th scope="col">Item</th><th scope="col">Detail</th></tr>
-      </thead>
-      <tbody>
-        <tr><th scope="row">Target population</th><td class="tbc">[ADS401 students, year, programme]</td></tr>
-        <tr><th scope="row">Sampling method</th><td class="tbc">[Convenience / volunteer / purposive]</td></tr>
-        <tr><th scope="row">Sample size</th><td class="tbc">[N = __ , rationale or power analysis]</td></tr>
-        <tr><th scope="row">Inclusion / exclusion</th><td class="tbc">[Criteria]</td></tr>
-        <tr><th scope="row">Recruitment channels</th><td class="tbc">[Where and how participants were invited]</td></tr>
-      </tbody>
-    </table>
-
-    <h3>4.3 Procedure and tasks</h3>
-    <ol class="steps">
-      <li><span class="tbc">[Step 1: consent, briefing, warm-up]</span></li>
-      <li><span class="tbc">[Step 2: task 1 - e.g. find a credible source for a given question]</span></li>
-      <li><span class="tbc">[Step 3: task 2 - e.g. check whether an AI summary matches the source]</span></li>
-      <li><span class="tbc">[Step 4: questionnaires and short interview]</span></li>
-      <li><span class="tbc">[Step 5: debrief]</span></li>
-    </ol>
-
-    <h3>4.4 Variables, measures and success criteria</h3>
-    <table>
-      <caption><span class="tbc">[Table 2. Measures]</span></caption>
-      <thead>
-        <tr>
-          <th scope="col">Construct</th>
-          <th scope="col">Operational definition</th>
-          <th scope="col">Instrument / metric</th>
-          <th scope="col">Scale</th>
-          <th scope="col">Success criterion</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr><td class="tbc">[Effectiveness]</td><td class="tbc">[...]</td><td class="tbc">[...]</td><td class="tbc">[ratio / ordinal]</td><td class="tbc">[...]</td></tr>
-        <tr><td class="tbc">[Efficiency]</td><td class="tbc">[...]</td><td class="tbc">[...]</td><td class="tbc">[ratio]</td><td class="tbc">[...]</td></tr>
-        <tr><td class="tbc">[Usability]</td><td class="tbc">[...]</td><td class="tbc">[e.g. SUS]</td><td class="tbc">[interval]</td><td class="tbc">[...]</td></tr>
-        <tr><td class="tbc">[Trust / accuracy perception]</td><td class="tbc">[...]</td><td class="tbc">[...]</td><td class="tbc">[interval]</td><td class="tbc">[...]</td></tr>
-        <tr><td class="tbc">[Continued-use intention]</td><td class="tbc">[...]</td><td class="tbc">[...]</td><td class="tbc">[interval]</td><td class="tbc">[...]</td></tr>
-      </tbody>
-    </table>
-
-    <h3>4.5 Ethics, consent, privacy and bias mitigation</h3>
-    <ul>
-      <li><span class="tbc">[Ethics approval route and reference]</span></li>
-      <li><span class="tbc">[Informed consent procedure]</span></li>
-      <li><span class="tbc">[Data minimisation, anonymisation, storage and destruction]</span></li>
-      <li><span class="tbc">[Mitigation of sampling, order, demand and researcher bias]</span></li>
-    </ul>
-
-    <h3>4.6 Pilot changes and deviations</h3>
-    <p class="tbc">[What the pilot changed, and any deviation from the original plan with the reason.]</p>
-  </div>
-</section>
-
-<!-- ============================================================
-     5. DATA PREPARATION AND ANALYSIS
-     ============================================================ -->
-<section id="analysis" class="section">
-  <div class="wrap">
-    <h2><span class="num">5</span> Data preparation and analysis</h2>
-
-    <h3>Data types and software</h3>
-    <p class="tbc">[Quantitative and qualitative data collected, and the software used (e.g. SPSS, Excel).]</p>
-
-    <h3>Cleaning, coding and exclusions</h3>
-    <p class="tbc">[Screening rules, missing-data handling, exclusions and their justification.]</p>
-
-    <h3>Statistical tests and why they are appropriate</h3>
-    <table>
-      <caption><span class="tbc">[Table 3. Analysis plan and assumption checks]</span></caption>
-      <thead>
-        <tr>
-          <th scope="col">Research question</th>
-          <th scope="col">Variables</th>
-          <th scope="col">Test</th>
-          <th scope="col">Assumptions checked</th>
-          <th scope="col">Effect size</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr><td class="tbc">[RQ1]</td><td class="tbc">[...]</td><td class="tbc">[e.g. paired t-test]</td><td class="tbc">[...]</td><td class="tbc">[Cohen's d]</td></tr>
-        <tr><td class="tbc">[RQ2]</td><td class="tbc">[...]</td><td class="tbc">[e.g. Spearman correlation]</td><td class="tbc">[...]</td><td class="tbc">[rho]</td></tr>
-        <tr><td class="tbc">[RQ3]</td><td class="tbc">[...]</td><td class="tbc">[...]</td><td class="tbc">[...]</td><td class="tbc">[...]</td></tr>
-      </tbody>
-    </table>
-
-    <h3>Qualitative analysis process</h3>
-    <p class="tbc">[Coding approach, number of coders, how disagreements were resolved, and how themes were derived.]</p>
-  </div>
-</section>
-
-<!-- ============================================================
-     6. FINDINGS
-     ============================================================ -->
-<section id="findings" class="section alt">
-  <div class="wrap">
-    <h2><span class="num">6</span> Findings</h2>
-
-    <h3>Answer to RQ1</h3>
-    <p class="tbc">[Direct answer, then supporting statistics: test statistic, exact p-value, confidence interval, effect size.]</p>
-
-    <figure class="figure-placeholder">
-      <div class="ph-box">Figure 2 placeholder<br><span>[Insert: main quantitative figure]</span></div>
-      <figcaption><strong>Figure 2.</strong> <span class="tbc">[Caption with axes, units and uncertainty.]</span></figcaption>
-    </figure>
-
-    <h3>Answer to RQ2</h3>
-    <p class="tbc">[Direct answer with evidence.]</p>
-
-    <h3>Answer to RQ3</h3>
-    <p class="tbc">[Direct answer with evidence.]</p>
-
-    <figure class="figure-placeholder">
-      <div class="ph-box">Figure 3 placeholder<br><span>[Insert: qualitative theme map, or a second quantitative figure]</span></div>
-      <figcaption><strong>Figure 3.</strong> <span class="tbc">[Caption.]</span></figcaption>
-    </figure>
-
-    <h3>Qualitative themes</h3>
-    <p class="tbc">[Theme, one anonymised illustrative quote, and how many participants supported it. No identifiable data.]</p>
-  </div>
-</section>
-
-<!-- ============================================================
-     7. DISCUSSION, LIMITATIONS AND RECOMMENDATIONS
-     ============================================================ -->
-<section id="discussion" class="section">
-  <div class="wrap">
-    <h2><span class="num">7</span> Discussion, limitations and recommendations</h2>
-
-    <h3>Interpretation and practical significance</h3>
-    <p class="tbc">[What the findings mean for students, and what they do not mean.]</p>
-
-    <h3>Alternative explanations</h3>
-    <p class="tbc">[Rival explanations for the pattern of results.]</p>
-
-    <h3>Limitations</h3>
-    <ul>
-      <li><span class="tbc">[Sample and generalisability]</span></li>
-      <li><span class="tbc">[Measures and self-report]</span></li>
-      <li><span class="tbc">[Task and setting]</span></li>
-    </ul>
-
-    <h3>Recommendations</h3>
-    <ol>
-      <li><span class="tbc">[Recommendation for the system or service owner, tied to evidence]</span></li>
-      <li><span class="tbc">[Recommendation for future research]</span></li>
-    </ol>
-
-    <p class="small tbc">[Make clear which statements are observed evidence and which are speculation.]</p>
-  </div>
-</section>
-
-<!-- ============================================================
-     8. TRANSPARENCY AND REFERENCES
-     ============================================================ -->
 <section id="transparency" class="section alt">
   <div class="wrap">
-    <h2><span class="num">8</span> Transparency and references</h2>
+    <div class="section-heading">
+      <p class="section-label">08 / Transparency and references</p>
+      <h2>Materials, contributions and limits</h2>
+    </div>
 
-    <h3>Contribution statement</h3>
-    <table>
-      <caption><span class="tbc">[Table 4. Individual contributions]</span></caption>
-      <thead>
-        <tr><th scope="col">Member</th><th scope="col">Contribution</th></tr>
-      </thead>
-      <tbody>
-        <tr><th scope="row" class="tbc">[Name 1]</th><td class="tbc">[...]</td></tr>
-        <tr><th scope="row" class="tbc">[Name 2]</th><td class="tbc">[...]</td></tr>
-        <tr><th scope="row" class="tbc">[Name 3]</th><td class="tbc">[...]</td></tr>
-      </tbody>
-    </table>
+    <div class="two-col transparency-top">
+      <div>
+        <h3>Contribution statement</h3>
+        <table>
+          <caption>Table 4. Group contribution</caption>
+          <thead><tr><th scope="col">Member</th><th scope="col">Contribution</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Fengyi Guo</th><td>Shared contribution to study design, questionnaire logic, pilot review, interpretation and report checking.</td></tr>
+            <tr><th scope="row">Jingyu Li</th><td>Shared contribution to study design, questionnaire logic, pilot review, interpretation and report checking.</td></tr>
+            <tr><th scope="row">Liyutong Gao</th><td>Shared contribution to study design, questionnaire logic, pilot review, interpretation and report checking.</td></tr>
+            <tr><th scope="row">Yuyang Long</th><td>Shared contribution to study design, questionnaire logic, pilot review, interpretation and report checking.</td></tr>
+          </tbody>
+        </table>
+        <p class="small muted">All members are jointly responsible for the project. Detailed working records are retained by the group.</p>
+      </div>
+      <div>
+        <h3>Permitted AI-use statement</h3>
+        <p>This page was revised with AI assistance for structure, language and presentation, based on the group&rsquo;s questionnaire, pilot export, presentation and interface inspection. The group must verify every claim, retain responsibility for the analysis and confirm that this assistance is permitted under the module&rsquo;s current AI policy.</p>
+        <p>AI was not used to invent participants, generate survey responses or create empirical results. All reported counts come from the seven-response pilot export supplied by the group.</p>
 
-    <h3>Permitted AI-use statement</h3>
-    <p class="tbc">[State exactly which AI tools were used and for what non-substantive purpose, matching the module policy.]</p>
+        <h3>Data and material availability</h3>
+        <p>The public page contains aggregate results only. Raw questionnaire responses, identifiers and the working export are not hosted here. The GitHub repository contains the HTML, CSS and supporting site files; anonymised materials may be supplied separately according to course requirements.</p>
+      </div>
+    </div>
 
-    <h3>Data and material availability</h3>
-    <p class="tbc">[Where anonymised data and SPSS outputs are deposited. Never host raw participant data here or in the repository.]</p>
-
-    <h3>References (IEEE, in order of first citation)</h3>
+    <h3>References</h3>
     <ol class="refs">
-      <li class="tbc">[1] Author, "Title," Journal, vol. x, no. x, pp. xx-xx, Year.</li>
-      <li class="tbc">[2] ...</li>
+      <li>A. M. Cox, &ldquo;Artificial intelligence and the academic library,&rdquo; <em>The Journal of Academic Librarianship</em>, vol. 50, no. 6, p. 102965, 2024, doi: 10.1016/j.acalib.2024.102965.</li>
+      <li>B. D. Lund and T. Wang, &ldquo;Chatting about ChatGPT: How may AI and GPT impact academia and libraries?,&rdquo; <em>Library Hi Tech News</em>, vol. 40, no. 3, pp. 26&ndash;29, 2023, doi: 10.1108/LHTN-01-2023-0009.</li>
+      <li>Y. Lappalainen and N. Narayanan, &ldquo;Aisha: A custom AI library chatbot using the ChatGPT API,&rdquo; <em>Journal of Web Librarianship</em>, vol. 17, no. 3, pp. 37&ndash;58, 2023, doi: 10.1080/19322909.2023.2221477.</li>
+      <li>C. K. Y. Chan and W. Hu, &ldquo;Students&rsquo; voices on generative AI: Perceptions, benefits, and challenges in higher education,&rdquo; <em>International Journal of Educational Technology in Higher Education</em>, vol. 20, no. 1, 2023, doi: 10.1186/s41239-023-00411-8.</li>
+      <li>E. Kasneci et al., &ldquo;ChatGPT for good? On opportunities and challenges of large language models for education,&rdquo; <em>Learning and Individual Differences</em>, vol. 103, p. 102274, 2023, doi: 10.1016/j.lindif.2023.102274.</li>
+      <li>W. H. Walters and E. I. Wilder, &ldquo;Fabrication and errors in the bibliographic citations generated by ChatGPT,&rdquo; <em>Scientific Reports</em>, vol. 13, no. 1, 2023, doi: 10.1038/s41598-023-41032-5.</li>
+      <li>M. Bhattacharyya, V. M. Miller, D. Bhattacharyya, and L. E. Miller, &ldquo;High rates of fabricated and inaccurate references in ChatGPT-generated medical content,&rdquo; <em>Cureus</em>, 2023, doi: 10.7759/cureus.39238.</li>
+      <li>F. D. Davis, &ldquo;Perceived usefulness, perceived ease of use, and user acceptance of information technology,&rdquo; <em>MIS Quarterly</em>, vol. 13, no. 3, pp. 319&ndash;340, 1989, doi: 10.2307/249008.</li>
+      <li>V. Venkatesh, M. G. Morris, G. B. Davis, and F. D. Davis, &ldquo;User acceptance of information technology: Toward a unified view,&rdquo; <em>MIS Quarterly</em>, vol. 27, no. 3, pp. 425&ndash;478, 2003, doi: 10.2307/30036540.</li>
+      <li>Y. Xiong, Y. Shi, Q. Pu, and N. Liu, &ldquo;More trust or more risk? User acceptance of artificial intelligence virtual assistant,&rdquo; <em>Human Factors and Ergonomics in Manufacturing &amp; Service Industries</em>, vol. 34, no. 3, pp. 190&ndash;205, 2024, doi: 10.1002/hfm.21020.</li>
+      <li>D. Long and B. Magerko, &ldquo;What is AI literacy? Competencies and design considerations,&rdquo; in <em>Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems</em>, 2020, pp. 1&ndash;16, doi: 10.1145/3313831.3376727.</li>
+      <li>D. T. K. Ng, J. K. L. Leung, S. K. W. Chu, and M. S. Qiao, &ldquo;Conceptualizing AI literacy: An exploratory review,&rdquo; <em>Computers and Education: Artificial Intelligence</em>, vol. 2, p. 100041, 2021, doi: 10.1016/j.caeai.2021.100041.</li>
+      <li>V. Braun and V. Clarke, &ldquo;Using thematic analysis in psychology,&rdquo; <em>Qualitative Research in Psychology</em>, vol. 3, no. 2, pp. 77&ndash;101, 2006, doi: 10.1191/1478088706qp063oa.</li>
     </ol>
 
     <h3>Acknowledgements</h3>
-    <p class="tbc">[Original system owner, reused code, measures, images and other assets.]</p>
+    <p>We acknowledge XJTLU Library as the owner of LibAI and the source of the evaluated service. The study was conducted for ADS401 Evaluation Methods and Statistics. No confidential library data or participant-level records are reproduced on this page.</p>
   </div>
 </section>
-
 </main>
 
 <footer class="site-footer">
-  <div class="wrap">
-    <p>ADS401 Evaluation Methods and Statistics &middot; Group J &middot; <span id="year"></span></p>
-    <p class="small">Single-page web report. No participant data is stored in this site or in its repository.</p>
+  <div class="wrap footer-inner">
+    <div>
+      <p class="footer-title">ADS401 Evaluation Methods and Statistics</p>
+      <p>Group J &middot; <span id="year">2026</span> &middot; XJTLU</p>
+    </div>
+    <p class="footer-note">Single-page web report. Pilot evidence only; no raw participant data is stored here.</p>
   </div>
 </footer>
 
-<button class="to-top" type="button" aria-label="Back to top">↑</button>
+<button class="to-top" type="button" aria-label="Back to top">&uarr;</button>
 <script src="assets/app.js"></script>
 </body>
 </html>
