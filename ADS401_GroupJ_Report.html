@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>From Awareness to Adoption: XJTLU Postgraduate Students' Perceptions of LibAI</title>
-<meta name="description" content="An ADS401 evaluation of XJTLU postgraduate students' awareness, use, preferences and improvement priorities for the Library AI tool LibAI." />
+<title>From Awareness to Adoption: Evaluating LibAI at XJTLU</title>
+<meta name="description" content="An ADS401 evaluation of XJTLU postgraduate students' use, perceptions and improvement priorities for the Library AI tool LibAI, with a proposed controlled comparison of LibAI, DeepSeek and ChatGPT." />
 <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
@@ -14,22 +14,23 @@
   <div class="wrap header-inner">
     <div class="header-copy">
       <p class="eyebrow">ADS401 Evaluation Methods and Statistics <span aria-hidden="true">/</span> Group J</p>
-      <p class="status-line"><span class="status-dot" aria-hidden="true"></span> Pilot evidence and survey status <span class="status-sep">|</span> Updated 7 November 2026</p>
-      <h1>From awareness to adoption: XJTLU postgraduate students&rsquo; perceptions of LibAI</h1>
-      <p class="lede">A mixed-methods questionnaire study of how XJTLU postgraduate students discover, use and judge LibAI for literature search and reading&mdash;and what would make the library&rsquo;s AI assistant a credible alternative to external tools.</p>
-      <p class="header-note"><strong>Reading note.</strong> The findings below describe a seven-response pilot, not the later questionnaire. A newer aggregate report contains 124 records, but its eligible and consenting analysis sample has not yet been established. See the survey status below.</p>
+      <p class="status-line"><span class="status-dot" aria-hidden="true"></span> Survey analysis complete <span class="status-sep">|</span> Task experiment designed, not yet run <span class="status-sep">|</span> Updated 8 November 2026</p>
+      <h1>From awareness to adoption: evaluating LibAI at XJTLU</h1>
+      <p class="lede">A 94-participant survey of how XJTLU postgraduate students use AI for literature work, what they value in LibAI, and which source, retrieval and workflow problems shape adoption.</p>
+      <p class="header-note"><strong>Evidence boundary.</strong> The quantitative results below come from the cleaned 94-response questionnaire dataset. The 3&times;2 task experiment is a proposed next phase: no AI-comparison results are reported because that experiment has not yet been conducted.</p>
+      <p class="download-links"><a href="assets/statistical-results-n94.pdf" download>Statistical report (PDF)</a><span aria-hidden="true">/</span><a href="assets/experiment-protocol.pdf" download>Experiment protocol (PDF)</a></p>
     </div>
 
     <aside class="project-badge" aria-label="Project summary">
       <p class="badge-kicker">Project snapshot</p>
-      <p class="badge-number">N = 7</p>
-      <p class="badge-label">pilot responses</p>
+      <p class="badge-number">N = 94</p>
+      <p class="badge-label">valid survey responses</p>
       <div class="badge-rule"></div>
       <dl class="badge-facts">
         <div><dt>Group</dt><dd>J</dd></div>
         <div><dt>Users</dt><dd>Postgraduate students</dd></div>
         <div><dt>System</dt><dd>LibAI</dd></div>
-        <div><dt>Method</dt><dd>Online questionnaire</dd></div>
+        <div><dt>Design</dt><dd>Survey + planned experiment</dd></div>
       </dl>
     </aside>
   </div>
@@ -38,20 +39,19 @@
     <div><dt>Members</dt><dd>Fengyi Guo, Jingyu Li, Liyutong Gao, Yuyang Long</dd></div>
     <div><dt>Context</dt><dd>XJTLU Library academic support</dd></div>
     <div><dt>Evaluated system</dt><dd><a href="https://libai.xjtlu.edu.cn/" target="_blank" rel="noopener">LibAI Portal</a></dd></div>
-    <div><dt>Study status</dt><dd>Pilot reported; later survey screening pending</dd></div>
+    <div><dt>Study status</dt><dd>Survey complete; task experiment planned</dd></div>
   </dl>
 </header>
 
 <nav class="toc" aria-label="Report sections">
   <div class="wrap">
     <ul>
-      <li><a href="#survey-update">Survey update</a></li>
       <li><a href="#overview">1. At a glance</a></li>
       <li><a href="#problem">2. Problem &amp; questions</a></li>
       <li><a href="#background">3. Background</a></li>
-      <li><a href="#design">4. Evaluation design</a></li>
-      <li><a href="#analysis">5. Data &amp; analysis</a></li>
-      <li><a href="#findings">6. Pilot findings</a></li>
+      <li><a href="#methods">4. Design &amp; methods</a></li>
+      <li><a href="#findings">5. Survey findings</a></li>
+      <li><a href="#experiment">6. Experiment design</a></li>
       <li><a href="#discussion">7. Discussion</a></li>
       <li><a href="#transparency">8. Transparency</a></li>
     </ul>
@@ -59,24 +59,6 @@
 </nav>
 
 <main id="main">
-<section id="survey-update" class="section alt" aria-labelledby="survey-update-title">
-  <div class="wrap">
-    <div class="section-heading">
-      <p class="section-label">Research update / 7 November 2026</p>
-      <h2 id="survey-update-title">Later survey: screening before analysis</h2>
-    </div>
-    <p>The supplied later questionnaire summary records <strong>124 responses</strong>. Its first two questions report 118 agreeing to participate and 6 declining, and 113 identifying as XJTLU postgraduates and 11 not identifying as such. These are separate question totals, not a final eligible sample.</p>
-    <div class="evidence-strip" role="group" aria-label="Later questionnaire screening totals">
-      <div class="evidence-item"><p class="evidence-number">124</p><p>records in the aggregate report</p></div>
-      <div class="evidence-item"><p class="evidence-number">118 / 124</p><p>answered yes to consent</p></div>
-      <div class="evidence-item"><p class="evidence-number">113 / 124</p><p>identified as XJTLU postgraduates</p></div>
-      <div class="evidence-item"><p class="evidence-number">Pending</p><p>consenting and eligible analysis sample</p></div>
-    </div>
-    <p>The two screening groups may overlap; their separate totals cannot establish how many satisfy both conditions. The aggregate summary includes responses from people who declined consent or were outside the target group. Respondent-level screening and an appropriate check of consent and eligibility are needed before analysing or reporting substantive results.</p>
-    <p>The later questionnaire covers AI use and LibAI awareness, branches for users and non-users, experience and concerns, and improvement priorities. It is a different instrument from the pilot described below. Recruitment details, exclusions, final sample sizes, statistical output and the group&rsquo;s conclusions remain to be confirmed. No later-wave substantive results are reported here.</p>
-    <p class="small muted">Source: group-supplied questionnaire aggregate report, questions 1 and 2; record-level data were not available for this update. The numbers above describe the export, not the target population.</p>
-  </div>
-</section>
 <section id="overview" class="section">
   <div class="wrap">
     <div class="section-heading">
@@ -86,9 +68,9 @@
 
     <div class="two-col overview-grid">
       <div>
-        <p class="lead-paragraph">LibAI gives XJTLU students a route into literature search, reading and synthesis through the library&rsquo;s own AI portal. Yet a subscription does not guarantee use. Students may not know it exists, may compare it with familiar external assistants, or may find its answers slow or poorly attuned to their question.</p>
-        <p>This project evaluates that gap between availability and meaningful use. We surveyed XJTLU postgraduate students about their awareness of LibAI, their literature-related AI practices, their preference between LibAI and external AI, and the improvements they consider most important. The pilot shows a consistent need for AI support, but limited conversion from that need into LibAI use.</p>
-        <p>The study does <strong>not</strong> ask whether AI is &ldquo;good&rdquo; or &ldquo;bad.&rdquo; It asks where an institutional literature assistant fits students&rsquo; existing workflows and which credibility and usability problems limit reliance on it.</p>
+        <p class="lead-paragraph">LibAI gives XJTLU students a route into literature search, reading and synthesis through the library&rsquo;s own AI portal. Yet availability does not guarantee meaningful use.</p>
+        <p>The survey shows a clear pattern. Students already use AI for literature work, especially finding papers and reading or summarising them. LibAI, however, is not their default: only 2 of 90 AI users name it as their most-used tool. Users report moderate task help, but weaker source verification, retrieval coverage and workflow integration.</p>
+        <p>The project therefore has two connected phases. The questionnaire identifies where the perceived problems lie. The proposed experiment tests whether those problems appear in actual task performance and how they relate to response speed, answer quality and user expectations.</p>
       </div>
 
       <aside class="card system-card">
@@ -98,58 +80,42 @@
         <dl class="detail-list">
           <div><dt>Owner</dt><dd>XJTLU Library</dd></div>
           <div><dt>Access</dt><dd>University account via the LibAI Portal</dd></div>
-          <div><dt>Core AI role</dt><dd>Retrieval, literature Q&amp;A and report generation grounded in a user&rsquo;s sources</dd></div>
-          <div><dt>Evaluated interaction</dt><dd>Asking a literature question, inspecting retrieved sources, then reading and judging the answer</dd></div>
+          <div><dt>Survey focus</dt><dd>Use, task help, usability, source verification and improvement priorities</dd></div>
+          <div><dt>Experiment focus</dt><dd>Fixed literature retrieval and paper-comprehension tasks</dd></div>
         </dl>
       </aside>
     </div>
 
-    <div class="evidence-strip" role="group" aria-label="Four main pilot observations">
+    <div class="evidence-strip" role="group" aria-label="Four main survey observations">
       <div class="evidence-item">
-        <p class="evidence-number">7 / 7</p>
-        <p>used AI for literature search or reading</p>
+        <p class="evidence-number">34.0%</p>
+        <p>had used LibAI; 66.0% had never used it</p>
       </div>
       <div class="evidence-item">
-        <p class="evidence-number">3 / 7</p>
-        <p>had used LibAI; two more had only heard of it and two did not know it</p>
+        <p class="evidence-number">2 / 90</p>
+        <p>named LibAI as their most-used AI</p>
       </div>
       <div class="evidence-item">
-        <p class="evidence-number">2 / 3</p>
-        <p>LibAI users preferred an external AI tool</p>
+        <p class="evidence-number">53.2%</p>
+        <p>chose verifiable sources or accuracy as the first improvement priority</p>
       </div>
       <div class="evidence-item">
-        <p class="evidence-number">4</p>
-        <p>recurring improvement themes in open comments</p>
+        <p class="evidence-number">6.4%</p>
+        <p>chose speed as the first priority</p>
       </div>
     </div>
 
     <figure class="system-figure">
-      <div class="system-flow" role="img" aria-label="The evaluated workflow has four stages: ask a literature question in LibAI, retrieve and inspect sources, read or scan a source, and judge whether the answer is relevant, traceable and trustworthy.">
-        <div class="flow-step">
-          <span class="flow-index">1</span>
-          <strong>Ask</strong>
-          <span>Frame a literature question in natural language</span>
-        </div>
+      <div class="system-flow" role="img" aria-label="The evaluation covers four stages: ask a literature question, retrieve sources, read evidence, and judge relevance, traceability and trust.">
+        <div class="flow-step"><span class="flow-index">1</span><strong>Ask</strong><span>Frame a literature question in natural language</span></div>
         <div class="flow-arrow" aria-hidden="true">&rarr;</div>
-        <div class="flow-step">
-          <span class="flow-index">2</span>
-          <strong>Retrieve</strong>
-          <span>Inspect the papers and sources returned</span>
-        </div>
+        <div class="flow-step"><span class="flow-index">2</span><strong>Retrieve</strong><span>Inspect papers and sources returned</span></div>
         <div class="flow-arrow" aria-hidden="true">&rarr;</div>
-        <div class="flow-step">
-          <span class="flow-index">3</span>
-          <strong>Read</strong>
-          <span>Open a source and locate the supporting passage</span>
-        </div>
+        <div class="flow-step"><span class="flow-index">3</span><strong>Read</strong><span>Open a source and locate supporting evidence</span></div>
         <div class="flow-arrow" aria-hidden="true">&rarr;</div>
-        <div class="flow-step">
-          <span class="flow-index">4</span>
-          <strong>Judge</strong>
-          <span>Decide whether the answer is relevant and credible</span>
-        </div>
+        <div class="flow-step"><span class="flow-index">4</span><strong>Judge</strong><span>Decide whether the answer is useful and credible</span></div>
       </div>
-      <figcaption><strong>Figure 1.</strong> The evaluated LibAI interaction. The study focuses on the full question-to-evidence loop, not only answer generation. Source: interface inspection of the public LibAI Portal, October 2026.</figcaption>
+      <figcaption><strong>Figure 1.</strong> The question-to-evidence interaction evaluated in this project. The survey measures perceived experience; the planned experiment will measure observed task performance.</figcaption>
     </figure>
   </div>
 </section>
@@ -165,43 +131,43 @@
       <article>
         <p class="mini-label">Users and context</p>
         <h3>Postgraduate literature work</h3>
-        <p>XJTLU postgraduate students search for papers, screen abstracts, read long PDFs and synthesise evidence for assignments and research. External assistants are already embedded in this work. LibAI enters the same workflow from inside the university library.</p>
+        <p>XJTLU postgraduate students search for papers, screen abstracts, read long texts and synthesise evidence for assignments and research. External assistants are already embedded in this workflow. LibAI enters the same workflow from inside the university library.</p>
       </article>
       <article>
         <p class="mini-label">Evaluation problem</p>
         <h3>The awareness-to-use gap</h3>
-        <p>A tool can be available, free and well connected to licensed sources yet remain underused. The important uncertainty is not whether students like AI in general, but whether they know LibAI, choose it over familiar alternatives, and trust the evidence it returns.</p>
+        <p>A tool can be available and connected to licensed sources yet remain underused. The key uncertainty is whether students know LibAI, choose it over familiar alternatives and trust the evidence it returns.</p>
       </article>
       <article>
         <p class="mini-label">Why it matters</p>
         <h3>Credible academic support</h3>
-        <p>The library can offer traceable, licensed sources and institutional accountability. If those advantages are invisible or difficult to experience, students may default to tools that are faster but less grounded in academic collections.</p>
+        <p>The library can offer licensed sources, traceable evidence and institutional accountability. If those advantages are invisible or difficult to experience, students may default to tools that feel faster but are less grounded in academic collections.</p>
       </article>
     </div>
 
     <div class="callout research-questions">
       <p class="card-kicker">Research questions</p>
       <ol>
-        <li><strong>RQ1.</strong> What is the awareness and usage level of LibAI among XJTLU postgraduate students, and how does it relate to their wider use of AI for literature search and reading?</li>
-        <li><strong>RQ2.</strong> When completing literature-related tasks, do students prefer LibAI or external AI, and what reasons explain that preference?</li>
-        <li><strong>RQ3.</strong> What do students expect from an academic AI assistant, and which improvements should LibAI prioritise?</li>
+        <li><strong>RQ1.</strong> How do XJTLU postgraduate students use generative AI and LibAI for literature search and reading?</li>
+        <li><strong>RQ2.</strong> How do LibAI users perceive task help, source verification, usability and workflow integration?</li>
+        <li><strong>RQ3.</strong> Which barriers and improvement priorities are reported by users and non-users?</li>
+        <li><strong>RQ4.</strong> Under identical retrieval and comprehension tasks, do LibAI, DeepSeek and ChatGPT differ in answer quality, time to useful answer, satisfaction and expectation confirmation?</li>
       </ol>
     </div>
 
     <div class="two-col hypothesis-grid">
       <div>
-        <h3>Working propositions</h3>
-        <p>The following were working propositions developed from the exploratory pilot; their status in the later questionnaire and final analysis needs group confirmation.</p>
+        <h3>Planned experiment hypotheses</h3>
         <ul class="proposition-list">
-          <li><strong>P1.</strong> General AI use for literature work will exceed specific awareness and use of LibAI.</li>
-          <li><strong>P2.</strong> Preference for LibAI will be associated with access to university literature and perceived academic reliability; preference for external AI will be associated with speed and comprehension of the user&rsquo;s request.</li>
-          <li><strong>P3.</strong> Improvement priorities will concentrate on source traceability, relevance and concise synthesis rather than on additional interface features.</li>
+          <li><strong>H1.</strong> The three systems differ in task success and answer quality.</li>
+          <li><strong>H2.</strong> AI performance and user evaluation vary by task type, producing an AI &times; task interaction.</li>
+          <li><strong>H3.</strong> Reuse intention is more strongly associated with answer quality and source verifiability than with raw response latency.</li>
         </ul>
       </div>
       <aside class="scope-box">
         <h3>Scope of claims</h3>
-        <p>The pilot uses non-probability convenience and snowball sampling. It can reveal response patterns, terminology problems and candidate themes, but cannot estimate prevalence among all XJTLU postgraduates.</p>
-        <p>All usage and preference measures are self-reported, not system logs or observed performance. No inferential test is reported.</p>
+        <p>The survey uses a non-probability sample of XJTLU postgraduate students. It identifies perceived use, barriers and priorities but cannot establish population prevalence or causal effects.</p>
+        <p>The comparison experiment will provide task-level evidence. Its results will remain conditional on the systems, tasks, settings and sampling frame used.</p>
       </aside>
     </div>
   </div>
@@ -220,285 +186,409 @@
         <p>Academic libraries have moved from back-office automation to services that interact directly with users. Cox frames AI as a general-purpose change to library work, while Lund and Wang show how conversational tools could reshape reference and discovery [1], [2]. Aisha, a library chatbot built with the ChatGPT API, illustrates both natural-language help and the need to connect model output with local services and collections [3].</p>
 
         <h3>Students already see value in generative AI</h3>
-        <p>Student evidence points the same way. Chan and Hu report perceived learning benefits alongside concerns about accuracy, ethics and dependency [4]. Kasneci et al. identify opportunities for explanation and feedback, but warn about factual errors, bias and plausible language being mistaken for knowledge [5]. A polished answer is not necessarily an evidence-based answer.</p>
+        <p>Student evidence points in the same direction. Chan and Hu report perceived learning benefits alongside concerns about accuracy, ethics and dependency [4]. Kasneci et al. identify opportunities for explanation and feedback, but warn about factual errors and plausible language being mistaken for knowledge [5].</p>
       </div>
 
       <div>
         <h3>Credibility is the binding constraint</h3>
-        <p>Bibliographic work exposes the limits of ungrounded generation. Walters and Wilder found fabricated or erroneous citation details in ChatGPT-generated references [6], and Bhattacharyya et al. reported high rates of inaccurate references in medical content [7]. For a library assistant this is central: if a source cannot be checked quickly, the institutional advantage disappears.</p>
+        <p>Bibliographic work exposes the limits of ungrounded generation. Walters and Wilder found fabricated or erroneous citation details in ChatGPT-generated references [6], and Bhattacharyya et al. reported high rates of inaccurate references in medical content [7]. For a library assistant, a source that cannot be checked quickly undermines the institutional advantage.</p>
 
         <h3>Adoption depends on more than access</h3>
-        <p>Technology acceptance research explains why availability is insufficient. Usefulness and ease of use shape intention [8]; performance expectancy, effort expectancy, social influence and facilitating conditions add constraints [9]. Trust adds a judgement about competence and risk [10], while AI literacy shapes whether students can evaluate outputs and recognise limitations [11], [12].</p>
+        <p>Technology acceptance research explains why availability is insufficient. Usefulness and ease of use shape intention [8]; performance expectancy, effort expectancy and facilitating conditions add constraints [9]. Trust adds a judgement about competence and risk [10], while AI literacy shapes whether students can evaluate outputs and recognise limitations [11], [12].</p>
       </div>
     </div>
 
     <div class="gap-panel">
       <p class="card-kicker">The gap this study addresses</p>
-      <p>Existing work establishes that academic libraries are adopting AI, students see value in generative tools, and fabricated sources are a serious risk. Less is known about a specific institutional integration: whether students know their library provides an AI assistant, how it competes with external tools, and which improvements they prioritise. A local evaluation is needed because adoption depends on the visibility, speed and perceived credibility of <em>this</em> service in <em>this</em> workflow.</p>
+      <p>Existing work establishes that academic libraries are adopting AI, students see value in generative tools, and fabricated sources are a serious risk. Less is known about a specific institutional integration: whether students know their library provides an AI assistant, where it fits their literature workflow, and which improvements they prioritise. A local survey and controlled task comparison are needed because adoption depends on the visibility, usability and credibility of this service in this context.</p>
     </div>
 
     <div class="rationale-band">
-      <h3>Why a questionnaire with open responses?</h3>
-      <p>A survey can reach students across programmes and capture both the distribution of experiences and the reasons behind them. Closed questions make awareness, task use and preference comparable; open questions reveal unanticipated expectations. This exploratory mixed-methods design also provides a basis for later task-based usability testing. The qualitative analysis follows Braun and Clarke&rsquo;s reflexive thematic approach [13].</p>
+      <h3>Why combine a survey and an experiment?</h3>
+      <p>The questionnaire captures perceptions at scale and identifies the problems users consider important. The experiment then tests whether those perceived differences appear when all participants complete the same task under the same instructions. Perceived usefulness and observed performance are different evidence sources, so the study reports them separately.</p>
     </div>
   </div>
 </section>
 
-<section id="design" class="section alt">
+<section id="methods" class="section alt">
   <div class="wrap">
     <div class="section-heading">
-      <p class="section-label">04 / System and evaluation design</p>
-      <h2>Measuring awareness, preference and improvement priorities</h2>
+      <p class="section-label">04 / Study design and methods</p>
+      <h2>A completed survey and a planned task experiment</h2>
     </div>
-
-    <h3>4.1 System and evaluated interaction</h3>
-    <p>LibAI is the XJTLU Library&rsquo;s AI-supported research portal. Its public interface supports questions over collected literature, wider search, report generation, PDF import, full-text translation, reading support, notes and source relationships. The evaluation focuses on the core academic chain: formulate a question, inspect retrieved literature, read a source and judge whether the answer is grounded.</p>
-    <p>The inspection supplies context but not participant evidence; it defines the interaction that the questionnaire asks about.</p>
 
     <div class="two-col design-top">
       <div>
-        <h3>4.2 Participants and recruitment</h3>
-        <p>The target population is XJTLU postgraduate students who use AI for academic work. Convenience and snowball sampling produced seven pilot responses, enough to check wording and routing but not to compare subgroups or infer population prevalence.</p>
-        <p>Wenjuanxing hosted the anonymous questionnaire, which took about three to five minutes.</p>
+        <h3>4.1 Survey sample</h3>
+        <p>The target population was XJTLU postgraduate students who use AI for academic work. Wenjuanxing hosted the anonymous questionnaire. Convenience and snowball sampling produced 124 raw records.</p>
+        <p>Six records did not consent and 11 were not XJTLU postgraduates. Both groups were removed. A further 13 records contained internally contradictory responses, leaving 94 valid records for the main analysis.</p>
       </div>
       <aside class="card">
-        <p class="card-kicker">Sampling summary</p>
+        <p class="card-kicker">Sample flow</p>
         <table class="compact-table">
-          <caption>Table 1. Pilot sampling information</caption>
+          <caption>Table 1. Survey screening</caption>
           <tbody>
-            <tr><th scope="row">Population</th><td>XJTLU postgraduate students</td></tr>
-            <tr><th scope="row">Approach</th><td>Convenience + snowball sampling</td></tr>
-            <tr><th scope="row">Pilot sample</th><td>N = 7 valid responses</td></tr>
-            <tr><th scope="row">Mode</th><td>Anonymous online questionnaire</td></tr>
-            <tr><th scope="row">Duration</th><td>Approximately 3&ndash;5 minutes</td></tr>
+            <tr><th scope="row">Raw export</th><td>124</td></tr>
+            <tr><th scope="row">Did not consent</th><td>&minus;6</td></tr>
+            <tr><th scope="row">Not XJTLU postgraduate</th><td>&minus;11</td></tr>
+            <tr><th scope="row">Logical conflicts</th><td>&minus;13</td></tr>
+            <tr><th scope="row">Main analysis</th><td>94</td></tr>
           </tbody>
         </table>
       </aside>
     </div>
 
-    <h3>4.3 Pilot procedure and questionnaire logic</h3>
-    <p class="small muted">The question numbers and routing in this section refer to the earlier pilot instrument, not the later questionnaire described in the survey update.</p>
-    <div class="procedure-grid">
-      <div class="procedure-step">
-        <span>01</span>
-        <h4>Consent and context</h4>
-        <p>Participants read the study information and consented by continuing. The introduction defined the purpose, anonymity and expected duration.</p>
-      </div>
-      <div class="procedure-step">
-        <span>02</span>
-        <h4>Awareness and AI practice</h4>
-        <p>Q1&ndash;Q3 measured LibAI awareness, general AI use for literature work and usage frequency.</p>
-      </div>
-      <div class="procedure-step">
-        <span>03</span>
-        <h4>Tasks and preference</h4>
-        <p>Q4&ndash;Q7 measured task use, LibAI versus external AI preference, reasons for preference and perceived LibAI weaknesses.</p>
-      </div>
-      <div class="procedure-step">
-        <span>04</span>
-        <h4>Open expectations</h4>
-        <p>Optional open questions captured the biggest problem with current tools, surprising or disappointing LibAI experiences, and desired improvements.</p>
-      </div>
+    <div class="callout method-note">
+      <p class="card-kicker">Corrected exclusion description</p>
+      <p>Six respondents reported never using generative AI in Q5 while reporting current LibAI use in Q8 and LibAI tasks in Q10. Six selected both &ldquo;no recent LibAI use&rdquo; and specific LibAI tasks in Q10. Two selected both &ldquo;no facilitating factor&rdquo; and a support option in Q24. One respondent met two rules, producing 13 unique exclusions.</p>
     </div>
-    <p class="small muted">Routing note: Q6 was shown only to participants who preferred LibAI. Q7 was shown to participants who had used LibAI. Duplicate open questions (Q8/Q9 and Q13/Q14) were used because the survey platform&rsquo;s routing could reach the external-AI path through two different conditions.</p>
 
-    <h3>4.4 Measures and evidence</h3>
+    <h3>4.2 Measures and analysis</h3>
     <div class="table-scroll">
       <table>
-        <caption>Table 2. Operationalisation of the research questions</caption>
-        <thead>
-          <tr>
-            <th scope="col">Construct</th>
-            <th scope="col">Questionnaire evidence</th>
-            <th scope="col">Measurement</th>
-            <th scope="col">Use in this report</th>
-          </tr>
-        </thead>
+        <caption>Table 2. Analysis approach and eligible denominators</caption>
+        <thead><tr><th scope="col">Measure</th><th scope="col">Evidence</th><th scope="col">Denominator</th><th scope="col">Analysis</th></tr></thead>
         <tbody>
-          <tr><th scope="row">Awareness</th><td>Q1</td><td>Three categories: used, heard but not used, did not know / unsure</td><td>Frequency and percentage; identifies the awareness-to-use gap</td></tr>
-          <tr><th scope="row">AI-supported literature work</th><td>Q2&ndash;Q4</td><td>Binary use, three-level frequency, multiple task selections</td><td>Describes the existing workflow LibAI must enter</td></tr>
-          <tr><th scope="row">Preference</th><td>Q5</td><td>LibAI or external AI</td><td>Descriptive comparison among participants who used LibAI</td></tr>
-          <tr><th scope="row">Reasons and weaknesses</th><td>Q6&ndash;Q7</td><td>Multiple-choice reasons plus optional text</td><td>Explains preference rather than only counting it</td></tr>
-          <tr><th scope="row">Improvement priorities</th><td>Q8&ndash;Q14</td><td>Optional open text</td><td>Provisional thematic analysis</td></tr>
+          <tr><th scope="row">LibAI awareness and adoption</th><td>Q8</td><td>94</td><td>Counts and percentages</td></tr>
+          <tr><th scope="row">AI tools and task use</th><td>Q7 and Q6</td><td>90 AI users</td><td>Counts and percentages</td></tr>
+          <tr><th scope="row">LibAI task use</th><td>Q10</td><td>20 current users</td><td>Counts and percentages</td></tr>
+          <tr><th scope="row">Task help and usability</th><td>Q12&ndash;Q13</td><td>32 previous users; item-specific missingness</td><td>Mean, SD, median, IQR, agreement percentages and Cronbach&rsquo;s alpha</td></tr>
+          <tr><th scope="row">Concerns and barriers</th><td>Q14 and Q16</td><td>32 previous users</td><td>Mean ratings and multi-select frequencies</td></tr>
+          <tr><th scope="row">Non-user reasons and supports</th><td>Q23&ndash;Q25</td><td>62 never-users</td><td>Multi-select frequencies and ordinal summary</td></tr>
+          <tr><th scope="row">Improvement priority</th><td>Q27&ndash;Q28</td><td>Q27: 82 complete cases; Q28: 94</td><td>Friedman test and forced-choice frequencies</td></tr>
         </tbody>
       </table>
     </div>
-    <p>Success is evaluated descriptively rather than against one pass/fail threshold. A useful result would show whether awareness approaches general AI use, whether LibAI is preferred for source-dependent tasks, and whether rejection points to solvable interaction problems. The study does not benchmark answer accuracy against a gold-standard literature set.</p>
 
-    <h3>4.5 Ethics and bias mitigation</h3>
+    <div class="analysis-note">
+      <p class="card-kicker">Interpretation rule</p>
+      <p><strong>Keep the denominator attached.</strong> Multi-select items do not sum to 100%. &ldquo;Not applicable&rdquo; and &ldquo;unable to judge&rdquo; remain missing. Ordinal ratings are not treated as exact interval measures. The Q18&ndash;Q19 association is exploratory because only 32 users answered both items.</p>
+    </div>
+
+    <h3>4.3 Ethics and bias mitigation</h3>
     <div class="ethics-grid">
-      <div><strong>Consent</strong><p>Voluntary participation, plain-language study information and consent by continuation. Participants could stop at any point.</p></div>
-      <div><strong>Privacy</strong><p>No names, student IDs or unnecessary personal details were requested. Responses are reported in aggregate.</p></div>
-      <div><strong>Storage</strong><p>Digital responses are held in the password-protected Wenjuanxing account and retained according to the course retention procedure.</p></div>
-      <div><strong>Bias</strong><p>The team reports the non-representative sample, avoids treating self-report as observed behaviour, preserves disconfirming comments and separates evidence from interpretation.</p></div>
+      <div><strong>Consent</strong><p>Participation was voluntary. The questionnaire introduced the purpose, anonymity and expected duration, and participants could stop before submission.</p></div>
+      <div><strong>Privacy</strong><p>The public page contains aggregate results only. No names, student IDs, IP addresses or raw response records are hosted here.</p></div>
+      <div><strong>Analysis auditing</strong><p>Recoding, exclusions and denominators are documented. The exclusions were reviewed after data inspection and are reported as a limitation rather than presented as a pre-registered rule.</p></div>
+      <div><strong>Experiment safeguards</strong><p>The planned task study will balance system order, use predefined prompts, provide separate consent for recording and retain only anonymised response and timing data.</p></div>
     </div>
-
-    <h3>4.6 Pilot changes and deviations</h3>
-    <p>The pilot exposed ambiguous terms and a platform-routing limitation. The pilot report proposed clarifying &ldquo;literature search,&rdquo; &ldquo;reading&rdquo; and &ldquo;external AI,&rdquo; reducing duplicate questions where possible, and recruiting a broader main-wave sample. The extent to which the later instrument implements these changes needs confirmation.</p>
   </div>
 </section>
 
-<section id="analysis" class="section">
+<section id="findings" class="section">
   <div class="wrap">
     <div class="section-heading">
-      <p class="section-label">05 / Data preparation and analysis</p>
-      <h2>Descriptive first, inferential only when justified</h2>
-    </div>
-
-    <div class="two-col">
-      <div>
-        <h3>Data types and preparation</h3>
-        <p>The pilot produced categorical responses, ordinal frequency data and optional free text. Responses were exported from Wenjuanxing and checked for incomplete submissions and impossible routing. Percentages use the valid responses to each question as the denominator, so it changes when a question was shown only to a subgroup. Counts appear alongside percentages because small denominators make a one-person difference look large.</p>
-        <p>No cases were removed. No inferential test, confidence interval or effect size is reported: several cells contain fewer than five cases and the sample is not probability-based. A p-value would imply more precision than the design supports.</p>
-      </div>
-      <aside class="analysis-note">
-        <p class="card-kicker">Interpretation rule</p>
-        <p><strong>Counts before percentages.</strong> A result such as &ldquo;two of three&rdquo; is more honest than &ldquo;66.7%&rdquo; when only three people answered. Percentages are included for comparability but are always tied to their denominator.</p>
-        <p><strong>No p-values for the pilot.</strong> The main wave may support Fisher&rsquo;s exact tests for categorical associations if cell sizes and design permit; that decision will be made after the data are inspected.</p>
-      </aside>
-    </div>
-
-    <h3>Analysis plan</h3>
-    <div class="table-scroll">
-      <table>
-        <caption>Table 3. Analysis plan and rationale</caption>
-        <thead>
-          <tr>
-            <th scope="col">Research question</th>
-            <th scope="col">Analysis</th>
-            <th scope="col">Why appropriate</th>
-            <th scope="col">Current status</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td>RQ1</td><td>Frequency counts, percentages and cross-tabulation of awareness by AI use</td><td>Variables are categorical; the aim is description, not prediction</td><td>Pilot reported</td></tr>
-          <tr><td>RQ2</td><td>Preference counts by LibAI-use group; categorisation of reasons and weaknesses</td><td>Preserves the difference between users and non-users and explains choices</td><td>Pilot reported; subgroup n = 3</td></tr>
-          <tr><td>RQ3</td><td>Inductive coding of open responses into themes</td><td>Captures priorities that closed options may miss</td><td>Provisional themes; full dual coding pending</td></tr>
-        </tbody>
-      </table>
-    </div>
-
-    <h3>Qualitative process</h3>
-    <p>Open comments were read repeatedly and grouped by the problem they described. The provisional categories were source integrity, request understanding and relevance, speed, and synthesis or knowledge connection. These are analytic summaries, not frequency claims. Full analysis will use independent coding, a coding frame, discussion of disagreements and an audit trail. The pilot export did not contain a clean, de-identified verbatim transcript, so comments are paraphrased.</p>
-  </div>
-</section>
-
-<section id="findings" class="section alt">
-  <div class="wrap">
-    <div class="section-heading">
-      <p class="section-label">06 / Pilot findings</p>
-      <h2>Demand is visible; differentiation is not yet convincing</h2>
+      <p class="section-label">05 / Survey findings</p>
+      <h2>Demand is visible; a credible evidence experience is not yet established</h2>
     </div>
 
     <div class="finding-block">
       <div class="finding-copy">
         <p class="mini-label">RQ1 / Awareness and use</p>
-        <h3>All participants used AI, but only three had used LibAI</h3>
-        <p>All seven participants used AI tools such as DeepSeek or ChatGPT for literature search and reading. Frequency was high for three and medium for four. Literature search was selected by all seven, reading or summarising by six, writing assistance by six and citation formatting by five.</p>
-        <p>Awareness of LibAI was lower: three had used it, two had heard of it, and two did not know or were unsure. The pilot shows an adoption gap within a group already comfortable with AI, but describes only seven responses.</p>
+        <h3>Most students use AI; LibAI remains secondary</h3>
+        <p>Ninety of 94 respondents had used generative AI in the previous three months. LibAI use was lower: 20 respondents had used it in the past six months, 12 had used it earlier, 36 had heard of it but never used it, and 26 had never heard of it.</p>
+        <p>DeepSeek and ChatGPT were tied as the most-used tools at 28 respondents each among the 90 AI users. Only two participants named LibAI as their most-used system. The adoption problem therefore begins after general AI adoption, not before it.</p>
       </div>
+      <figure class="chart-card">
+        <figcaption><strong>Figure 2.</strong> LibAI awareness and use. Q8, n = 94.</figcaption>
+        <div class="bar-chart" role="img" aria-label="Used LibAI in the past six months: 20 of 94, 21.3 percent. Used before but not recently: 12, 12.8 percent. Heard but never used: 36, 38.3 percent. Never heard: 26, 27.7 percent.">
+          <div class="bar-row"><span class="bar-label">Used in past 6 months</span><div class="bar-track"><span class="bar-fill" style="--value:21.3%"></span></div><span class="bar-value">20 <small>21.3%</small></span></div>
+          <div class="bar-row"><span class="bar-label">Used earlier</span><div class="bar-track"><span class="bar-fill" style="--value:12.8%"></span></div><span class="bar-value">12 <small>12.8%</small></span></div>
+          <div class="bar-row"><span class="bar-label">Heard, never used</span><div class="bar-track"><span class="bar-fill" style="--value:38.3%"></span></div><span class="bar-value">36 <small>38.3%</small></span></div>
+          <div class="bar-row"><span class="bar-label">Never heard</span><div class="bar-track"><span class="bar-fill" style="--value:27.7%"></span></div><span class="bar-value">26 <small>27.7%</small></span></div>
+        </div>
+        <p class="chart-note">Current and former LibAI users together: 32/94 (34.0%). Never-users: 62/94 (66.0%).</p>
+      </figure>
+    </div>
+
+    <div class="two-col">
+      <figure class="chart-card">
+        <figcaption><strong>Figure 3.</strong> Tasks for which students used AI. Q6, n = 90 AI users, multiple choice.</figcaption>
+        <div class="bar-chart" role="img" aria-label="Read, summarize or explain papers 57 of 90, 63.3 percent. Find and screen literature 56, 62.2 percent. Assist writing 51, 56.7 percent. Clarify questions or search terms 50, 55.6 percent. Compare or extract 42, 46.7 percent.">
+          <div class="bar-row"><span class="bar-label">Read / summarise</span><div class="bar-track"><span class="bar-fill" style="--value:63.3%"></span></div><span class="bar-value">57 <small>63.3%</small></span></div>
+          <div class="bar-row"><span class="bar-label">Find / screen papers</span><div class="bar-track"><span class="bar-fill" style="--value:62.2%"></span></div><span class="bar-value">56 <small>62.2%</small></span></div>
+          <div class="bar-row"><span class="bar-label">Writing assistance</span><div class="bar-track"><span class="bar-fill" style="--value:56.7%"></span></div><span class="bar-value">51 <small>56.7%</small></span></div>
+          <div class="bar-row"><span class="bar-label">Clarify task</span><div class="bar-track"><span class="bar-fill" style="--value:55.6%"></span></div><span class="bar-value">50 <small>55.6%</small></span></div>
+          <div class="bar-row"><span class="bar-label">Compare / extract</span><div class="bar-track"><span class="bar-fill" style="--value:46.7%"></span></div><span class="bar-value">42 <small>46.7%</small></span></div>
+        </div>
+        <p class="chart-note">These results justify keeping retrieval and reading/synthesis as separate experiment tasks.</p>
+      </figure>
 
       <figure class="chart-card">
-        <figcaption><strong>Figure 2.</strong> LibAI awareness and use in the pilot (N = 7). Percentages are shown to one decimal place; the underlying counts are three, two and two.</figcaption>
-        <div class="bar-chart" role="img" aria-label="Awareness of LibAI: 3 of 7 had used it, 42.9 percent; 2 had heard of it but not used it, 28.6 percent; 2 did not know or were unsure, 28.6 percent.">
-          <div class="bar-row">
-            <span class="bar-label">Used LibAI</span>
-            <div class="bar-track"><span class="bar-fill" style="--value:42.9%"></span></div>
-            <span class="bar-value">3 / 7 <small>42.9%</small></span>
-          </div>
-          <div class="bar-row">
-            <span class="bar-label">Heard, not used</span>
-            <div class="bar-track"><span class="bar-fill" style="--value:28.6%"></span></div>
-            <span class="bar-value">2 / 7 <small>28.6%</small></span>
-          </div>
-          <div class="bar-row">
-            <span class="bar-label">Did not know</span>
-            <div class="bar-track"><span class="bar-fill" style="--value:28.6%"></span></div>
-            <span class="bar-value">2 / 7 <small>28.6%</small></span>
-          </div>
+        <figcaption><strong>Figure 4.</strong> Tasks completed with LibAI by current users. Q10, n = 20, multiple choice.</figcaption>
+        <div class="bar-chart" role="img" aria-label="Read, summarize or explain papers 16 of 20, 80 percent. Find and screen literature 14, 70 percent. Compare or extract 7, 35 percent. Clarify task 6, 30 percent.">
+          <div class="bar-row"><span class="bar-label">Read / summarise</span><div class="bar-track"><span class="bar-fill" style="--value:80%"></span></div><span class="bar-value">16 <small>80.0%</small></span></div>
+          <div class="bar-row"><span class="bar-label">Find / screen papers</span><div class="bar-track"><span class="bar-fill" style="--value:70%"></span></div><span class="bar-value">14 <small>70.0%</small></span></div>
+          <div class="bar-row"><span class="bar-label">Compare / extract</span><div class="bar-track"><span class="bar-fill" style="--value:35%"></span></div><span class="bar-value">7 <small>35.0%</small></span></div>
+          <div class="bar-row"><span class="bar-label">Clarify task</span><div class="bar-track"><span class="bar-fill" style="--value:30%"></span></div><span class="bar-value">6 <small>30.0%</small></span></div>
         </div>
-        <p class="chart-note">Pilot data, Wenjuanxing export. Non-probability sample; not generalisable.</p>
+        <p class="chart-note">The 12 former users did not answer Q10 in this cleaned file, so the denominator is 20 current users.</p>
       </figure>
     </div>
 
     <div class="finding-block reverse">
       <figure class="chart-card">
-        <figcaption><strong>Figure 3.</strong> Tasks for which participants used AI in the pilot (N = 7, multiple choice). Writing assistance overlaps with reading and citation work.</figcaption>
-        <div class="bar-chart" role="img" aria-label="Task use: literature search 7 of 7, 100 percent; reading or summarising 6 of 7, 85.7 percent; writing assistance 6 of 7, 85.7 percent; citation formats 5 of 7, 71.4 percent.">
-          <div class="bar-row">
-            <span class="bar-label">Search</span>
-            <div class="bar-track"><span class="bar-fill" style="--value:100%"></span></div>
-            <span class="bar-value">7 / 7 <small>100%</small></span>
-          </div>
-          <div class="bar-row">
-            <span class="bar-label">Read / summarise</span>
-            <div class="bar-track"><span class="bar-fill" style="--value:85.7%"></span></div>
-            <span class="bar-value">6 / 7 <small>85.7%</small></span>
-          </div>
-          <div class="bar-row">
-            <span class="bar-label">Writing support</span>
-            <div class="bar-track"><span class="bar-fill" style="--value:85.7%"></span></div>
-            <span class="bar-value">6 / 7 <small>85.7%</small></span>
-          </div>
-          <div class="bar-row">
-            <span class="bar-label">Citations</span>
-            <div class="bar-track"><span class="bar-fill" style="--value:71.4%"></span></div>
-            <span class="bar-value">5 / 7 <small>71.4%</small></span>
-          </div>
+        <figcaption><strong>Figure 5.</strong> Perceived help with literature tasks. Q12, previous LibAI users, item-level n = 31&ndash;32.</figcaption>
+        <div class="mean-chart" role="img" aria-label="Task help means: find relevant literature 3.68, judge relevance 3.84, understand or summarize papers 3.94, compare or extract 3.68, clear structure 3.84, usable starting point 3.61.">
+          <div class="bar-row"><span class="bar-label">Find relevant papers</span><div class="bar-track"><span class="bar-fill" style="--value:73.6%"></span></div><span class="bar-value">3.68</span></div>
+          <div class="bar-row"><span class="bar-label">Judge relevance</span><div class="bar-track"><span class="bar-fill" style="--value:76.8%"></span></div><span class="bar-value">3.84</span></div>
+          <div class="bar-row"><span class="bar-label">Understand / summarise</span><div class="bar-track"><span class="bar-fill" style="--value:78.8%"></span></div><span class="bar-value">3.94</span></div>
+          <div class="bar-row"><span class="bar-label">Compare / extract</span><div class="bar-track"><span class="bar-fill" style="--value:73.6%"></span></div><span class="bar-value">3.68</span></div>
+          <div class="bar-row"><span class="bar-label">Clear structure</span><div class="bar-track"><span class="bar-fill" style="--value:76.8%"></span></div><span class="bar-value">3.84</span></div>
+          <div class="bar-row"><span class="bar-label">Usable starting point</span><div class="bar-track"><span class="bar-fill" style="--value:72.2%"></span></div><span class="bar-value">3.61</span></div>
         </div>
-        <p class="chart-note">Multiple selections were permitted; percentages are based on seven respondents.</p>
+        <p class="chart-note">1 = strongly disagree, 5 = strongly agree. Cronbach&rsquo;s alpha = 0.90 (n = 31 complete).</p>
       </figure>
 
       <div class="finding-copy">
-        <p class="mini-label">RQ2 / Preference and reasons</p>
-        <h3>Two of the three LibAI users still preferred external AI</h3>
-        <p>Among three LibAI users, one preferred LibAI and two preferred an external tool. The LibAI preference was linked to institutional access, free use and perceived reliability. The external-AI preferences were explained by LibAI not understanding the actual request and by slow response.</p>
-        <p>Two of the three LibAI users selected &ldquo;cannot understand my actual requirements&rdquo; and two selected &ldquo;slow response&rdquo; as disadvantages. None selected inaccurate output, weak guidance or unfamiliarity. This does not prove accuracy; it means accuracy was not the selected complaint. Non-users also mentioned over-reliance, unstable results, long tasks going off track and trust concerns.</p>
+        <p class="mini-label">RQ2 / Perceived task help</p>
+        <h3>Moderately useful, especially for understanding papers</h3>
+        <p>The task-help composite averages 3.72/5. Understanding and summarising papers is the highest-rated item at 3.94, while a usable starting point is the lowest at 3.61.</p>
+        <p>This matters because it would be inaccurate to describe LibAI as simply unhelpful. Users see value in the tasks it supports. The more important question is whether that value can survive source checking and integration into an existing literature workflow.</p>
       </div>
     </div>
 
-    <div class="preference-panel">
-      <div class="preference-visual" role="img" aria-label="Among three LibAI users, one preferred LibAI and two preferred external AI.">
-        <div class="preference-ring"><span><strong>3</strong> LibAI users</span></div>
-        <div class="preference-split">
-          <div class="split-row"><span class="split-swatch libai"></span><span>LibAI</span><strong>1 / 3</strong></div>
-          <div class="split-row"><span class="split-swatch external"></span><span>External AI</span><strong>2 / 3</strong></div>
+    <div class="finding-block">
+      <div class="finding-copy">
+        <p class="mini-label">RQ2 / Usability and credibility</p>
+        <h3>Task help is rated higher than the conditions around it</h3>
+        <p>The usability, trust and access composite averages 3.19/5, compared with 3.72/5 for task help. Workflow fit is lowest at 2.84, followed by retrieval coverage at 3.03 and source verification at 3.12.</p>
+        <p>A paired Wilcoxon comparison of the two composite scores is exploratory (<em>p</em> = .0195, n = 32) because the blocks measure different constructs. The practical pattern is consistent with the barriers: the answer may help, but users are less confident that it is sufficient, verifiable and easy to incorporate.</p>
+      </div>
+      <figure class="chart-card">
+        <figcaption><strong>Figure 6.</strong> Operation, trust and access conditions. Q13, n = 30&ndash;32.</figcaption>
+        <div class="mean-chart" role="img" aria-label="Usability means: easy to learn 3.19, clear guidance 3.22, natural language 3.34, verify sources 3.12, enough literature 3.03, relevant results 3.34, acceptable speed 3.37, stability 3.25, access 3.38, workflow fit 2.84.">
+          <div class="bar-row"><span class="bar-label">Easy to learn</span><div class="bar-track"><span class="bar-fill" style="--value:63.8%"></span></div><span class="bar-value">3.19</span></div>
+          <div class="bar-row"><span class="bar-label">Clear guidance</span><div class="bar-track"><span class="bar-fill" style="--value:64.4%"></span></div><span class="bar-value">3.22</span></div>
+          <div class="bar-row"><span class="bar-label">Natural-language request</span><div class="bar-track"><span class="bar-fill" style="--value:66.8%"></span></div><span class="bar-value">3.34</span></div>
+          <div class="bar-row"><span class="bar-label">Verify sources</span><div class="bar-track"><span class="bar-fill" style="--value:62.4%"></span></div><span class="bar-value">3.12</span></div>
+          <div class="bar-row"><span class="bar-label">Enough literature</span><div class="bar-track"><span class="bar-fill" style="--value:60.6%"></span></div><span class="bar-value">3.03</span></div>
+          <div class="bar-row"><span class="bar-label">Relevant results</span><div class="bar-track"><span class="bar-fill" style="--value:66.8%"></span></div><span class="bar-value">3.34</span></div>
+          <div class="bar-row"><span class="bar-label">Acceptable speed</span><div class="bar-track"><span class="bar-fill" style="--value:67.4%"></span></div><span class="bar-value">3.37</span></div>
+          <div class="bar-row"><span class="bar-label">Stability</span><div class="bar-track"><span class="bar-fill" style="--value:65.0%"></span></div><span class="bar-value">3.25</span></div>
+          <div class="bar-row"><span class="bar-label">Login / access</span><div class="bar-track"><span class="bar-fill" style="--value:67.6%"></span></div><span class="bar-value">3.38</span></div>
+          <div class="bar-row"><span class="bar-label">Fits workflow</span><div class="bar-track"><span class="bar-fill" style="--value:56.8%"></span></div><span class="bar-value">2.84</span></div>
         </div>
-      </div>
-      <div class="preference-copy">
-        <p class="card-kicker">The tension in one sentence</p>
-        <p>LibAI&rsquo;s strongest asset is institutional access to academic sources; its immediate adoption barrier is the experience of asking a question and waiting for an answer that feels relevant.</p>
+        <p class="chart-note">Cronbach&rsquo;s alpha = 0.90 (n = 30 complete responses).</p>
+      </figure>
+    </div>
+
+    <div class="two-col">
+      <figure class="chart-card">
+        <figcaption><strong>Figure 7.</strong> Concerns about LibAI. Q14, n = 32.</figcaption>
+        <div class="mean-chart" role="img" aria-label="Concern means: errors affect judgment 3.81, insufficient sources 3.94, fabricated references 3.59, data mishandled 3.62, over-reliance 3.53.">
+          <div class="bar-row"><span class="bar-label">Errors affect judgment</span><div class="bar-track"><span class="bar-fill" style="--value:76.2%"></span></div><span class="bar-value">3.81</span></div>
+          <div class="bar-row"><span class="bar-label">Insufficient sources</span><div class="bar-track"><span class="bar-fill" style="--value:78.8%"></span></div><span class="bar-value">3.94</span></div>
+          <div class="bar-row"><span class="bar-label">Fabricated references</span><div class="bar-track"><span class="bar-fill" style="--value:71.8%"></span></div><span class="bar-value">3.59</span></div>
+          <div class="bar-row"><span class="bar-label">Data mishandled</span><div class="bar-track"><span class="bar-fill" style="--value:72.4%"></span></div><span class="bar-value">3.62</span></div>
+          <div class="bar-row"><span class="bar-label">Over-reliance</span><div class="bar-track"><span class="bar-fill" style="--value:70.6%"></span></div><span class="bar-value">3.53</span></div>
+        </div>
+        <p class="chart-note">1 = not at all concerned, 5 = very concerned. Source/evidence concerns are highest at 3.94.</p>
+      </figure>
+
+      <figure class="chart-card">
+        <figcaption><strong>Figure 8.</strong> Barriers among LibAI users. Q16, n = 32, multiple choice.</figcaption>
+        <div class="bar-chart" role="img" aria-label="Barriers: irrelevant or inaccurate results 14 of 32, 43.8 percent. Insufficient database coverage 14, 43.8 percent. Unknown entry point 12, 37.5 percent. Bilingual or complex requests 12, 37.5 percent. Insufficient evidence 12, 37.5 percent. Slow or unstable 5, 15.6 percent.">
+          <div class="bar-row"><span class="bar-label">Irrelevant / inaccurate</span><div class="bar-track"><span class="bar-fill" style="--value:43.8%"></span></div><span class="bar-value">14 <small>43.8%</small></span></div>
+          <div class="bar-row"><span class="bar-label">Database coverage</span><div class="bar-track"><span class="bar-fill" style="--value:43.8%"></span></div><span class="bar-value">14 <small>43.8%</small></span></div>
+          <div class="bar-row"><span class="bar-label">Unknown entry point</span><div class="bar-track"><span class="bar-fill" style="--value:37.5%"></span></div><span class="bar-value">12 <small>37.5%</small></span></div>
+          <div class="bar-row"><span class="bar-label">Complex request</span><div class="bar-track"><span class="bar-fill" style="--value:37.5%"></span></div><span class="bar-value">12 <small>37.5%</small></span></div>
+          <div class="bar-row"><span class="bar-label">Insufficient evidence</span><div class="bar-track"><span class="bar-fill" style="--value:37.5%"></span></div><span class="bar-value">12 <small>37.5%</small></span></div>
+          <div class="bar-row"><span class="bar-label">Slow / unstable</span><div class="bar-track"><span class="bar-fill" style="--value:15.6%"></span></div><span class="bar-value">5 <small>15.6%</small></span></div>
+        </div>
+        <p class="chart-note">Accuracy, source quality and retrieval coverage are reported more often than raw speed.</p>
+      </figure>
+    </div>
+
+    <div class="finding-block reverse">
+      <figure class="chart-card">
+        <figcaption><strong>Figure 9.</strong> Reasons for not using LibAI. Q23, n = 62 never-users, multiple choice.</figcaption>
+        <div class="bar-chart" role="img" aria-label="Non-use reasons: external AI meets needs 29 of 62, 46.8 percent. Lack of trial opportunity 23, 37.1 percent. Unclear tasks 22, 35.5 percent. Unknown entry point 21, 33.9 percent. Concern about accuracy 14, 22.6 percent.">
+          <div class="bar-row"><span class="bar-label">External AI meets needs</span><div class="bar-track"><span class="bar-fill" style="--value:46.8%"></span></div><span class="bar-value">29 <small>46.8%</small></span></div>
+          <div class="bar-row"><span class="bar-label">No trial opportunity</span><div class="bar-track"><span class="bar-fill" style="--value:37.1%"></span></div><span class="bar-value">23 <small>37.1%</small></span></div>
+          <div class="bar-row"><span class="bar-label">Unclear tasks</span><div class="bar-track"><span class="bar-fill" style="--value:35.5%"></span></div><span class="bar-value">22 <small>35.5%</small></span></div>
+          <div class="bar-row"><span class="bar-label">Unknown entry point</span><div class="bar-track"><span class="bar-fill" style="--value:33.9%"></span></div><span class="bar-value">21 <small>33.9%</small></span></div>
+          <div class="bar-row"><span class="bar-label">Accuracy concern</span><div class="bar-track"><span class="bar-fill" style="--value:22.6%"></span></div><span class="bar-value">14 <small>22.6%</small></span></div>
+        </div>
+        <p class="chart-note">Half of never-users (50.0%) said they would be willing to try LibAI if conditions improved (mean 3.45/5).</p>
+      </figure>
+
+      <div class="finding-copy">
+        <p class="mini-label">RQ3 / Non-users</p>
+        <h3>The barrier is evidence, not only speed</h3>
+        <p>Never-users most often say external AI already meets their literature needs (46.8%). Awareness and onboarding are also substantial: 37.1% lack an opportunity to try LibAI, 35.5% are unclear which tasks it supports, and 33.9% do not know how to access it.</p>
+        <p>The most requested supports are a clear entry demonstration and peer or teacher experience, each selected by 41.9%, followed by a clear list of suitable and unsuitable tasks (33.9%). This points to a trial and evidence problem, not merely an advertising problem.</p>
       </div>
     </div>
 
-    <div class="themes">
-      <div class="section-heading compact">
+    <div class="finding-block">
+      <div class="finding-copy">
         <p class="mini-label">RQ3 / Improvement priorities</p>
-        <h3>Four themes in the open responses</h3>
+        <h3>Accuracy and traceability dominate the priority ranking</h3>
+        <p>Verifiable sources (26/94, 27.7%) and answer accuracy with fewer fabrications (24/94, 25.5%) were the two most frequently selected first priorities. Together they account for 50/94 responses (53.2%). Speed and stability were selected by only 6/94 (6.4%).</p>
+        <p>The nine importance ratings in Q27 were broadly high and did not differ significantly overall (Friedman &chi;<sup>2</sup>(8) = 3.357, <em>p</em> = .910, n = 82 complete cases). The forced-choice Q28 is therefore especially informative: users regard many improvements as important, but source evidence and accuracy are most likely to be ranked first.</p>
       </div>
-      <div class="theme-grid">
-        <article>
-          <span class="theme-number">A</span>
-          <h4>Source integrity</h4>
-          <p>Do not invent answers or references when literature is available. Answers should be visibly tied to retrievable sources.</p>
-        </article>
-        <article>
-          <span class="theme-number">B</span>
-          <h4>Relevance and comprehension</h4>
-          <p>Understand the user&rsquo;s research intent, not only literal keywords, and return articles that fit the question.</p>
-        </article>
-        <article>
-          <span class="theme-number">C</span>
-          <h4>Synthesis, not just retrieval</h4>
-          <p>Use titles, abstracts and full text to show how papers relate, while keeping the answer deep and concise.</p>
-        </article>
-        <article>
-          <span class="theme-number">D</span>
-          <h4>Visible evidence paths</h4>
-          <p>Make connections between literature and supporting passages easy to inspect so students can judge trustworthiness.</p>
-        </article>
+      <figure class="chart-card">
+        <figcaption><strong>Figure 10.</strong> First improvement priority. Q28, n = 94, one option per respondent.</figcaption>
+        <div class="bar-chart" role="img" aria-label="First priorities: verifiable sources 26, accuracy 24, simpler operation 11, database coverage 8, workflow integration 7, speed 6, language support 5, login compatibility 5, privacy 2.">
+          <div class="bar-row"><span class="bar-label">Verifiable sources</span><div class="bar-track"><span class="bar-fill" style="--value:27.7%"></span></div><span class="bar-value">26 <small>27.7%</small></span></div>
+          <div class="bar-row"><span class="bar-label">Accuracy</span><div class="bar-track"><span class="bar-fill" style="--value:25.5%"></span></div><span class="bar-value">24 <small>25.5%</small></span></div>
+          <div class="bar-row"><span class="bar-label">Simpler operation</span><div class="bar-track"><span class="bar-fill" style="--value:11.7%"></span></div><span class="bar-value">11 <small>11.7%</small></span></div>
+          <div class="bar-row"><span class="bar-label">Database coverage</span><div class="bar-track"><span class="bar-fill" style="--value:8.5%"></span></div><span class="bar-value">8 <small>8.5%</small></span></div>
+          <div class="bar-row"><span class="bar-label">Workflow integration</span><div class="bar-track"><span class="bar-fill" style="--value:7.4%"></span></div><span class="bar-value">7 <small>7.4%</small></span></div>
+          <div class="bar-row"><span class="bar-label">Speed / stability</span><div class="bar-track"><span class="bar-fill" style="--value:6.4%"></span></div><span class="bar-value">6 <small>6.4%</small></span></div>
+          <div class="bar-row"><span class="bar-label">Language support</span><div class="bar-track"><span class="bar-fill" style="--value:5.3%"></span></div><span class="bar-value">5 <small>5.3%</small></span></div>
+          <div class="bar-row"><span class="bar-label">Login / compatibility</span><div class="bar-track"><span class="bar-fill" style="--value:5.3%"></span></div><span class="bar-value">5 <small>5.3%</small></span></div>
+          <div class="bar-row"><span class="bar-label">Privacy</span><div class="bar-track"><span class="bar-fill" style="--value:2.1%"></span></div><span class="bar-value">2 <small>2.1%</small></span></div>
+        </div>
+        <p class="chart-note">All nine options sum to 94. Percentages may not sum exactly to 100% because of rounding.</p>
+      </figure>
+    </div>
+
+    <div class="two-col">
+      <figure class="chart-card">
+        <figcaption><strong>Figure 11.</strong> Overall satisfaction and reuse intention among previous LibAI users. Q18&ndash;Q19, n = 32.</figcaption>
+        <div class="score-summary">
+          <div><strong>3.53</strong><span>Satisfaction mean / 5</span></div>
+          <div><strong>62.5%</strong><span>rated 4 or 5</span></div>
+          <div><strong>3.66</strong><span>Reuse intention mean / 5</span></div>
+          <div><strong>59.4%</strong><span>rated 4 or 5</span></div>
+        </div>
+        <p class="chart-note">Q20 recommendation mean: 4.72/10; NPS = &minus;75.0. The recommendation measure is secondary and based on only 32 users.</p>
+      </figure>
+
+      <aside class="analysis-note">
+        <p class="card-kicker">Exploratory, not confirmatory</p>
+        <p>Satisfaction and reuse intention were almost unrelated (Spearman &rho; = &minus;.022; permutation <em>p</em> = .906; 95% bootstrap interval &minus;.40 to .37; n = 32). This wide interval provides no evidence of a monotonic association, but it also does not establish that no association exists.</p>
+        <p>The result is reported in the appendix of the statistical report and is not used as a headline conclusion.</p>
+      </aside>
+    </div>
+
+    <h3>Task-specific preference</h3>
+    <div class="table-scroll">
+      <table>
+        <caption>Table 3. Choice between LibAI and external AI by task. Q15, n = 32 previous LibAI users.</caption>
+        <thead><tr><th scope="col">Task</th><th scope="col">LibAI</th><th scope="col">External AI</th><th scope="col">Both</th><th scope="col">Not used</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Clarify research question</th><td>3 (9.4%)</td><td>6 (18.8%)</td><td>13 (40.6%)</td><td>10 (31.2%)</td></tr>
+          <tr><th scope="row">Find / screen literature</th><td>3 (9.4%)</td><td>7 (21.9%)</td><td>13 (40.6%)</td><td>9 (28.1%)</td></tr>
+          <tr><th scope="row">Read / summarise papers</th><td>2 (6.2%)</td><td>8 (25.0%)</td><td>16 (50.0%)</td><td>6 (18.8%)</td></tr>
+          <tr><th scope="row">Compare / extract information</th><td>1 (3.1%)</td><td>7 (21.9%)</td><td>16 (50.0%)</td><td>8 (25.0%)</td></tr>
+          <tr><th scope="row">Format citations</th><td>2 (6.2%)</td><td>7 (21.9%)</td><td>15 (46.9%)</td><td>8 (25.0%)</td></tr>
+          <tr><th scope="row">Translate / cross-language reading</th><td>2 (6.2%)</td><td>7 (21.9%)</td><td>16 (50.0%)</td><td>7 (21.9%)</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>For every task, &ldquo;both&rdquo; is the largest category (40.6%&ndash;50.0%), while LibAI alone is selected by only 3.1%&ndash;9.4%. Most users regard the two tools as complementary rather than direct substitutes.</p>
+  </div>
+</section>
+
+<section id="experiment" class="section alt">
+  <div class="wrap">
+    <div class="section-heading">
+      <p class="section-label">06 / Planned task experiment</p>
+      <h2>From perceived experience to observable task performance</h2>
+    </div>
+
+    <div class="callout experiment-status">
+      <p class="card-kicker">Current status</p>
+      <p>The experiment is fully designed but has not yet been run. This section describes the proposed protocol; it does not contain experimental results.</p>
+    </div>
+
+    <h3>6.1 Design and participants</h3>
+    <div class="two-col design-top">
+      <div>
+        <p>The planned design is a <strong>balanced 3 &times; 2 fully within-subjects experiment</strong>. Every participant uses every AI system and completes both task types.</p>
+        <ul>
+          <li><strong>AI factor:</strong> LibAI, DeepSeek and ChatGPT.</li>
+          <li><strong>Task factor:</strong> fixed literature retrieval and fixed paper comprehension.</li>
+          <li><strong>Trials:</strong> six per participant.</li>
+          <li><strong>Target sample:</strong> 24&ndash;30 XJTLU postgraduate students; at least 24 complete datasets.</li>
+          <li><strong>Recruitment balance:</strong> approximately 40% current or former LibAI users and 60% never-users.</li>
+        </ul>
+        <p>Complete counterbalancing uses six AI orders. Task order is also balanced so half of the sessions begin with retrieval and half begin with comprehension.</p>
       </div>
-      <p class="small muted">These themes paraphrase recurring open comments from the pilot. They are provisional coding categories, not prevalence estimates.</p>
+      <aside class="card">
+        <p class="card-kicker">Balanced AI orders</p>
+        <table class="compact-table">
+          <caption>Table 4. Counterbalancing with 24 participants</caption>
+          <thead><tr><th scope="col">Group</th><th scope="col">AI order</th><th scope="col">n</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">G1</th><td>LibAI &rarr; DeepSeek &rarr; ChatGPT</td><td>4</td></tr>
+            <tr><th scope="row">G2</th><td>LibAI &rarr; ChatGPT &rarr; DeepSeek</td><td>4</td></tr>
+            <tr><th scope="row">G3</th><td>DeepSeek &rarr; LibAI &rarr; ChatGPT</td><td>4</td></tr>
+            <tr><th scope="row">G4</th><td>DeepSeek &rarr; ChatGPT &rarr; LibAI</td><td>4</td></tr>
+            <tr><th scope="row">G5</th><td>ChatGPT &rarr; LibAI &rarr; DeepSeek</td><td>4</td></tr>
+            <tr><th scope="row">G6</th><td>ChatGPT &rarr; DeepSeek &rarr; LibAI</td><td>4</td></tr>
+          </tbody>
+        </table>
+      </aside>
+    </div>
+
+    <h3>6.2 Fixed tasks</h3>
+    <div class="task-grid">
+      <article class="task-card">
+        <p class="mini-label">Task 1 / Literature retrieval</p>
+        <h4>Same prompt for all systems</h4>
+        <p class="task-summary">Find three authentic peer-reviewed papers published from 2022 onward on generative AI in academic-library support. Provide authors, year, full title, journal, DOI, database or source, and a one-sentence relevance statement. Mark anything that cannot be verified; do not invent sources.</p>
+        <details>
+          <summary>View the full participant prompt</summary>
+          <p class="prompt-copy">Please search for three peer-reviewed papers published in 2022 or later on &ldquo;generative artificial intelligence in academic library support services.&rdquo; For each paper, provide the authors, year, full title, journal, DOI, database or source link, and one sentence explaining why it fits the topic. Prioritise sources that can be opened and verified. Clearly label anything that cannot be verified and do not invent papers or citations. At the end, explain how you verified at least one DOI or source link.</p>
+        </details>
+        <p class="task-meta">Maximum 6 minutes. One standardised follow-up is allowed if the checklist is incomplete.</p>
+      </article>
+
+      <article class="task-card">
+        <p class="mini-label">Task 2 / Literature comprehension</p>
+        <h4>Same abstract and prompt for all systems</h4>
+        <p class="task-summary">Read a fixed research abstract and identify the research question, design, sample, two numerical findings, two limitations, what the study can support and what it cannot support.</p>
+        <details>
+          <summary>View the full participant prompt</summary>
+          <p class="prompt-copy">Use only the abstract provided below. Do not add information that is not present. Summarise: (1) the research question, (2) the design and method, (3) the sample, (4) two main findings with their numerical values, (5) two study limitations, (6) what conclusion the study can best support, and (7) what it cannot support. [The balanced fixed abstract is supplied in the experiment protocol.]</p>
+        </details>
+        <p class="task-meta">Maximum 6 minutes. Same output checklist and same standardised follow-up for every system.</p>
+      </article>
+    </div>
+
+    <h3>6.3 Measures and procedure</h3>
+    <div class="table-scroll">
+      <table>
+        <caption>Table 5. Planned experimental measures</caption>
+        <thead><tr><th scope="col">Level</th><th scope="col">Measures</th><th scope="col">How recorded</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Objective performance</th><td>Task success; valid papers; DOI/source accuracy; correct findings; fabricated claims</td><td>Predefined checklist and blinded scoring by two researchers</td></tr>
+          <tr><th scope="row">Time</th><td>First visible content; time to useful answer; full generation time; timeout</td><td>Screen recording or stopwatch from send to user click</td></tr>
+          <tr><th scope="row">Answer quality</th><td>Correctness, relevance, completeness, source verifiability and clarity</td><td>Five dimensions, 0&ndash;4 each; AI identity hidden</td></tr>
+          <tr><th scope="row">User experience</th><td>Satisfaction, confidence, trust, source-checking effort, mental effort, expectation confirmation and reuse intention</td><td>Seven-point scales after each task and system</td></tr>
+          <tr><th scope="row">Interview</th><td>Critical incidents, judging strategies, trust, speed&ndash;accuracy trade-offs and LibAI adoption</td><td>8&ndash;10 minute semi-structured interview with 8&ndash;10 purposively selected participants</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="procedure-grid">
+      <div class="procedure-step"><span>01</span><h4>Consent and baseline</h4><p>Information sheet, consent, recording preference, AI and LibAI experience, and pre-use expectations.</p></div>
+      <div class="procedure-step"><span>02</span><h4>Training</h4><p>Explain the task card and timing. Participants complete an unrelated practice query.</p></div>
+      <div class="procedure-step"><span>03</span><h4>Six trials</h4><p>Three systems &times; two tasks in balanced order. Click &ldquo;enough&rdquo; when the checklist is complete.</p></div>
+      <div class="procedure-step"><span>04</span><h4>Rating and interview</h4><p>System-level scales, final ranking, 8&ndash;10 minute interview and debrief.</p></div>
+    </div>
+
+    <h3>6.4 Planned analysis</h3>
+    <div class="two-col">
+      <div>
+        <ul>
+          <li>Three-system and two-task effects using repeated-measures ANOVA when assumptions hold.</li>
+          <li>Friedman tests with Holm-corrected Wilcoxon comparisons when assumptions fail.</li>
+          <li>Cochran&rsquo;s Q for binary task success and matched pairwise comparisons where appropriate.</li>
+          <li>Median and interquartile range for right-skewed response times.</li>
+          <li>Inter-rater agreement for answer scoring.</li>
+          <li>Regression of reuse intention on speed, task success, quality, source verifiability and mental effort.</li>
+        </ul>
+      </div>
+      <aside class="analysis-note">
+        <p class="card-kicker">Primary outcome</p>
+        <p>The experiment prioritises task success and verifiable answer quality. Time to useful answer is a key secondary outcome. A faster response that is incorrect or cannot be checked is not treated as better performance.</p>
+        <p>The study will report effect sizes and confidence intervals, not only <em>p</em>-values.</p>
+      </aside>
     </div>
   </div>
 </section>
@@ -512,49 +602,51 @@
 
     <div class="two-col discussion-grid">
       <div>
-        <h3>What the pattern means</h3>
-        <p>The pilot is too small for a general claim, but it exposes a coherent design problem. Students use AI for the tasks LibAI supports, yet awareness is incomplete and users who tried it did not consistently prefer it. Their reasons&mdash;speed, comprehension and evidence quality&mdash;are actionable.</p>
-        <p>This shifts attention from feature counting. Another button will not matter if the first answer is slow, misreads the question or cannot be checked. If students distrust unstable answers, a grounded library assistant has a credible niche.</p>
+        <h3>What the survey pattern means</h3>
+        <p>The survey shows that LibAI is not failing because postgraduate students reject AI. Most already use generative tools for the same tasks. The adoption gap is more specific: students do not consistently know LibAI, do not experience a clear advantage over external tools, and are not yet convinced that its outputs are easy to verify and integrate.</p>
+        <p>Respondents value understanding and relevance, but report lower confidence in source verification, retrieval coverage and workflow fit. The priority results reinforce this: source evidence and accuracy together account for more first choices than every other improvement combined.</p>
       </div>
       <div>
-        <h3>Alternative explanations</h3>
-        <p>Preference may reflect task familiarity rather than stable judgement. Daily external-AI users have more practice crafting prompts, and one salient bad experience may dominate recall. Self-report also cannot separate observed search success, reading time, citation accuracy or answer quality from perceived performance.</p>
+        <h3>Why the experiment is necessary</h3>
+        <p>Perception alone cannot show whether LibAI is actually slower, less accurate or less well grounded. It also cannot show whether users prefer a fast but unreliable answer to a slower but verifiable one. The fixed-task experiment addresses these questions by holding the prompt and task constant while measuring outcomes and user judgement separately.</p>
+        <p>The survey and experiment are therefore complementary: the survey identifies what matters, and the experiment tests performance under controlled conditions.</p>
       </div>
     </div>
 
     <div class="limitations">
       <h3>Limitations</h3>
       <ul>
-        <li><strong>Sample.</strong> Seven non-probability responses cannot represent the postgraduate population or support stable subgroup comparisons.</li>
-        <li><strong>Measurement.</strong> Self-reported awareness and preference are not system logs or observed behaviour; no accuracy benchmark was used.</li>
-        <li><strong>Design.</strong> The pilot tests a questionnaire, not a controlled comparison between LibAI and external AI. Order, demand and recall effects are plausible.</li>
-        <li><strong>Qualitative evidence.</strong> The available export does not provide a clean verbatim transcript, so themes are paraphrased and not count-based.</li>
+        <li><strong>Sample.</strong> The 94 responses come from non-probability convenience and snowball sampling and cannot represent all XJTLU postgraduates.</li>
+        <li><strong>Exclusions.</strong> The 13 logical-conflict exclusions were decided after reviewing the data. They are documented, but not pre-registered.</li>
+        <li><strong>Measurement.</strong> Awareness, preference and usability are self-reported and are not observed system performance.</li>
+        <li><strong>Comparisons.</strong> The 32 users provide limited power for subgroup and correlation analyses.</li>
+        <li><strong>Open text.</strong> The cleaned 94-case analysis dataset does not contain the open-ended responses, so qualitative themes are not re-estimated here.</li>
+        <li><strong>Experiment.</strong> The planned task study has not yet been run. No comparative performance claim is made on this page.</li>
       </ul>
     </div>
 
     <div class="recommendation-grid">
       <article class="recommendation-card">
         <p class="card-kicker">Recommendation 1</p>
-        <h3>Make the evidence path the default</h3>
-        <p>Expose the sources used, the supporting passage and the difference between retrieved evidence and generated interpretation. This turns the library&rsquo;s collection advantage into an observable benefit.</p>
+        <h3>Make evidence paths visible</h3>
+        <p>Show which sources support each claim, make DOI and source links easy to inspect, and distinguish retrieved evidence from generated interpretation.</p>
       </article>
       <article class="recommendation-card">
         <p class="card-kicker">Recommendation 2</p>
-        <h3>Reduce time to a useful first result</h3>
-        <p>Return a few highly relevant papers early and let students refine the question without restarting. Evaluate speed as time to a defensible source, not only response latency.</p>
+        <h3>Optimise time to a defensible answer</h3>
+        <p>Evaluate speed as time to a usable, checked answer rather than time to the first paragraph. A short unverified answer does not solve the user&rsquo;s literature task.</p>
       </article>
       <article class="recommendation-card">
         <p class="card-kicker">Recommendation 3</p>
-        <h3>Design for the comparison students already make</h3>
-        <p>Explain in-product how LibAI differs through licensed access, traceability and library integration. Test whether the explanation is persuasive.</p>
+        <h3>Design onboarding around real tasks</h3>
+        <p>Demonstrate suitable and unsuitable tasks, provide a low-risk trial, and show how LibAI differs from familiar external tools.</p>
       </article>
       <article class="recommendation-card">
         <p class="card-kicker">Recommendation 4</p>
-        <h3>Consider a task-based follow-up study</h3>
-        <p>Combine the revised survey with a task: find a relevant paper, verify a claim and summarise two sources. Record success, time, errors and confidence against self-report.</p>
+        <h3>Evaluate before scaling claims</h3>
+        <p>Run the balanced task experiment and two-rater quality assessment before making comparative claims about accuracy, speed or user preference.</p>
       </article>
     </div>
-    <p class="evidence-key"><strong>Evidence key.</strong> Counts and percentages above are observed pilot responses. Statements about what students &ldquo;need&rdquo; or what LibAI &ldquo;should&rdquo; do are interpretations and design recommendations, not established effects.</p>
   </div>
 </section>
 
@@ -569,24 +661,25 @@
       <div>
         <h3>Contribution statement</h3>
         <table>
-          <caption>Table 4. Group contribution</caption>
+          <caption>Table 6. Group contribution</caption>
           <thead><tr><th scope="col">Member</th><th scope="col">Contribution</th></tr></thead>
           <tbody>
-            <tr><th scope="row">Fengyi Guo</th><td>Shared contribution to study design, questionnaire logic, pilot review, interpretation and report checking.</td></tr>
-            <tr><th scope="row">Jingyu Li</th><td>Shared contribution to study design, questionnaire logic, pilot review, interpretation and report checking.</td></tr>
-            <tr><th scope="row">Liyutong Gao</th><td>Shared contribution to study design, questionnaire logic, pilot review, interpretation and report checking.</td></tr>
-            <tr><th scope="row">Yuyang Long</th><td>Shared contribution to study design, questionnaire logic, pilot review, interpretation and report checking.</td></tr>
+            <tr><th scope="row">Fengyi Guo</th><td>Shared contribution to study design, questionnaire logic, data interpretation, report checking and experiment planning.</td></tr>
+            <tr><th scope="row">Jingyu Li</th><td>Shared contribution to study design, questionnaire logic, data interpretation, report checking and experiment planning.</td></tr>
+            <tr><th scope="row">Liyutong Gao</th><td>Shared contribution to study design, questionnaire logic, data interpretation, report checking and experiment planning.</td></tr>
+            <tr><th scope="row">Yuyang Long</th><td>Shared contribution to study design, questionnaire logic, data interpretation, report checking and experiment planning.</td></tr>
           </tbody>
         </table>
         <p class="small muted">All members are jointly responsible for the project. Detailed working records are retained by the group.</p>
       </div>
       <div>
-        <h3>Permitted AI-use statement</h3>
-        <p>This page was revised with AI assistance for structure, language and presentation, based on the group&rsquo;s questionnaire, pilot export, presentation and interface inspection. The group must verify every claim, retain responsibility for the analysis and confirm that this assistance is permitted under the module&rsquo;s current AI policy.</p>
-        <p>AI was not used to invent participants, generate survey responses or create empirical results. The pilot findings are from the seven-response pilot export; the later screening totals come from the supplied aggregate questionnaire report. This update also used AI to organise and describe the supplied material; the group must check whether that use is permitted and disclose it as required.</p>
-
         <h3>Data and material availability</h3>
-        <p>The public page contains aggregate results only. Raw questionnaire responses, identifiers and the working export are not hosted here. The GitHub repository contains the HTML, CSS and supporting site files; anonymised materials may be supplied separately according to course requirements.</p>
+        <p>This public page contains aggregate results only. Raw questionnaire responses, identifiers and working exports are not hosted here.</p>
+        <p><a href="assets/statistical-results-n94.pdf" download>Download the revised statistical report</a> or <a href="assets/experiment-protocol.pdf" download>download the experiment protocol</a>.</p>
+
+        <h3>AI-use statement</h3>
+        <p>OpenAI Codex assisted with data processing, statistical calculations, report drafting and web formatting based on the group&rsquo;s questionnaire data, presentation materials and experimental protocol. The group must verify every claim, retain responsibility for the analysis and confirm that this scope of assistance is permitted under the module&rsquo;s AI policy.</p>
+        <p>AI was not used to invent participants, survey responses or experimental results. The 94-case aggregate statistics are derived from the group&rsquo;s supplied dataset; experiment results are not reported because the experiment has not yet been conducted.</p>
       </div>
     </div>
 
@@ -619,7 +712,7 @@
       <p class="footer-title">ADS401 Evaluation Methods and Statistics</p>
       <p>Group J &middot; <span id="year">2026</span> &middot; XJTLU</p>
     </div>
-    <p class="footer-note">Single-page web report. Pilot findings and later survey screening status; no raw participant data is stored here.</p>
+    <p class="footer-note">Single-page web report. Survey evidence is complete; task-experiment results have not yet been collected.</p>
   </div>
 </footer>
 
