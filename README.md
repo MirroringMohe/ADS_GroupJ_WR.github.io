@@ -8,6 +8,7 @@ This project evaluates XJTLU postgraduate students' use, perceptions and improve
 
 - The questionnaire is complete, with 94 eligible responses in the cleaned survey analysis.
 - The site reports aggregate survey results on AI use, LibAI task help, usability, barriers and improvement priorities.
+- Four core analysis charts are shown directly, with the remaining survey charts available in an expandable gallery.
 - A balanced 3 x 2 within-subjects experiment comparing LibAI, DeepSeek and ChatGPT has been designed but not yet conducted.
 - The downloadable statistical report and experiment protocol are included in `assets/`.
 
@@ -18,6 +19,7 @@ This project evaluates XJTLU postgraduate students' use, perceptions and improve
 | `ADS401_GroupJ_Report.html` | Main single-page report |
 | `assets/style.css` | Report styles |
 | `assets/app.js` | Section navigation and back-to-top behaviour |
+| `assets/analysis-charts/` | Full-resolution aggregate survey charts used in the web report |
 | `assets/statistical-results-n94.pdf` | Revised aggregate statistical report |
 | `assets/experiment-protocol.pdf` | Experiment design, tasks, measures and interview guide |
 
