@@ -597,7 +597,7 @@
       </table>
     </div>
 
-    <h3>6.5 Paired comparisons of answer quality</h3>
+    <h3>6.5 Within-participant comparisons</h3>
     <div class="two-col">
       <div>
         <p><strong>Retrieval.</strong> The overall difference was large (Friedman <em>Q</em> = 33.74, Kendall&rsquo;s <em>W</em> = .84, adjusted <em>p</em> &lt; .001). GPT-6 Luna and LibAI each averaged 5.55 points above DeepSeek, with adjusted <em>p</em> &lt; .001 for both paired comparisons. GPT-6 Luna and LibAI tied in 11 of 20 comparisons (adjusted <em>p</em> = 1.000).</p>
@@ -609,6 +609,25 @@
         <p>Holm adjustment was applied to the three overall tests and, separately, the six two-sided paired sign tests.</p>
       </aside>
     </div>
+
+    <h4>Exploratory paired comparisons of user ratings</h4>
+    <p>Among the 15 participants with complete ratings, the retrieval comparisons indicated differences across systems for both satisfaction and expectations (both adjusted <em>p</em> &lt; .001). For satisfaction, GPT-6 Luna and LibAI both scored above DeepSeek (adjusted <em>p</em> = .003 and .034). For expectations, LibAI scored above DeepSeek (adjusted <em>p</em> = .003), while the LibAI–GPT-6 Luna comparison gave adjusted <em>p</em> = .105. Comprehension ratings clustered near the top of the scale (adjusted <em>p</em> = .720 for satisfaction and .289 for expectations).</p>
+    <details>
+      <summary>View tests for satisfaction and expectations</summary>
+      <div class="table-scroll">
+        <table>
+          <caption>Exploratory user-rating tests with 15 paired participants</caption>
+          <thead><tr><th scope="col">Task</th><th scope="col">Measure</th><th scope="col">Friedman <em>Q</em></th><th scope="col">Kendall&rsquo;s <em>W</em></th><th scope="col">Adjusted <em>p</em></th></tr></thead>
+          <tbody>
+          <tr><th scope='row'>Retrieval</th><td>Overall satisfaction</td><td>18.55</td><td>0.62</td><td>&lt; .001</td></tr>
+          <tr><th scope='row'>Retrieval</th><td>Rating against expectations</td><td>18.62</td><td>0.62</td><td>&lt; .001</td></tr>
+          <tr><th scope='row'>Comprehension</th><td>Overall satisfaction</td><td>0.80</td><td>0.03</td><td>.720</td></tr>
+          <tr><th scope='row'>Comprehension</th><td>Rating against expectations</td><td>4.00</td><td>0.13</td><td>.289</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="small muted">Exact within-participant permutation tests were adjusted across four overall comparisons. Twelve two-sided paired sign tests formed a separate Holm adjustment family.</p>
+    </details>
 
     <h3>6.6 What shaped participants&rsquo; choices</h3>
     <div class="task-grid">
