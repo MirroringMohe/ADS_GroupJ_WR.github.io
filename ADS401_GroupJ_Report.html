@@ -17,7 +17,7 @@
       <p class="status-line"><span class="status-dot" aria-hidden="true"></span> Survey analysis complete <span class="status-sep">|</span> Task experiment results available <span class="status-sep">|</span> Updated 26 November 2026</p>
       <h1>From awareness to adoption: evaluating LibAI at XJTLU</h1>
       <p class="lede">A 94-participant survey of how XJTLU postgraduate students use AI for literature work, what they value in LibAI, and which source, retrieval and workflow problems shape adoption.</p>
-      <p class="header-note"><strong>Evidence boundary.</strong> The cleaned survey includes 94 responses. A separate task experiment compares answer quality for 20 participants and satisfaction for the 15 with available ratings. <a href="#experiment">See the task experiment results</a>.</p>
+      <p class="header-note"><strong>Evidence boundary.</strong> The cleaned survey includes 94 responses. A separate task experiment compares answer quality for 20 participants and user experience for the 15 with available ratings. <a href="#experiment">See the task experiment results</a>.</p>
       <p class="download-links"><a href="assets/statistical-results-n94.pdf" download>Statistical report (PDF)</a><span aria-hidden="true">/</span><a href="assets/experiment-protocol.pdf" download>Experiment protocol (PDF)</a></p>
     </div>
 
@@ -167,7 +167,7 @@
       <aside class="scope-box">
         <h3>Scope of claims</h3>
         <p>The survey uses a non-probability sample of XJTLU postgraduate students. It identifies perceived use, barriers and priorities but cannot establish population prevalence or causal effects.</p>
-        <p>The comparison provides task-level evidence conditional on the systems, prompts and sample used. The available records support answer-quality and satisfaction comparisons. Timing-dependent hypotheses remain open.</p>
+        <p>The comparison provides task-level evidence conditional on the systems, prompts and sample used. The available records support answer-quality, satisfaction and expectation comparisons. Timing-dependent questions remain open.</p>
       </aside>
     </div>
   </div>
@@ -482,13 +482,13 @@
 <section id="experiment" class="section alt">
   <div class="wrap">
     <div class="section-heading">
-      <p class="section-label">06 / Task experiment results</p>
+      <p class="section-label">06 / RQ4 · Task experiment results</p>
       <h2>Retrieval separated the three systems most clearly</h2>
     </div>
 
     <div class="callout experiment-status">
       <p class="card-kicker">Completed comparison</p>
-      <p>Twenty participants completed a literature retrieval task and an abstract comprehension task with each of three AI systems. The analysis covers 120 answer-quality ratings and overall satisfaction for the 15 participants with available ratings.</p>
+      <p>Twenty participants completed a literature retrieval task and an abstract comprehension task with each of three AI systems. The analysis covers 120 answer-quality ratings and satisfaction and expectation ratings for the 15 participants with complete experience data.</p>
     </div>
 
     <h3>6.1 Design and participants</h3>
@@ -536,14 +536,14 @@
         <thead><tr><th scope="col">Measure</th><th scope="col">Coverage</th><th scope="col">How interpreted</th></tr></thead>
         <tbody>
           <tr><th scope="row">Answer quality</th><td>120 answers from 20 participants</td><td>Correctness, relevance, completeness, source verifiability and clarity, each scored out of 4. The total is out of 20.</td></tr>
-          <tr><th scope="row">User experience</th><td>15 participants with seven-point ratings</td><td>Overall satisfaction is reported descriptively for the available participants.</td></tr>
+          <tr><th scope="row">User experience</th><td>15 participants with seven-point ratings</td><td>Overall satisfaction and how performance compared with expectations are summarised descriptively.</td></tr>
           <tr><th scope="row">Interview material</th><td>Four batches of interview records and summaries</td><td>Two batches with interview records informed the main themes. Two batches of organised question-and-answer summaries provided supplementary context.</td></tr>
           <tr><th scope="row">Response time</th><td>No usable timing data in the analysis files</td><td>Waiting is discussed as a reported experience. The report does not rank systems by measured speed.</td></tr>
         </tbody>
       </table>
     </div>
 
-    <h3>6.4 Answer quality and satisfaction</h3>
+    <h3>6.4 Answer quality and user experience</h3>
     <p>Retrieval produced the clearest separation. GPT-6 Luna and LibAI both averaged <strong>19.30/20</strong>, compared with <strong>13.75/20</strong> for DeepSeek. In comprehension, <strong>49 of 60 answers</strong> received full marks, leaving less room for the rubric to distinguish among systems.</p>
 
     <div class="chart-overview">
@@ -555,52 +555,15 @@
           <figcaption><strong>Figure 7. Mean answer quality.</strong> 20 participants per system and task.</figcaption>
         </figure>
         <figure class="primary-chart">
-          <a href="assets/experiment-charts/perfect-scores.png" target="_blank" rel="noopener">
-            <img class="chart-image" src="assets/experiment-charts/perfect-scores.png" alt="Full marks in retrieval and comprehension: DeepSeek 0% and 60%, GPT-6 Luna 70% and 95%, LibAI 55% and 90%." loading="lazy" decoding="async" />
+          <a href="assets/experiment-charts/user-experience.png" target="_blank" rel="noopener">
+            <img class="chart-image" src="assets/experiment-charts/user-experience.png" alt="Mean satisfaction and expectation ratings out of 7. Satisfaction — Retrieval: DeepSeek 4.33, GPT-6 Luna 6.13, LibAI 6.00; Comprehension: DeepSeek 6.53, GPT-6 Luna 6.53, LibAI 6.73. Expectations — Retrieval: DeepSeek 3.93, GPT-6 Luna 5.53, LibAI 6.20; Comprehension: DeepSeek 6.07, GPT-6 Luna 6.20, LibAI 6.47." loading="lazy" decoding="async" />
           </a>
-          <figcaption><strong>Figure 8. Full-mark rates.</strong> Comprehension had 49 full-mark answers out of 60.</figcaption>
-        </figure>
-        <figure class="primary-chart">
-          <a href="assets/experiment-charts/retrieval-dimensions.png" target="_blank" rel="noopener">
-            <img class="chart-image" src="assets/experiment-charts/retrieval-dimensions.png" alt="For retrieval, DeepSeek averaged 2.25 out of 4 for completeness and 2.20 for source verifiability. GPT-6 Luna and LibAI both averaged 3.75 for verifiability." loading="lazy" decoding="async" />
-          </a>
-          <figcaption><strong>Figure 9. Retrieval rubric.</strong> Five dimensions scored out of 4, with 20 responses per system.</figcaption>
-        </figure>
-        <figure class="primary-chart">
-          <a href="assets/experiment-charts/satisfaction.png" target="_blank" rel="noopener">
-            <img class="chart-image" src="assets/experiment-charts/satisfaction.png" alt="Satisfaction out of 7, retrieval then comprehension: DeepSeek 4.33 and 6.53, GPT-6 Luna 6.13 and 6.53, LibAI 6.00 and 6.73." loading="lazy" decoding="async" />
-          </a>
-          <figcaption><strong>Figure 10. Overall satisfaction.</strong> 15 participants with available ratings.</figcaption>
+          <figcaption><strong>Figure 8. Satisfaction and expectations.</strong> Descriptive means for 15 participants. For expectations, 1 means far below and 7 far above expectations.</figcaption>
         </figure>
       </div>
     </div>
-    <details class="chart-library">
-      <summary>
-        <span>Explore the retrieval results</span>
-        <small>Three additional charts show score distributions, batch means and paired comparisons</small>
-      </summary>
-      <div class="chart-gallery">
-        <figure>
-          <a href="assets/experiment-charts/retrieval-distribution.png" target="_blank" rel="noopener">
-            <img src="assets/experiment-charts/retrieval-distribution.png" alt="DeepSeek's 20 retrieval scores fall between 10 and 16. GPT-6 Luna has 14 full marks and scores as low as 13. LibAI has 11 full marks and scores between 18 and 20." loading="lazy" decoding="async" />
-          </a>
-          <figcaption><strong>Figure 11. Retrieval score distributions.</strong> Equal means for GPT-6 Luna and LibAI reflect different score distributions.</figcaption>
-        </figure>
-        <figure>
-          <a href="assets/experiment-charts/retrieval-batches.png" target="_blank" rel="noopener">
-            <img src="assets/experiment-charts/retrieval-batches.png" alt="DeepSeek has the lowest retrieval mean in all four batches. GPT-6 Luna and LibAI tie in the first two batches and trade places in the other two." loading="lazy" decoding="async" />
-          </a>
-          <figcaption><strong>Figure 12. Retrieval by batch.</strong> Five participants per batch, with one scorer assigned to each batch.</figcaption>
-        </figure>
-        <figure>
-          <a href="assets/experiment-charts/retrieval-pairs.png" target="_blank" rel="noopener">
-            <img src="assets/experiment-charts/retrieval-pairs.png" alt="GPT-6 Luna scored above DeepSeek in 19 of 20 retrieval pairs, with one tie. LibAI scored above DeepSeek in all 20 pairs. GPT-6 Luna scored above LibAI in six pairs, tied in 11, and scored below LibAI in three." loading="lazy" decoding="async" />
-          </a>
-          <figcaption><strong>Figure 13. Paired retrieval results.</strong> Each pair compares the same 20 participants.</figcaption>
-        </figure>
-      </div>
-      <p class="chart-source">The charts use aggregate results from the group&rsquo;s experiment scoring workbooks. Select a chart to view it at full size.</p>
-    </details>
+
+    <p class="evidence-note"><strong>Participant ratings.</strong> For retrieval, GPT-6 Luna had the highest mean satisfaction (6.13/7), while LibAI had the highest mean rating against expectations (6.20/7). LibAI led both measures in comprehension, with mean satisfaction of 6.73 and a mean expectation rating of 6.47. These comparisons describe the 15 participants with complete ratings.</p>
 
     <div class="table-scroll">
       <table>
@@ -614,7 +577,7 @@
       </table>
     </div>
 
-    <h3>6.5 Within-participant comparisons</h3>
+    <h3>6.5 Paired comparisons of answer quality</h3>
     <div class="two-col">
       <div>
         <p><strong>Retrieval.</strong> The overall difference was large (Friedman <em>Q</em> = 33.74, Kendall&rsquo;s <em>W</em> = .84, adjusted <em>p</em> &lt; .001). GPT-6 Luna and LibAI each averaged 5.55 points above DeepSeek, with adjusted <em>p</em> &lt; .001 for both paired comparisons. GPT-6 Luna and LibAI tied in 11 of 20 comparisons (adjusted <em>p</em> = 1.000).</p>
@@ -658,7 +621,7 @@
       </div>
       <div>
         <h3>What the task experiment adds</h3>
-        <p>LibAI matched GPT-6 Luna&rsquo;s mean retrieval score in this sample. Both systems scored above DeepSeek on retrieval, with the clearest gaps in completeness and source verifiability. The high rate of full marks in comprehension limits how well that task separates the systems.</p>
+        <p>LibAI matched GPT-6 Luna&rsquo;s mean retrieval score in this sample. Both systems scored above DeepSeek on retrieval, with the clearest gaps in completeness and source verifiability. Both GPT-6 Luna and LibAI averaged 3.75/4 for source verifiability, compared with 2.20/4 for DeepSeek. The high rate of full marks in comprehension limits how well that task separates the systems.</p>
         <p>The survey favoured accuracy and verifiable sources as improvement priorities. In the task interviews, some participants still preferred GPT for its perceived speed, while others chose LibAI for its detailed academic responses. The available files do not support a timed comparison.</p>
       </div>
     </div>
