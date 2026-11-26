@@ -20,7 +20,7 @@ This project evaluates XJTLU postgraduate students' use, perceptions and improve
 | `assets/style.css` | Report styles |
 | `assets/app.js` | Section navigation and back-to-top behaviour |
 | `assets/analysis-charts/` | Full-resolution aggregate survey charts used in the web report |
-| `assets/experiment-charts/` | Aggregate experiment figures, including the two shown in the report |
+| `assets/experiment-charts/` | Aggregate experiment figures, including the four shown in the report |
 | `assets/statistical-results-n94.pdf` | Revised aggregate statistical report |
 | `assets/experiment-protocol.pdf` | Experiment design, tasks, measures and interview guide |
 
