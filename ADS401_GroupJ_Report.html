@@ -1,805 +1,122 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Evaluating LibAI at XJTLU</title>
-<meta name="description" content="An ADS401 evaluation of XJTLU postgraduate students' use, perceptions and improvement priorities for the Library AI tool LibAI, with a completed task comparison of LibAI, DeepSeek and GPT-6 Luna." />
-<link rel="stylesheet" href="assets/style.css" />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Improving LibAI for XJTLU Postgraduate Research | ADS401 Group J</title>
+<meta content="A survey-led evaluation of LibAI adoption, postgraduate literature needs and a task comparison of LibAI, DeepSeek and GPT-6 Luna." name="description"/>
+<link href="assets/style.css" rel="stylesheet"/>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to main content</a>
-
 <header class="site-header" id="top">
-  <div class="wrap header-inner">
-    <div class="header-copy">
-      <p class="eyebrow">ADS401 Evaluation Methods and Statistics <span aria-hidden="true">/</span> Group J</p>
-      <p class="status-line"><span class="status-dot" aria-hidden="true"></span> Survey analysis complete <span class="status-sep">|</span> Task experiment results available <span class="status-sep">|</span> Updated 26 November 2026</p>
-      <h1>Evaluating LibAI at XJTLU</h1>
-      <p class="lede">We asked postgraduate students how they use AI to find and read papers, then compared LibAI, DeepSeek and GPT-6 Luna on two literature tasks.</p>
-      <p class="header-note">We analysed 94 survey responses and scored answers from 20 task participants. Of those 20, 15 had complete experience ratings. <a href="#experiment">See the task experiment results</a>.</p>
-      <p class="download-links"><a href="assets/statistical-results-n94.pdf" download>Statistical report (PDF)</a><span aria-hidden="true">/</span><a href="assets/experiment-protocol.pdf" download>Experiment protocol (PDF)</a></p>
-    </div>
-
-    <aside class="project-badge" aria-label="Project summary">
-      <p class="badge-kicker">Project snapshot</p>
-      <p class="badge-number">N = 94</p>
-      <p class="badge-label">valid survey responses</p>
-      <div class="badge-rule"></div>
-      <dl class="badge-facts">
-        <div><dt>Group</dt><dd>J</dd></div>
-        <div><dt>Users</dt><dd>Postgraduate students</dd></div>
-        <div><dt>System</dt><dd>LibAI</dd></div>
-        <div><dt>Design</dt><dd>94 survey responses + 20 task participants</dd></div>
-      </dl>
-    </aside>
-  </div>
-
-  <dl class="wrap fact-grid" aria-label="Project details">
-    <div><dt>Members</dt><dd>Fengyi Guo, Jingyu Li, Liyutong Gao, Yuyang Long</dd></div>
-    <div><dt>Context</dt><dd>XJTLU Library academic support</dd></div>
-    <div><dt>Evaluated system</dt><dd><a href="https://libai.xjtlu.edu.cn/" target="_blank" rel="noopener">LibAI Portal</a></dd></div>
-    <div><dt>Study status</dt><dd>Survey and task experiment complete</dd></div>
-  </dl>
+<div class="wrap header-inner">
+<div class="header-copy">
+<p class="eyebrow">ADS401 Evaluation Methods and Statistics <span aria-hidden="true">/</span> Group J</p>
+<p class="status-line"><span aria-hidden="true" class="status-dot"></span> Survey analysis complete (n=107) <span class="status-sep">|</span> Task comparison reported (n=20; below target) <span class="status-sep">|</span> Updated 27 November 2026</p>
+<h1>What would make LibAI worth choosing for postgraduate research?</h1>
+<p class="lede">We surveyed XJTLU postgraduates about AI use, LibAI adoption and desired improvements. The reported needs shaped a comparison of LibAI, DeepSeek and GPT-6 Luna on literature search and understanding. The survey includes 107 eligible responses; the task study includes 20 participants and is interpreted as exploratory.</p>
+<p class="header-note">Verifiable sources and accuracy were the leading survey priorities. In the task study, LibAI matched GPT-6 Luna on mean retrieval quality and outscored DeepSeek. No comparable timing data were available, and the experiment sample was below its planned target. <a href="#experiment">See how these findings support bounded recommendations.</a></p>
+<p class="download-links"><span aria-hidden="true">/</span><a download="" href="assets/experiment-protocol.pdf">Original protocol (8 Nov 2026; pre-experiment plan)</a></p>
+</div>
+<aside aria-label="Project summary" class="project-badge">
+<p class="badge-kicker">Project snapshot</p>
+<p class="badge-number">N = 107</p>
+<p class="badge-label">eligible survey responses</p>
+<div class="badge-rule"></div>
+<dl class="badge-facts"><div><dt>Group</dt><dd>J</dd></div><div><dt>Users</dt><dd>XJTLU postgraduates</dd></div><div><dt>System</dt><dd>LibAI</dd></div><div><dt>Design</dt><dd>107 survey + 20 task participants</dd></div></dl>
+</aside>
+</div>
+<dl aria-label="Project details" class="wrap fact-grid"><div><dt>Members</dt><dd>Fengyi Guo, Jingyu Li, Liyutong Gao, Yuyang Long</dd></div><div><dt>Context</dt><dd>XJTLU Library academic support</dd></div><div><dt>Evaluated system</dt><dd><a href="https://libai.xjtlu.edu.cn/" rel="noopener" target="_blank">LibAI Portal</a></dd></div><div><dt>Evidence status</dt><dd>Survey n=107; task results n=20</dd></div></dl>
 </header>
-
-<nav class="toc" aria-label="Report sections">
-  <div class="wrap">
-    <ul>
-      <li><a href="#overview">1. At a glance</a></li>
-      <li><a href="#problem">2. Problem &amp; questions</a></li>
-      <li><a href="#background">3. Background</a></li>
-      <li><a href="#methods">4. Design &amp; methods</a></li>
-      <li><a href="#findings">5. Survey findings</a></li>
-      <li><a href="#experiment">6. Task experiment</a></li>
-      <li><a href="#discussion">7. Discussion</a></li>
-      <li><a href="#transparency">8. Transparency</a></li>
-    </ul>
-  </div>
+<nav aria-label="Report sections" class="toc">
+<div class="wrap">
+<ul>
+<li><a href="#overview">1. At a glance</a></li>
+<li><a href="#problem">2. Problem &amp; questions</a></li>
+<li><a href="#background">3. Background</a></li>
+<li><a href="#methods">4. Design &amp; methods</a></li>
+<li><a href="#findings">5. Survey findings</a></li>
+<li><a href="#experiment">6. Task experiment</a></li>
+<li><a href="#discussion">7. Discussion</a></li>
+<li><a href="#transparency">8. Transparency</a></li>
+</ul>
+</div>
 </nav>
-
 <main id="main">
-<section id="overview" class="section">
-  <div class="wrap">
-    <div class="section-heading">
-      <p class="section-label">01 / Project at a glance</p>
-      <h2>How often do students use LibAI?</h2>
-    </div>
-
-    <div class="two-col overview-grid">
-      <div>
-        <p class="lead-paragraph">LibAI is XJTLU Library&rsquo;s AI tool for finding and reading academic papers. Of the 94 survey respondents, 32 had used it.</p>
-        <p>Finding and summarising papers were common uses of AI, but only 2 of 90 AI users named LibAI as their most-used tool. LibAI users rated it more highly for help with literature tasks than for checking sources, finding enough relevant papers or fitting into the way they already work.</p>
-        <p>In the task experiment, LibAI and GPT-6 Luna both averaged 19.30/20 for literature retrieval, compared with 13.75/20 for DeepSeek. All three systems earned full marks more often on the abstract comprehension task.</p>
-      </div>
-
-      <aside class="card system-card">
-        <p class="card-kicker">Selected system</p>
-        <h3>LibAI Portal</h3>
-        <p class="system-url"><a href="https://libai.xjtlu.edu.cn/" target="_blank" rel="noopener">libai.xjtlu.edu.cn</a></p>
-        <dl class="detail-list">
-          <div><dt>Owner</dt><dd>XJTLU Library</dd></div>
-          <div><dt>Access</dt><dd>University account via the LibAI Portal</dd></div>
-          <div><dt>Survey focus</dt><dd>Use, task help, usability, source verification and improvement priorities</dd></div>
-          <div><dt>Experiment focus</dt><dd>Fixed literature retrieval and paper-comprehension tasks</dd></div>
-        </dl>
-      </aside>
-    </div>
-
-    <div class="evidence-strip" role="group" aria-label="Four main survey observations">
-      <div class="evidence-item">
-        <p class="evidence-number">34.0%</p>
-        <p>had used LibAI; 66.0% had never used it</p>
-      </div>
-      <div class="evidence-item">
-        <p class="evidence-number">2 / 90</p>
-        <p>named LibAI as their most-used AI</p>
-      </div>
-      <div class="evidence-item">
-        <p class="evidence-number">53.2%</p>
-        <p>chose verifiable sources or accuracy as the first improvement priority</p>
-      </div>
-      <div class="evidence-item">
-        <p class="evidence-number">6.4%</p>
-        <p>chose speed as the first priority</p>
-      </div>
-    </div>
-
-    <figure class="system-figure">
-      <div class="system-flow" role="img" aria-label="The evaluation covers four stages: ask a literature question, retrieve sources, read evidence, and judge relevance, traceability and trust.">
-        <div class="flow-step"><span class="flow-index">1</span><strong>Ask</strong><span>Frame a literature question in natural language</span></div>
-        <div class="flow-arrow" aria-hidden="true">&rarr;</div>
-        <div class="flow-step"><span class="flow-index">2</span><strong>Retrieve</strong><span>Inspect papers and sources returned</span></div>
-        <div class="flow-arrow" aria-hidden="true">&rarr;</div>
-        <div class="flow-step"><span class="flow-index">3</span><strong>Read</strong><span>Open a source and locate supporting evidence</span></div>
-        <div class="flow-arrow" aria-hidden="true">&rarr;</div>
-        <div class="flow-step"><span class="flow-index">4</span><strong>Judge</strong><span>Decide whether the answer is useful and credible</span></div>
-      </div>
-      <figcaption><strong>Figure 1.</strong> The steps from asking a literature question to checking the answer. We surveyed students about their experience and compared the tools on two fixed tasks.</figcaption>
-    </figure>
-  </div>
-</section>
-
-<section id="problem" class="section alt">
-  <div class="wrap">
-    <div class="section-heading">
-      <p class="section-label">02 / Problem, motivation and questions</p>
-      <h2>Why study LibAI?</h2>
-    </div>
-
-    <div class="three-col problem-grid">
-      <article>
-        <p class="mini-label">Users and context</p>
-        <h3>Postgraduate literature work</h3>
-        <p>Postgraduate students search for papers, screen abstracts and synthesise findings for assignments and research. They already use tools such as ChatGPT and DeepSeek for some of this work. LibAI is another option, offered by the university library.</p>
-      </article>
-      <article>
-        <p class="mini-label">Evaluation problem</p>
-        <h3>Awareness and use</h3>
-        <p>We wanted to find out how many students had heard of LibAI, when they chose to use it and how much they trusted the sources it returned.</p>
-      </article>
-      <article>
-        <p class="mini-label">Why it matters</p>
-        <h3>Checking sources</h3>
-        <p>A library tool can point students to licensed academic sources. For literature work, it matters whether students can find the original paper and check what it says.</p>
-      </article>
-    </div>
-
-    <div class="callout research-questions">
-      <p class="card-kicker">Research questions</p>
-      <ol>
-        <li><strong>RQ1.</strong> How do XJTLU postgraduate students use generative AI and LibAI for literature search and reading?</li>
-        <li><strong>RQ2.</strong> How do LibAI users perceive task help, source verification, usability and workflow integration?</li>
-        <li><strong>RQ3.</strong> Which barriers and improvement priorities are reported by users and non-users?</li>
-        <li><strong>RQ4.</strong> Under identical retrieval and comprehension tasks, do LibAI, DeepSeek and ChatGPT differ in answer quality, time to useful answer, satisfaction and expectation confirmation? <a href="#rq4-findings">See the experiment findings</a>.</li>
-      </ol>
-    </div>
-
-    <div class="two-col hypothesis-grid">
-      <div>
-        <h3>Task experiment hypotheses</h3>
-        <ul class="proposition-list">
-          <li><strong>H1.</strong> The three systems differ in task success and answer quality.</li>
-          <li><strong>H2.</strong> AI performance and user evaluation vary by task type, producing an AI &times; task interaction.</li>
-          <li><strong>H3.</strong> Reuse intention is more strongly associated with answer quality and source verifiability than with raw response latency.</li>
-        </ul>
-      </div>
-      <aside class="scope-box">
-        <h3>What the study can tell us</h3>
-        <p>The survey uses a non-probability sample of XJTLU postgraduate students. It identifies perceived use, barriers and priorities but cannot establish population prevalence or causal effects.</p>
-        <p>The experiment lets us compare answer quality, satisfaction and ratings against expectations for these systems and prompts. We lack comparable timing records.</p>
-      </aside>
-    </div>
-  </div>
-</section>
-
-<section id="background" class="section">
-  <div class="wrap">
-    <div class="section-heading">
-      <p class="section-label">03 / Background and related work</p>
-      <h2>Previous research on AI in academic libraries</h2>
-    </div>
-
-    <div class="narrative-columns">
-      <div>
-        <h3>AI tools for library enquiries</h3>
-        <p>Cox discusses how AI can change library work, and Lund and Wang describe possible uses for chatbots in reference services and search [1], [2]. Aisha, a library chatbot built with the ChatGPT API, is one example of how a chatbot can connect users with local services and collections [3].</p>
-
-        <h3>Benefits and concerns for students</h3>
-        <p>Students in Chan and Hu&rsquo;s study reported learning benefits and raised concerns about accuracy, ethics and dependency [4]. Kasneci et al. discuss how AI can offer explanations and feedback, and warn that convincing answers can contain factual errors [5].</p>
-      </div>
-
-      <div>
-        <h3>Errors in AI-generated citations</h3>
-        <p>Walters and Wilder found fabricated or incorrect citations in ChatGPT answers [6]. Bhattacharyya et al. found similar problems in ChatGPT-generated medical content [7]. This is why we included source verifiability in the scoring rubric.</p>
-
-        <h3>Why people choose to use a tool</h3>
-        <p>Research on technology adoption links intention to use with perceived usefulness, ease of use and access to support [8], [9]. Trust also depends on how people judge the tool&rsquo;s competence and risks [10]. AI literacy helps students check answers and recognise their limits [11], [12].</p>
-      </div>
-    </div>
-
-    <div class="gap-panel">
-      <p class="card-kicker">The question at XJTLU</p>
-      <p>We wanted to know whether postgraduates at XJTLU knew about their own library&rsquo;s AI tool, when they used it and what they wanted the library to improve.</p>
-    </div>
-
-    <div class="rationale-band">
-      <h3>Why combine a survey and an experiment?</h3>
-      <p>The survey tells us what students say they use and what problems they report. The experiment lets us compare the three tools on the same prompts and record how participants rated each experience.</p>
-    </div>
-  </div>
-</section>
-
-<section id="methods" class="section alt">
-  <div class="wrap">
-    <div class="section-heading">
-      <p class="section-label">04 / Study design and methods</p>
-      <h2>How we ran the survey</h2>
-    </div>
-    <p>This section describes the questionnaire sample and analysis. The <a href="#experiment-design">task experiment design</a> appears with its results in Section 6.</p>
-
-    <div class="two-col design-top">
-      <div>
-        <h3>4.1 Survey sample</h3>
-        <p>The target population was XJTLU postgraduate students who use AI for academic work. Wenjuanxing hosted the anonymous questionnaire. Convenience and snowball sampling produced 124 raw records.</p>
-        <p>Six records did not consent and 11 were not XJTLU postgraduates. Both groups were removed. A further 13 records contained internally contradictory responses, leaving 94 valid records for the main analysis.</p>
-      </div>
-      <aside class="card">
-        <p class="card-kicker">Sample flow</p>
-        <table class="compact-table">
-          <caption>Table 1. Survey screening</caption>
-          <tbody>
-            <tr><th scope="row">Raw export</th><td>124</td></tr>
-            <tr><th scope="row">Did not consent</th><td>&minus;6</td></tr>
-            <tr><th scope="row">Not XJTLU postgraduate</th><td>&minus;11</td></tr>
-            <tr><th scope="row">Logical conflicts</th><td>&minus;13</td></tr>
-            <tr><th scope="row">Main analysis</th><td>94</td></tr>
-          </tbody>
-        </table>
-      </aside>
-    </div>
-
-    <div class="callout method-note">
-      <p class="card-kicker">Why we excluded 13 conflicting responses</p>
-      <p>Six respondents reported never using generative AI in Q5 while reporting current LibAI use in Q8 and LibAI tasks in Q10. Six selected both &ldquo;no recent LibAI use&rdquo; and specific LibAI tasks in Q10. Two selected both &ldquo;no facilitating factor&rdquo; and a support option in Q24. One respondent met two rules, producing 13 unique exclusions.</p>
-    </div>
-
-    <h3>4.2 Measures and analysis</h3>
-    <div class="table-scroll">
-      <table>
-        <caption>Table 2. Analysis approach and eligible denominators</caption>
-        <thead><tr><th scope="col">Measure</th><th scope="col">Evidence</th><th scope="col">Denominator</th><th scope="col">Analysis</th></tr></thead>
-        <tbody>
-          <tr><th scope="row">LibAI awareness and adoption</th><td>Q8</td><td>94</td><td>Counts and percentages</td></tr>
-          <tr><th scope="row">AI tools and task use</th><td>Q7 and Q6</td><td>90 AI users</td><td>Counts and percentages</td></tr>
-          <tr><th scope="row">LibAI task use</th><td>Q10</td><td>20 current users</td><td>Counts and percentages</td></tr>
-          <tr><th scope="row">Task help and usability</th><td>Q12&ndash;Q13</td><td>32 previous users; item-specific missingness</td><td>Mean, SD, median, IQR, agreement percentages and Cronbach&rsquo;s alpha</td></tr>
-          <tr><th scope="row">Concerns and barriers</th><td>Q14 and Q16</td><td>32 previous users</td><td>Mean ratings and multi-select frequencies</td></tr>
-          <tr><th scope="row">Non-user reasons and supports</th><td>Q23&ndash;Q25</td><td>62 never-users</td><td>Multi-select frequencies and ordinal summary</td></tr>
-          <tr><th scope="row">Improvement priority</th><td>Q27&ndash;Q28</td><td>Q27: 82 complete cases; Q28: 94</td><td>Friedman test and forced-choice frequencies</td></tr>
-        </tbody>
-      </table>
-    </div>
-
-    <div class="analysis-note">
-      <p class="card-kicker">How to read the percentages and ratings</p>
-      <p>Percentages use the number of respondents eligible for each question. For questions with multiple choices, the percentages can add up to more than 100%. We treated &ldquo;not applicable&rdquo; and &ldquo;unable to judge&rdquo; as missing and treated rating scales as ordinal. The Q18&ndash;Q19 association is exploratory because only 32 users answered both items.</p>
-    </div>
-
-    <h3>4.3 Ethics and bias mitigation</h3>
-    <div class="ethics-grid">
-      <div><strong>Consent</strong><p>Participation was voluntary. The questionnaire introduced the purpose, anonymity and expected duration, and participants could stop before submission.</p></div>
-      <div><strong>Privacy</strong><p>The public page contains aggregate results only. No names, student IDs, IP addresses or raw response records are hosted here.</p></div>
-      <div><strong>Analysis auditing</strong><p>Recoding, exclusions and denominators are documented. The exclusions were reviewed after data inspection and are reported as a limitation rather than presented as a pre-registered rule.</p></div>
-      <div><strong>Experiment safeguards</strong><p>The protocol specifies predefined prompts, separate consent for recording and anonymised records. The public experiment results use aggregate scores and summaries.</p></div>
-    </div>
-  </div>
-</section>
-
-<section id="findings" class="section">
-  <div class="wrap">
-    <div class="section-heading">
-      <p class="section-label">05 / Survey findings</p>
-      <h2>How students use LibAI and what they want improved</h2>
-    </div>
-
-    <div class="chart-overview">
-      <div class="chart-overview-head">
-        <div>
-          <p class="mini-label">Survey charts</p>
-          <h3>Use, ratings and priorities</h3>
-        </div>
-        <p>These charts come from the statistical report for the 94 survey responses. The gallery below has ten more charts.</p>
-      </div>
-
-      <div class="chart-mosaic">
-        <figure class="primary-chart">
-          <a href="assets/analysis-charts/q8-awareness.png" target="_blank" rel="noopener" aria-label="Open the LibAI awareness chart at full size">
-            <img class="chart-image" src="assets/analysis-charts/q8-awareness-web.png" alt="LibAI awareness and use among 94 respondents: 20 current users, 12 former users, 36 people who had heard of it but never used it, and 26 who had never heard of it." />
-          </a>
-          <figcaption><strong>Figure 2. LibAI awareness and use.</strong> Q8, <em>n</em> = 94.</figcaption>
-        </figure>
-
-        <figure class="primary-chart">
-          <a href="assets/analysis-charts/q7-main-tool.png" target="_blank" rel="noopener" aria-label="Open the most-used AI chart at full size">
-            <img class="chart-image" src="assets/analysis-charts/q7-main-tool-web.png" alt="Most-used AI for academic tasks among 90 AI users: DeepSeek and ChatGPT each 28, Doubao or Kimi or Qwen 19, academic AI 6, school database AI 4, LibAI 2, and other 3." />
-          </a>
-          <figcaption><strong>Figure 3. Most-used AI for academic tasks.</strong> Q7, <em>n</em> = 90 AI users.</figcaption>
-        </figure>
-
-        <figure class="primary-chart">
-          <a href="assets/analysis-charts/q13-conditions.png" target="_blank" rel="noopener" aria-label="Open the usability and trust chart at full size">
-            <img class="chart-image" src="assets/analysis-charts/q13-conditions-web.png" alt="Mean ratings for usability, trust and access conditions. Workflow fit is lowest at 2.84 out of 5, followed by retrieval coverage at 3.03 and source verification at 3.12." />
-          </a>
-          <figcaption><strong>Figure 4. Usability, trust and access.</strong> Q13, item-level <em>n</em> = 30&ndash;32.</figcaption>
-        </figure>
-
-        <figure class="primary-chart">
-          <a href="assets/analysis-charts/q28-priority.png" target="_blank" rel="noopener" aria-label="Open the first-priority chart at full size">
-            <img class="chart-image" src="assets/analysis-charts/q28-priority-web.png" alt="First improvement priority among 94 respondents: verifiable sources 26, accuracy 24, simpler operation 11, database coverage 8, workflow integration 7, speed and stability 6, language support 5, login compatibility 5, and privacy 2." />
-          </a>
-          <figcaption><strong>Figure 5. First improvement priority.</strong> Q28, <em>n</em> = 94, one choice per respondent.</figcaption>
-        </figure>
-      </div>
-    </div>
-
-    <details class="chart-library">
-      <summary>
-        <span>See 10 more survey charts</span>
-        <small>Tasks, barriers, reasons to try LibAI, improvement ratings and satisfaction</small>
-      </summary>
-      <div class="chart-gallery">
-        <figure>
-          <a href="assets/analysis-charts/q6-ai-tasks.png" target="_blank" rel="noopener">
-            <img src="assets/analysis-charts/q6-ai-tasks.png" alt="Academic tasks for which 90 AI users used AI, led by reading or summarising papers at 57 and finding or screening literature at 56." loading="lazy" decoding="async" />
-          </a>
-          <figcaption><strong>Q6.</strong> Academic tasks performed with AI, <em>n</em> = 90 AI users; multiple choice.</figcaption>
-        </figure>
-        <figure>
-          <a href="assets/analysis-charts/q10-libai-tasks.png" target="_blank" rel="noopener">
-            <img src="assets/analysis-charts/q10-libai-tasks.png" alt="Tasks completed with LibAI by 20 current users, led by reading or summarising papers at 16 and finding or screening literature at 14." loading="lazy" decoding="async" />
-          </a>
-          <figcaption><strong>Q10.</strong> Tasks completed with LibAI, <em>n</em> = 20 current users; multiple choice.</figcaption>
-        </figure>
-        <figure>
-          <a href="assets/analysis-charts/q12-task-help.png" target="_blank" rel="noopener">
-            <img src="assets/analysis-charts/q12-task-help.png" alt="Perceived task help from LibAI. Understanding and summarising papers is highest at 3.94 out of 5, while a usable starting point is lowest at 3.61." loading="lazy" decoding="async" />
-          </a>
-          <figcaption><strong>Q12.</strong> Perceived task help, previous LibAI users; item-level <em>n</em> = 31&ndash;32.</figcaption>
-        </figure>
-        <figure>
-          <a href="assets/analysis-charts/q14-concerns.png" target="_blank" rel="noopener">
-            <img src="assets/analysis-charts/q14-concerns.png" alt="Concerns about LibAI. Insufficient sources or evidence is highest at 3.94 out of 5, followed by errors affecting academic judgment at 3.81." loading="lazy" decoding="async" />
-          </a>
-          <figcaption><strong>Q14.</strong> Concerns when using LibAI, <em>n</em> = 32 previous users.</figcaption>
-        </figure>
-        <figure>
-          <a href="assets/analysis-charts/q16-barriers.png" target="_blank" rel="noopener">
-            <img src="assets/analysis-charts/q16-barriers.png" alt="Barriers among 32 LibAI users. Irrelevant or inaccurate results and insufficient database coverage are highest at 43.8 percent; slow or unstable responses are lowest at 15.6 percent." loading="lazy" decoding="async" />
-          </a>
-          <figcaption><strong>Q16.</strong> Barriers among previous LibAI users, <em>n</em> = 32; multiple choice.</figcaption>
-        </figure>
-        <figure>
-          <a href="assets/analysis-charts/q23-nonusers.png" target="_blank" rel="noopener">
-            <img src="assets/analysis-charts/q23-nonusers.png" alt="Reasons for not using LibAI among 62 never-users. External AI meeting literature needs is highest at 46.8 percent, followed by lack of a trial opportunity at 37.1 percent." loading="lazy" decoding="async" />
-          </a>
-          <figcaption><strong>Q23.</strong> Reasons for not using LibAI, <em>n</em> = 62 never-users; multiple choice.</figcaption>
-        </figure>
-        <figure>
-          <a href="assets/analysis-charts/q24-supports.png" target="_blank" rel="noopener">
-            <img src="assets/analysis-charts/q24-supports.png" alt="Supports that may encourage a trial. Clear entry demonstrations and real peer or teacher experiences are each selected by 41.9 percent." loading="lazy" decoding="async" />
-          </a>
-          <figcaption><strong>Q24.</strong> Supports that may encourage a trial, <em>n</em> = 62 never-users; multiple choice.</figcaption>
-        </figure>
-        <figure>
-          <a href="assets/analysis-charts/q27-importance.png" target="_blank" rel="noopener">
-            <img src="assets/analysis-charts/q27-importance.png" alt="Mean importance ratings for nine improvements. Ratings are broadly high, and the overall Friedman test does not show a significant ordering." loading="lazy" decoding="async" />
-          </a>
-          <figcaption><strong>Q27.</strong> Mean importance of nine improvements; complete-case <em>n</em> = 82 for the overall test.</figcaption>
-        </figure>
-        <figure>
-          <a href="assets/analysis-charts/q18-q19-ratings.png" target="_blank" rel="noopener">
-            <img src="assets/analysis-charts/q18-q19-ratings.png" alt="Overall satisfaction and reuse intention among 32 previous users. Satisfaction mean is 3.53 and reuse intention mean is 3.66 out of 5." loading="lazy" decoding="async" />
-          </a>
-          <figcaption><strong>Q18&ndash;Q19.</strong> Satisfaction and reuse intention, <em>n</em> = 32 previous users.</figcaption>
-        </figure>
-        <figure>
-          <a href="assets/analysis-charts/q18-q19-bubble.png" target="_blank" rel="noopener">
-            <img src="assets/analysis-charts/q18-q19-bubble.png" alt="Response combinations for satisfaction and reuse intention. The plotted association is exploratory and based on 32 users." loading="lazy" decoding="async" />
-          </a>
-          <figcaption><strong>Q18&ndash;Q19 association.</strong> Response combinations, <em>n</em> = 32; exploratory only.</figcaption>
-        </figure>
-      </div>
-      <p class="chart-source">All charts show aggregate survey data only. Denominators vary by question because some items apply only to AI users, previous LibAI users or never-users. Select any chart to open it at full size, or <a href="assets/statistical-results-n94.pdf" download>download the statistical report</a> for the full tables and tests.</p>
-    </details>
-
-    <div class="finding-block single">
-      <div class="finding-copy">
-        <p class="mini-label">RQ1 / Awareness and use</p>
-        <h3>Few respondents used LibAI as their main AI tool</h3>
-        <p>Ninety of 94 respondents had used generative AI in the previous three months. LibAI use was lower: 20 respondents had used it in the past six months, 12 had used it earlier, 36 had heard of it but never used it, and 26 had never heard of it.</p>
-        <p>Among the 90 AI users, 28 named DeepSeek as their most-used tool and 28 named ChatGPT. Two named LibAI.</p>
-      </div>
-    </div>
-
-    <p class="evidence-note"><strong>Most common tasks.</strong> Among the 90 AI users, 57 used AI to read or summarise papers and 56 to find or screen them. The same tasks were most common among the 20 current LibAI users. Of those, 16 used it for reading or summarising and 14 for finding or screening papers.</p>
-
-    <div class="finding-block single">
-      <div class="finding-copy">
-        <p class="mini-label">RQ2 / Perceived task help</p>
-        <h3>Users rated LibAI highest for understanding papers</h3>
-        <p>The average rating across task-help items was 3.72/5. Understanding and summarising papers scored highest (3.94/5). Providing a usable starting point scored lowest (3.61/5).</p>
-      </div>
-    </div>
-
-    <div class="finding-block single">
-      <div class="finding-copy">
-        <p class="mini-label">RQ2 / Usability and credibility</p>
-        <h3>Fit with existing work received the lowest rating</h3>
-        <p>The usability, trust and access composite averages 3.19/5, compared with 3.72/5 for task help. Workflow fit is lowest at 2.84, followed by retrieval coverage at 3.03 and source verification at 3.12.</p>
-        <p>The paired Wilcoxon comparison of the two averages is exploratory because the question sets measure different things (<em>p</em> = .0195, n = 32).</p>
-      </div>
-    </div>
-
-    <p class="evidence-note"><strong>Concerns and barriers.</strong> Insufficient sources or evidence was the highest-rated concern (3.94/5), followed by errors affecting academic judgement (3.81/5). Inaccurate results and limited database coverage were the most common barriers (43.8% each). Unclear entry points, complex requests and insufficient evidence each followed at 37.5%. Slow or unstable responses were the least common barrier (15.6%).</p>
-
-    <div class="finding-block single">
-      <div class="finding-copy">
-        <p class="mini-label">RQ3 / Non-users</p>
-        <h3>Why students had never used LibAI</h3>
-        <p>The most common reason was that other AI tools already met their literature needs (46.8%). Some had not had a chance to try LibAI (37.1%), were unsure what it could do (35.5%) or did not know how to access it (33.9%).</p>
-        <p>Among those who had never used LibAI, 41.9% selected a demonstration of how to get started and 41.9% selected examples from peers or teachers. A list of tasks LibAI could and could not handle was selected by 33.9%.</p>
-      </div>
-    </div>
-
-    <div class="finding-block single">
-      <div class="finding-copy">
-        <p class="mini-label">RQ3 / Improvement priorities</p>
-        <h3>Verifiable sources and accuracy were the top priorities</h3>
-        <p>Verifiable sources (26/94, 27.7%) and answer accuracy with fewer fabrications (24/94, 25.5%) were the two most frequently selected first priorities. Together they account for 50/94 responses (53.2%). Speed and stability were selected by only 6/94 (6.4%).</p>
-        <p>Respondents generally rated all nine improvements as important in Q27. The ratings did not differ significantly overall (Friedman &chi;<sup>2</sup>(8) = 3.357, <em>p</em> = .910, n = 82 complete cases). Q28 asked each respondent to pick just one priority.</p>
-      </div>
-    </div>
-
-    <div class="two-col">
-      <figure class="chart-card">
-        <figcaption><strong>Figure 6.</strong> Overall satisfaction and reuse intention among previous LibAI users. Q18&ndash;Q19, n = 32. The distributions appear in the expandable chart gallery above.</figcaption>
-        <div class="score-summary">
-          <div><strong>3.53</strong><span>Satisfaction mean / 5</span></div>
-          <div><strong>62.5%</strong><span>rated 4 or 5</span></div>
-          <div><strong>3.66</strong><span>Reuse intention mean / 5</span></div>
-          <div><strong>59.4%</strong><span>rated 4 or 5</span></div>
-        </div>
-        <p class="chart-note">Q20 recommendation mean: 4.72/10; NPS = &minus;75.0. The recommendation measure is secondary and based on only 32 users.</p>
-      </figure>
-
-      <aside class="analysis-note">
-        <p class="card-kicker">Satisfaction and intention to use LibAI again</p>
-        <p>The estimated correlation was close to zero, with a wide interval (Spearman &rho; = &minus;.022, permutation <em>p</em> = .906, 95% bootstrap interval &minus;.40 to .37, n = 32). The sample leaves substantial uncertainty about the relationship.</p>
-      </aside>
-    </div>
-
-    <h3>Task-specific preference</h3>
-    <div class="table-scroll">
-      <table>
-        <caption>Table 3. Choice between LibAI and external AI by task. Q15, n = 32 previous LibAI users.</caption>
-        <thead><tr><th scope="col">Task</th><th scope="col">LibAI</th><th scope="col">External AI</th><th scope="col">Both</th><th scope="col">Not used</th></tr></thead>
-        <tbody>
-          <tr><th scope="row">Clarify research question</th><td>3 (9.4%)</td><td>6 (18.8%)</td><td>13 (40.6%)</td><td>10 (31.2%)</td></tr>
-          <tr><th scope="row">Find / screen literature</th><td>3 (9.4%)</td><td>7 (21.9%)</td><td>13 (40.6%)</td><td>9 (28.1%)</td></tr>
-          <tr><th scope="row">Read / summarise papers</th><td>2 (6.2%)</td><td>8 (25.0%)</td><td>16 (50.0%)</td><td>6 (18.8%)</td></tr>
-          <tr><th scope="row">Compare / extract information</th><td>1 (3.1%)</td><td>7 (21.9%)</td><td>16 (50.0%)</td><td>8 (25.0%)</td></tr>
-          <tr><th scope="row">Format citations</th><td>2 (6.2%)</td><td>7 (21.9%)</td><td>15 (46.9%)</td><td>8 (25.0%)</td></tr>
-          <tr><th scope="row">Translate / cross-language reading</th><td>2 (6.2%)</td><td>7 (21.9%)</td><td>16 (50.0%)</td><td>7 (21.9%)</td></tr>
-        </tbody>
-      </table>
-    </div>
-    <p>For each of the six tasks, using both LibAI and an external tool was the most common choice (40.6%&ndash;50.0%). LibAI alone accounted for 3.1%&ndash;9.4% of responses.</p>
-  </div>
-</section>
-
-<section id="experiment" class="section alt">
-  <div class="wrap">
-    <div class="section-heading">
-      <p class="section-label">06 / RQ4 · Task experiment results</p>
-      <h2>The tools differed most when finding papers</h2>
-    </div>
-
-    <div class="callout experiment-status">
-      <p class="card-kicker">20 participants, two tasks</p>
-      <p>Each participant asked all three tools to find papers and explain an abstract. We scored 120 answers. Fifteen participants provided complete ratings for satisfaction and how well the answers met their expectations.</p>
-    </div>
-
-    <h3 id="rq4-findings">How did the three tools compare?</h3>
-    <div class="three-col problem-grid">
-      <article>
-        <h4>Answer quality</h4>
-        <p>Retrieval showed the clearest difference. GPT-6 Luna and LibAI averaged 19.30/20, compared with 13.75/20 for DeepSeek. In comprehension, 49 of 60 answers received full marks.</p>
-      </article>
-      <article>
-        <h4>Satisfaction and expectations</h4>
-        <p>Among the 15 participants with complete ratings, satisfaction and ratings against expectations differed across tools on the retrieval task. On the comprehension task, both exploratory tests gave adjusted <em>p</em>-values above .05.</p>
-      </article>
-      <article>
-        <h4>Time to a useful answer</h4>
-        <p>Some participants commented on waiting. We had no comparable timing records for the three tools.</p>
-      </article>
-    </div>
-
-    <h3 id="experiment-design">6.1 Design and participants</h3>
-    <div class="two-col design-top">
-      <div>
-        <p>Each participant completed the same <strong>3 &times; 2 within-subjects comparison</strong>, using DeepSeek, GPT-6 Luna (ChatGPT) and LibAI for both fixed tasks. This produced six answers per participant, allowing comparisons within the same person.</p>
-        <p>The group assigned four scorers to four batches of five participants. Each scorer rated all six answers from each of the five participants in their batch. Two batches used 0, 2 and 4 as the possible scores for each dimension. The other two also used 1 and 3.</p>
-      </div>
-      <aside class="card">
-        <p class="card-kicker">Planned and completed sessions</p>
-        <p>The protocol called for 24&ndash;30 participants and balanced task and system orders. We analysed 20 participants, and the records do not show the order each person followed. Because each scorer rated one batch, we cannot separate differences between scorers from differences between batches.</p>
-        <p><a href="assets/experiment-protocol.pdf" download>Read the original experiment protocol</a>.</p>
-      </aside>
-    </div>
-
-    <h3>6.2 The two prompts</h3>
-    <div class="task-grid">
-      <article class="task-card">
-        <p class="mini-label">Task 1 / Literature retrieval</p>
-        <h4>Find three peer-reviewed papers</h4>
-        <p class="task-summary">Find three authentic peer-reviewed papers published from 2022 onward on generative AI in academic-library support. Provide authors, year, full title, journal, DOI, database or source, and a one-sentence relevance statement. Mark anything that cannot be verified; do not invent sources.</p>
-        <details>
-          <summary>View the full participant prompt</summary>
-          <p class="prompt-copy">Please search for three peer-reviewed papers published in 2022 or later on &ldquo;generative artificial intelligence in academic library support services.&rdquo; For each paper, provide the authors, year, full title, journal, DOI, database or source link, and one sentence explaining why it fits the topic. Prioritise sources that can be opened and verified. Clearly label anything that cannot be verified and do not invent papers or citations. At the end, explain how you verified at least one DOI or source link.</p>
-        </details>
-        <p class="task-meta">Protocol allowance: up to six minutes and one standardised follow-up for an incomplete checklist.</p>
-      </article>
-
-      <article class="task-card">
-        <p class="mini-label">Task 2 / Literature comprehension</p>
-        <h4>Summarise a research abstract</h4>
-        <p class="task-summary">Read a fixed research abstract and identify the research question, design, sample, two numerical findings, two limitations, what the study can support and what it cannot support.</p>
-        <details>
-          <summary>View the full participant prompt</summary>
-          <p class="prompt-copy">Use only the abstract provided below. Do not add information that is not present. Summarise: (1) the research question, (2) the design and method, (3) the sample, (4) two main findings with their numerical values, (5) two study limitations, (6) what conclusion the study can best support, and (7) what it cannot support. [The balanced fixed abstract is supplied in the experiment protocol.]</p>
-        </details>
-        <p class="task-meta">Protocol allowance: up to six minutes, with the same checklist and follow-up for each system.</p>
-      </article>
-    </div>
-
-    <h3>6.3 What we measured</h3>
-    <div class="table-scroll">
-      <table>
-        <caption>Table 4. Evidence used in the task experiment analysis</caption>
-        <thead><tr><th scope="col">Measure</th><th scope="col">Coverage</th><th scope="col">How interpreted</th></tr></thead>
-        <tbody>
-          <tr><th scope="row">Answer quality</th><td>120 answers from 20 participants</td><td>Correctness, relevance, completeness, source verifiability and clarity, each scored out of 4. The total is out of 20.</td></tr>
-          <tr><th scope="row">User experience</th><td>15 participants with seven-point ratings</td><td>Overall satisfaction and ratings against expectations are summarised with means and compared within participants using exploratory rank and sign tests.</td></tr>
-          <tr><th scope="row">Interview material</th><td>Four batches of interview records and summaries</td><td>Two batches with interview records informed the main themes. Two batches of organised question-and-answer summaries provided supplementary context.</td></tr>
-          <tr><th scope="row">Response time</th><td>No usable timing data in the analysis files</td><td>Waiting is discussed as a reported experience. The report does not rank systems by measured speed.</td></tr>
-        </tbody>
-      </table>
-    </div>
-
-    <h3>6.4 Answer quality and user experience</h3>
-    <p>The charts show where the retrieval scores differed and how often each tool earned full marks. The largest retrieval gaps were in how complete the answers were and how easy it was to verify their sources.</p>
-
-    <div class="chart-overview">
-      <div class="chart-overview-head">
-        <div>
-          <p class="mini-label">Experiment charts</p>
-          <h3>Scores and participant ratings by task</h3>
-        </div>
-        <p>Answer-quality charts use 20 participants per condition. Satisfaction and expectation ratings use the 15 participants with complete experience data.</p>
-      </div>
-
-      <div class="chart-mosaic">
-        <figure class="primary-chart">
-          <a href="assets/experiment-charts/mean-quality.png" target="_blank" rel="noopener">
-            <img class="chart-image" src="assets/experiment-charts/mean-quality.png" alt="Mean quality out of 20, retrieval then comprehension: DeepSeek 13.75 and 19.50, GPT-6 Luna 19.30 and 19.90, LibAI 19.30 and 19.85." loading="lazy" decoding="async" />
-          </a>
-          <figcaption><strong>Figure 7. Mean answer quality.</strong> 20 participants per system and task.</figcaption>
-        </figure>
-        <figure class="primary-chart">
-          <a href="assets/experiment-charts/user-experience.png" target="_blank" rel="noopener">
-            <img class="chart-image" src="assets/experiment-charts/user-experience.png" alt="Mean satisfaction and expectation ratings out of 7. Satisfaction — Retrieval: DeepSeek 4.33, GPT-6 Luna 6.13, LibAI 6.00; Comprehension: DeepSeek 6.53, GPT-6 Luna 6.53, LibAI 6.73. Expectations — Retrieval: DeepSeek 3.93, GPT-6 Luna 5.53, LibAI 6.20; Comprehension: DeepSeek 6.07, GPT-6 Luna 6.20, LibAI 6.47." loading="lazy" decoding="async" />
-          </a>
-          <figcaption><strong>Figure 8. Satisfaction and expectations.</strong> Descriptive means for 15 participants. For expectations, 1 means far below and 7 far above expectations.</figcaption>
-        </figure>
-        <figure class="primary-chart">
-          <a href="assets/experiment-charts/retrieval-dimensions.png" target="_blank" rel="noopener">
-            <img class="chart-image" src="assets/experiment-charts/retrieval-dimensions.png" alt="In retrieval, DeepSeek averaged 2.25 out of 4 for completeness and 2.20 for source verifiability. GPT-6 Luna averaged 3.80 and 3.75, respectively, and LibAI averaged 3.95 and 3.75." loading="lazy" decoding="async" />
-          </a>
-          <figcaption><strong>Figure 9. Retrieval scoring dimensions.</strong> The largest gaps between DeepSeek and the other systems were in completeness and source verifiability.</figcaption>
-        </figure>
-        <figure class="primary-chart">
-          <a href="assets/experiment-charts/perfect-scores.png" target="_blank" rel="noopener">
-            <img class="chart-image" src="assets/experiment-charts/perfect-scores.png" alt="Full-mark rates for retrieval and comprehension, respectively: DeepSeek 0% and 60%, GPT-6 Luna 70% and 95%, and LibAI 55% and 90%." loading="lazy" decoding="async" />
-          </a>
-          <figcaption><strong>Figure 10. Full-mark rates.</strong> In comprehension, 49 of 60 answers scored 20/20, compared with 25 of 60 in retrieval.</figcaption>
-        </figure>
-      </div>
-    </div>
-
-    <p class="evidence-note"><strong>Participant ratings.</strong> For retrieval, GPT-6 Luna had the highest mean satisfaction (6.13/7), while LibAI had the highest mean rating against expectations (6.20/7). LibAI led both measures in comprehension, with mean satisfaction of 6.73 and a mean expectation rating of 6.47. These comparisons describe the 15 participants with complete ratings.</p>
-
-    <div class="table-scroll">
-      <table>
-        <caption>Table 5. Answer quality by task and system, 20 participants per condition</caption>
-        <thead><tr><th scope="col">AI system</th><th scope="col">Retrieval mean (SD)</th><th scope="col">Retrieval full marks</th><th scope="col">Comprehension mean (SD)</th><th scope="col">Comprehension full marks</th></tr></thead>
-        <tbody>
-          <tr><th scope="row">DeepSeek</th><td>13.75 (1.83)</td><td>0/20</td><td>19.50 (0.69)</td><td>12/20</td></tr>
-          <tr><th scope="row">GPT-6 Luna</th><td>19.30 (1.63)</td><td>14/20</td><td>19.90 (0.45)</td><td>19/20</td></tr>
-          <tr><th scope="row">LibAI</th><td>19.30 (0.86)</td><td>11/20</td><td>19.85 (0.49)</td><td>18/20</td></tr>
-        </tbody>
-      </table>
-    </div>
-
-    <h3>6.5 Within-participant comparisons</h3>
-    <div class="two-col">
-      <div>
-        <p><strong>Retrieval.</strong> The overall difference was large (Friedman <em>Q</em> = 33.74, Kendall&rsquo;s <em>W</em> = .84, adjusted <em>p</em> &lt; .001). GPT-6 Luna and LibAI each averaged 5.55 points above DeepSeek, with adjusted <em>p</em> &lt; .001 for both paired comparisons. GPT-6 Luna and LibAI tied in 11 of 20 comparisons (adjusted <em>p</em> = 1.000).</p>
-        <p><strong>Comprehension.</strong> The overall test detected a smaller difference (Friedman <em>Q</em> = 8.00, Kendall&rsquo;s <em>W</em> = .20, adjusted <em>p</em> = .0119). All three pairwise comparisons had adjusted <em>p</em>-values above .05.</p>
-      </div>
-      <aside class="analysis-note">
-        <p class="card-kicker">Analysis</p>
-        <p>Exact Friedman permutation tests preserve each participant&rsquo;s paired ratings and account for ties. An exploratory test compared the comprehension-minus-retrieval score change across systems (<em>Q</em> = 31.51, adjusted <em>p</em> &lt; .001).</p>
-        <p>Holm adjustment was applied to the three overall tests and, separately, the six two-sided paired sign tests.</p>
-      </aside>
-    </div>
-
-    <h4>Exploratory paired comparisons of user ratings</h4>
-    <p>Among the 15 participants with complete ratings, the retrieval comparisons indicated differences across systems for both satisfaction and expectations (both adjusted <em>p</em> &lt; .001). For satisfaction, GPT-6 Luna and LibAI both scored above DeepSeek (adjusted <em>p</em> = .003 and .034). For expectations, LibAI scored above DeepSeek (adjusted <em>p</em> = .003), while the LibAI–GPT-6 Luna comparison gave adjusted <em>p</em> = .105. Comprehension ratings clustered near the top of the scale (adjusted <em>p</em> = .720 for satisfaction and .289 for expectations).</p>
-    <details>
-      <summary>View tests for satisfaction and expectations</summary>
-      <div class="table-scroll">
-        <table>
-          <caption>Exploratory user-rating tests with 15 paired participants</caption>
-          <thead><tr><th scope="col">Task</th><th scope="col">Measure</th><th scope="col">Friedman <em>Q</em></th><th scope="col">Kendall&rsquo;s <em>W</em></th><th scope="col">Adjusted <em>p</em></th></tr></thead>
-          <tbody>
-          <tr><th scope='row'>Retrieval</th><td>Overall satisfaction</td><td>18.55</td><td>0.62</td><td>&lt; .001</td></tr>
-          <tr><th scope='row'>Retrieval</th><td>Rating against expectations</td><td>18.62</td><td>0.62</td><td>&lt; .001</td></tr>
-          <tr><th scope='row'>Comprehension</th><td>Overall satisfaction</td><td>0.80</td><td>0.03</td><td>.720</td></tr>
-          <tr><th scope='row'>Comprehension</th><td>Rating against expectations</td><td>4.00</td><td>0.13</td><td>.289</td></tr>
-          </tbody>
-        </table>
-      </div>
-      <p class="small muted">Exact within-participant permutation tests were adjusted across four overall comparisons. Twelve two-sided paired sign tests formed a separate Holm adjustment family.</p>
-    </details>
-
-    <h3>6.6 What participants said in interviews</h3>
-    <div class="task-grid">
-      <article class="task-card">
-        <p class="mini-label">Source verification</p>
-        <h4>Which answers needed more checking?</h4>
-        <p>All five contributors in one interview batch identified DeepSeek as the system needing the most follow-up verification. They mentioned inaccessible links, topic fit and whether the system supplied enough qualifying papers. Across the interview records and supplementary summaries, DOI matching, accurate citation details and usable links were recurring concerns.</p>
-      </article>
-      <article class="task-card">
-        <p class="mini-label">Wait and preference</p>
-        <h4>Which tools did participants prefer?</h4>
-        <p>In the same batch, the three tools all received 7/7 for comprehension satisfaction. When asked which tool they preferred, all five interviewees chose GPT-6 Luna for comprehension and mentioned waiting for LibAI. For retrieval, three preferred GPT-6 Luna and two chose LibAI. They cited speed, detail or fit with their academic work.</p>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section id="discussion" class="section">
-  <div class="wrap">
-    <div class="section-heading">
-      <p class="section-label">07 / Discussion, limitations and recommendations</p>
-      <h2>What the findings mean for LibAI</h2>
-    </div>
-
-    <div class="two-col discussion-grid">
-      <div>
-        <h3>Why students might use LibAI more often</h3>
-        <p>Most survey respondents already used AI, and many who had never tried LibAI said other tools met their needs. Among LibAI users, the lower ratings for checking sources and fitting the tool into their work show where the library could make it easier to use.</p>
-        <p>Just over half of all respondents chose either verifiable sources or answer accuracy as their first priority. This gives the library two clear places to start.</p>
-      </div>
-      <div>
-        <h3>What LibAI did well in the tasks</h3>
-        <p>LibAI matched GPT-6 Luna&rsquo;s mean retrieval score in this sample. Both systems scored above DeepSeek on retrieval, with the clearest gaps in completeness and source verifiability. Both GPT-6 Luna and LibAI averaged 3.75/4 for source verifiability, compared with 2.20/4 for DeepSeek. The high rate of full marks in comprehension limits how well that task separates the systems.</p>
-        <p>In interviews, some participants described GPT-6 Luna as faster, while others chose LibAI for its detailed academic responses. These comments describe how the tools felt to use. We had no comparable timing records.</p>
-      </div>
-    </div>
-
-    <h3 id="hypothesis-results">Results for the three hypotheses</h3>
-    <div class="three-col problem-grid">
-      <article>
-        <h4>H1. Answer quality differed</h4>
-        <p>Answer quality differed most clearly in retrieval. This supports the answer-quality component of H1. Comparable task-success data across all conditions were unavailable.</p>
-      </article>
-      <article>
-        <h4>H2. Score differences varied by task</h4>
-        <p>In an exploratory test, the change in answer-quality scores from retrieval to comprehension differed across the three tools. We compared user ratings separately for each task.</p>
-      </article>
-      <article>
-        <h4>H3. We could not test what mattered most for reuse</h4>
-        <p>Testing whether quality and source verifiability matter more for reuse than latency requires comparable response-time measurements. Those measurements were unavailable.</p>
-      </article>
-    </div>
-
-    <div class="limitations">
-      <h3>Limitations</h3>
-      <ul>
-        <li><strong>Sample.</strong> The 94 responses come from non-probability convenience and snowball sampling and cannot represent all XJTLU postgraduates.</li>
-        <li><strong>Exclusions.</strong> The 13 logical-conflict exclusions were decided after reviewing the data. They are documented, but not pre-registered.</li>
-        <li><strong>Measurement.</strong> Awareness, preference and usability are self-reported and are not observed system performance.</li>
-        <li><strong>Comparisons.</strong> The 32 users provide limited power for subgroup and correlation analyses.</li>
-        <li><strong>Open text.</strong> The cleaned 94-case analysis dataset does not contain the open-ended responses, so qualitative themes are not re-estimated here.</li>
-        <li><strong>Experiment.</strong> The task sample of 20 fell below the protocol target of 24&ndash;30. Each scorer rated one batch, scoring increments differed across batches, and the supplied records did not establish realised system order or timing. The comparisons apply to these fixed tasks.</li>
-      </ul>
-    </div>
-
-    <div class="recommendation-grid">
-      <article class="recommendation-card">
-        <p class="card-kicker">Recommendation 1</p>
-        <h3>Show which source supports each claim</h3>
-        <p>Show which sources support each claim, make DOI and source links easy to inspect, and distinguish retrieved evidence from generated interpretation.</p>
-      </article>
-      <article class="recommendation-card">
-        <p class="card-kicker">Recommendation 2</p>
-        <h3>Count the time spent checking an answer</h3>
-        <p>When assessing speed, include the time it takes a student to get an answer they can use and verify.</p>
-      </article>
-      <article class="recommendation-card">
-        <p class="card-kicker">Recommendation 3</p>
-        <h3>Help students try LibAI on a literature task</h3>
-        <p>Show students how to find and check a paper in LibAI. Give them a chance to try it and explain where the tool works well and where it struggles.</p>
-      </article>
-      <article class="recommendation-card">
-        <p class="card-kicker">Recommendation 4</p>
-        <h3>Record response times and compare scorers</h3>
-        <p>In follow-up testing, ask independent raters to score some of the same answers and record time to a usable, verified answer.</p>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section id="transparency" class="section alt">
-  <div class="wrap">
-    <div class="section-heading">
-      <p class="section-label">08 / Transparency and references</p>
-      <h2>Study materials and contributions</h2>
-    </div>
-
-    <div class="two-col transparency-top">
-      <div>
-        <h3>Contribution statement</h3>
-        <table>
-          <caption>Table 6. Group contribution</caption>
-          <thead><tr><th scope="col">Member</th><th scope="col">Contribution</th></tr></thead>
-          <tbody>
-            <tr><th scope="row">Fengyi Guo</th><td>Shared contribution to study design, questionnaire logic, data interpretation, report checking and experiment planning.</td></tr>
-            <tr><th scope="row">Jingyu Li</th><td>Shared contribution to study design, questionnaire logic, data interpretation, report checking and experiment planning.</td></tr>
-            <tr><th scope="row">Liyutong Gao</th><td>Shared contribution to study design, questionnaire logic, data interpretation, report checking and experiment planning.</td></tr>
-            <tr><th scope="row">Yuyang Long</th><td>Shared contribution to study design, questionnaire logic, data interpretation, report checking and experiment planning.</td></tr>
-          </tbody>
-        </table>
-        <p class="small muted">All members are jointly responsible for the project. Detailed working records are retained by the group.</p>
-      </div>
-      <div>
-        <h3>Data and material availability</h3>
-        <p>This public page contains aggregate results only. Raw questionnaires, task responses, interview transcripts, participant identifiers and internal scoring workbooks are kept outside the public report.</p>
-        <p><a href="assets/statistical-results-n94.pdf" download>Download the revised statistical report</a> or <a href="assets/experiment-protocol.pdf" download>download the experiment protocol</a>.</p>
-
-        <h3>AI-use statement</h3>
-        <p>OpenAI Codex assisted with data processing, statistical calculations, report drafting and web formatting based on the group&rsquo;s questionnaire data, presentation materials and experimental protocol. The group must verify every claim, retain responsibility for the analysis and confirm that this scope of assistance is permitted under the module&rsquo;s AI policy.</p>
-        <p>The survey statistics derive from the group&rsquo;s cleaned dataset. The experiment results use the supplied scoring workbooks. The supplementary summaries are used for themes at batch level, without attributing wording to individual participants.</p>
-      </div>
-    </div>
-
-    <h3>References</h3>
-    <ol class="refs">
-      <li>A. M. Cox, &ldquo;Artificial intelligence and the academic library,&rdquo; <em>The Journal of Academic Librarianship</em>, vol. 50, no. 6, p. 102965, 2024, doi: 10.1016/j.acalib.2024.102965.</li>
-      <li>B. D. Lund and T. Wang, &ldquo;Chatting about ChatGPT: How may AI and GPT impact academia and libraries?,&rdquo; <em>Library Hi Tech News</em>, vol. 40, no. 3, pp. 26&ndash;29, 2023, doi: 10.1108/LHTN-01-2023-0009.</li>
-      <li>Y. Lappalainen and N. Narayanan, &ldquo;Aisha: A custom AI library chatbot using the ChatGPT API,&rdquo; <em>Journal of Web Librarianship</em>, vol. 17, no. 3, pp. 37&ndash;58, 2023, doi: 10.1080/19322909.2023.2221477.</li>
-      <li>C. K. Y. Chan and W. Hu, &ldquo;Students&rsquo; voices on generative AI: Perceptions, benefits, and challenges in higher education,&rdquo; <em>International Journal of Educational Technology in Higher Education</em>, vol. 20, no. 1, 2023, doi: 10.1186/s41239-023-00411-8.</li>
-      <li>E. Kasneci et al., &ldquo;ChatGPT for good? On opportunities and challenges of large language models for education,&rdquo; <em>Learning and Individual Differences</em>, vol. 103, p. 102274, 2023, doi: 10.1016/j.lindif.2023.102274.</li>
-      <li>W. H. Walters and E. I. Wilder, &ldquo;Fabrication and errors in the bibliographic citations generated by ChatGPT,&rdquo; <em>Scientific Reports</em>, vol. 13, no. 1, 2023, doi: 10.1038/s41598-023-41032-5.</li>
-      <li>M. Bhattacharyya, V. M. Miller, D. Bhattacharyya, and L. E. Miller, &ldquo;High rates of fabricated and inaccurate references in ChatGPT-generated medical content,&rdquo; <em>Cureus</em>, 2023, doi: 10.7759/cureus.39238.</li>
-      <li>F. D. Davis, &ldquo;Perceived usefulness, perceived ease of use, and user acceptance of information technology,&rdquo; <em>MIS Quarterly</em>, vol. 13, no. 3, pp. 319&ndash;340, 1989, doi: 10.2307/249008.</li>
-      <li>V. Venkatesh, M. G. Morris, G. B. Davis, and F. D. Davis, &ldquo;User acceptance of information technology: Toward a unified view,&rdquo; <em>MIS Quarterly</em>, vol. 27, no. 3, pp. 425&ndash;478, 2003, doi: 10.2307/30036540.</li>
-      <li>Y. Xiong, Y. Shi, Q. Pu, and N. Liu, &ldquo;More trust or more risk? User acceptance of artificial intelligence virtual assistant,&rdquo; <em>Human Factors and Ergonomics in Manufacturing &amp; Service Industries</em>, vol. 34, no. 3, pp. 190&ndash;205, 2024, doi: 10.1002/hfm.21020.</li>
-      <li>D. Long and B. Magerko, &ldquo;What is AI literacy? Competencies and design considerations,&rdquo; in <em>Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems</em>, 2020, pp. 1&ndash;16, doi: 10.1145/3313831.3376727.</li>
-      <li>D. T. K. Ng, J. K. L. Leung, S. K. W. Chu, and M. S. Qiao, &ldquo;Conceptualizing AI literacy: An exploratory review,&rdquo; <em>Computers and Education: Artificial Intelligence</em>, vol. 2, p. 100041, 2021, doi: 10.1016/j.caeai.2021.100041.</li>
-      <li>V. Braun and V. Clarke, &ldquo;Using thematic analysis in psychology,&rdquo; <em>Qualitative Research in Psychology</em>, vol. 3, no. 2, pp. 77&ndash;101, 2006, doi: 10.1191/1478088706qp063oa.</li>
-    </ol>
-
-    <h3>Acknowledgements</h3>
-    <p>We acknowledge XJTLU Library as the owner of LibAI and the source of the evaluated service. The study was conducted for ADS401 Evaluation Methods and Statistics. No confidential library data or participant-level records are reproduced on this page.</p>
-  </div>
-</section>
+<section class="section" id="overview"><div class="wrap">
+<div class="section-heading"><p class="section-label">01 / Project at a glance</p><h2>From adoption to practical improvement</h2></div>
+<div class="two-col overview-grid"><div>
+<p class="lead-paragraph">The study asks two linked questions: do XJTLU postgraduates choose LibAI for literature work, and does its performance on common tasks give them a reason to choose it?</p>
+<p>The questionnaire identifies who has tried LibAI, why others have not and which capabilities they want improved. It shows that literature search and reading are common AI tasks. The group then compared LibAI with two alternatives on fixed versions of those tasks.</p>
+<p>The combined evidence points to a practical direction: make LibAI's library value and source trail easy to see, while continuing to validate quality across more topics. The experiment does not support a speed ranking because comparable timing records are missing.</p>
+</div><aside class="card system-card"><p class="card-kicker">Selected system</p><h3>LibAI Portal</h3><p class="system-url"><a href="https://libai.xjtlu.edu.cn/" rel="noopener" target="_blank">libai.xjtlu.edu.cn</a></p><dl class="detail-list"><div><dt>Owner</dt><dd>XJTLU Library</dd></div><div><dt>Survey population</dt><dd>Current XJTLU postgraduate students</dd></div><div><dt>Survey evidence</dt><dd>107 eligible responses</dd></div><div><dt>Task evidence</dt><dd>20 participants; six trials each</dd></div></dl></aside></div>
+<div aria-label="Key survey and task study results" class="evidence-strip" role="group"><div class="evidence-item"><p class="evidence-number">40.2%</p><p>had ever used LibAI (43 of 107)</p></div><div class="evidence-item"><p class="evidence-number">59.8%</p><p>had never used LibAI (64 of 107)</p></div><div class="evidence-item"><p class="evidence-number">50.5%</p><p>chose source verification or accuracy as the top improvement</p></div><div class="evidence-item"><p class="evidence-number">19.30 / 20</p><p>mean retrieval score for both LibAI and GPT-6 Luna</p></div></div>
+<figure class="system-figure"><div aria-label="Survey adoption and needs led to task selection; the task comparison measured output quality; findings shape bounded recommendations." class="system-flow" role="img"><div class="flow-step"><span class="flow-index">1</span><strong>Ask students</strong><span>Measure adoption, non-use reasons and priorities</span></div><div aria-hidden="true" class="flow-arrow">→</div><div class="flow-step"><span class="flow-index">2</span><strong>Choose tasks</strong><span>Use common literature search and reading tasks</span></div><div aria-hidden="true" class="flow-arrow">→</div><div class="flow-step"><span class="flow-index">3</span><strong>Compare outputs</strong><span>Score sources, completeness and faithful summary</span></div><div aria-hidden="true" class="flow-arrow">→</div><div class="flow-step"><span class="flow-index">4</span><strong>Set priorities</strong><span>Separate observed strengths from untested needs</span></div></div><figcaption><strong>Figure 1.</strong> The questionnaire determines which tasks matter; the experiment tests a narrow sample of those tasks; recommendations reflect both sources without stretching either.</figcaption></figure>
+</div></section>
+<section class="section alt" id="problem"><div class="wrap">
+<div class="section-heading"><p class="section-label">02 / Problem, motivation and questions</p><h2>Adoption and task quality are different problems</h2></div>
+<div class="three-col problem-grid"><article><p class="card-kicker">Users and context</p><h3>Postgraduate literature work</h3><p>Students use AI to find, screen, compare and understand academic literature. LibAI is the library's option in this workflow, alongside general-purpose tools.</p></article><article><p class="card-kicker">Evaluation problem</p><h3>Who chooses LibAI, and why?</h3><p>Non-use may reflect low awareness, no clear use case, a lack of trial opportunity, or satisfaction with another tool. Current use alone cannot explain these routes.</p></article><article><p class="card-kicker">Improvement question</p><h3>Which capability deserves work first?</h3><p>Students named sources and accuracy as their leading priorities. A controlled task comparison tests whether these concerns appear in actual outputs.</p></article></div>
+<div class="callout"><p class="card-kicker">Research questions</p><ol><li><strong>RQ1 - Adoption:</strong> How many surveyed XJTLU postgraduates are current users, former users, aware non-users or unaware non-users, and what reasons do they report?</li><li><strong>RQ2 - Needs:</strong> Which improvements do respondents prioritise, and what barriers appear among people who have never used LibAI?</li><li><strong>RQ3 - Task performance:</strong> On fixed literature search and understanding tasks, how do LibAI, DeepSeek and GPT-6 Luna compare in answer quality and post-task experience?</li><li><strong>RQ4 - Action:</strong> Which recommendations are supported by both the survey and task study, and which still need testing?</li></ol></div>
+<h3>What the evidence can support</h3><p>The questionnaire is a cross-sectional self-report from 107 eligible respondents, not a probability sample or system-log record. The task study compares 20 people on two fixed tasks and fell below the protocol target of 24-30. It can compare these tested conditions, but cannot establish university-wide preference, long-term adoption or performance across disciplines. No comparable timing data were available, so speed-related hypotheses cannot be tested.</p>
+</div></section>
+<section class="section" id="background"><div class="wrap">
+<div class="section-heading"><p class="section-label">03 / Background and related work</p><h2>Why source checking belongs in the evaluation</h2></div>
+<p>AI-supported literature work combines retrieval and interpretation. A search tool must find papers that meet the request and return metadata a student can verify. A reading tool must preserve what the source says, including its numbers and limitations. Satisfaction alone cannot establish either form of correctness.</p>
+<div class="narrative-columns"><div><h3>Retrieval needs relevance and verification</h3><p>Walters and Wilder evaluated citations in literature reviews generated by ChatGPT-3.5 and GPT-4. They found fabricated citations and substantive errors among real citations, demonstrating why citation existence and metadata should be checked directly [1]. Their results concern earlier model versions, not LibAI's current error rate.</p><p>Across four evidence-synthesis case studies, Lau and Golder found Elicit had higher precision but lower average sensitivity than the original reviews. They concluded it could supplement, but not replace, comprehensive searching in those cases [2]. This supports measuring both task fit and source verification.</p></div><div><h3>Interpretation needs human validation</h3><p>A 2026 feasibility study of Elicit data extraction found accuracy and reproducibility varied across prompts and test articles, and recommended human validation [3]. We therefore pair blinded output scoring with user ratings: a response may feel useful while omitting a key result or adding unsupported information.</p><p>These studies motivate our measures; they do not predict LibAI performance. The local gap is whether XJTLU postgraduates know and choose the library tool, what they want it to do, and how it performs on tasks drawn from their reported workflow.</p></div></div>
+<div class="evidence-note"><strong>Evaluation rationale.</strong> The survey identifies local priorities; the task study evaluates source correctness and faithful summarisation; interviews add context. Recommendations stay within those measured boundaries.</div>
+</div></section>
+<section class="section alt" id="methods"><div class="wrap">
+<div class="section-heading"><p class="section-label">04 / Study design and methods</p><h2>The questionnaire sets the experiment's scope</h2></div>
+<div class="finding-block single"><div><h3>4.1 Questionnaire: adoption and user needs</h3><p>The bilingual questionnaire targeted adults enrolled as XJTLU postgraduates. Branching covered recent AI tasks, LibAI contact and experience, barriers, non-use reasons and improvement priorities. Of 124 raw submissions, six did not consent and 11 were not XJTLU postgraduates, leaving 107 eligible cases.</p><p>The cleaned file retains nine responses under 120 seconds and 11 identical ratings across all nine improvement items as quality flags, not automatic exclusions. Findings are therefore descriptive and exploratory. The survey used non-probability convenience/snowball recruitment; results do not estimate all XJTLU postgraduates.</p></div></div>
+<div class="table-wrap"><table><caption>Table 1. How questionnaire findings led to experiment decisions</caption><thead><tr><th>Survey evidence</th><th>Design decision</th><th>What the experiment tests</th></tr></thead><tbody><tr><th scope="row">Search/screen and read/summarise were each selected by 61 recent AI users</th><td>Use literature retrieval and source understanding as task types</td><td>Task quality, completeness, source verification and faithful extraction</td></tr><tr><th scope="row">DeepSeek (31) and ChatGPT (32) were the most-used AI tools; two named LibAI</th><td>Compare LibAI with alternatives students already encounter</td><td>Within-person differences under the same prompts</td></tr><tr><th scope="row">Verifiable sources and accuracy led improvement choices</th><td>Do not rely on satisfaction as the quality measure</td><td>Blind scoring of correctness, relevance, completeness, traceability and clarity</td></tr><tr><th scope="row">Non-users reported unclear use cases and limited trial opportunity</th><td>Include users and non-users; ask why they chose a system</td><td>Interviews add context; the tasks do not test onboarding</td></tr></tbody></table></div>
+<div class="two-col"><div><h3>4.2 Task comparison: reported results</h3><p>The protocol specified a 3 x 2 within-participant design. In the later report, 20 XJTLU postgraduates completed six trials each: LibAI, DeepSeek and GPT-6 Luna (ChatGPT configuration) on a retrieval task and a fixed abstract-understanding task. This produced 120 scored answers. The tasks followed the two most common AI-supported literature task types in the survey.</p><p>The protocol target was 24-30 participants, with at least 24 complete sessions. The completed n=20 was below target. The protocol planned balanced system and task order, but participant-level order was not recorded, so order effects cannot be ruled out.</p></div><div><h3>4.3 Measures and safeguards</h3><p>Answers were scored for correctness, relevance, completeness, source verifiability and clarity/actionability on a 0-20 total scale. Two scoring batches used only 0, 2 and 4 per dimension; two also used 1 and 3. Each scorer covered a different batch, so scorer and batch effects cannot be separated.</p><p>Fifteen participants had complete seven-point satisfaction and expectation ratings. Interview material included both records and structured summaries. Comparable timing data were unavailable, so time-to-useful-answer claims are not reported. Questionnaire and experiment consent were required; recording had separate consent. The public page contains aggregate findings only.</p></div></div>
+<div class="callout"><p class="card-kicker">Measurement boundary</p><ol><li>Survey frequency and task selections are self-reported, not usage logs.</li><li>Survey priorities describe what respondents want, not verified system defects.</li><li>Task scores describe two prompts and tested system versions, not all LibAI use.</li><li>No timing data means this study cannot say which system was faster.</li></ol></div>
+</div></section>
+<section class="section" id="findings"><div class="wrap">
+<div class="section-heading"><p class="section-label">05 / Survey findings</p><h2>Use is limited; source evidence leads requested improvements</h2></div>
+<p class="evidence-note">Results use the latest cleaned questionnaire file: 107 eligible respondents from 124 raw records. The AI task questions were routed to the 97 respondents with recent AI use; non-use reasons apply to 64 never-users. This report does not carry forward the earlier n=94 analysis, which used a different logical-conflict exclusion rule.</p>
+<div class="chart-overview"><div class="chart-overview-head"><div><p class="mini-label">Four views of the survey</p><h3>Adoption, task demand and requested changes</h3></div><p>Each chart names its denominator. AI task use is among recent AI users; non-use reasons are among respondents who had never used LibAI.</p></div><div class="data-chart-grid"><figure class="data-chart"><img alt="LibAI status among 107 respondents: 31 current users, 12 former users, 38 aware non-users and 26 unaware non-users." src="assets/analysis-charts/adoption-n107.png"/><figcaption><strong>Figure 2.</strong> LibAI contact status, n=107.</figcaption></figure><figure class="data-chart"><img alt="Among 97 recent AI users, 61 used AI for literature search or screening and 61 for reading or summarising; 51 framed a research question and 48 compared papers or extracted information." src="assets/analysis-charts/tasks-n107.png"/><figcaption><strong>Figure 3.</strong> Common AI-supported academic tasks, n=97; multiple selections.</figcaption></figure><figure class="data-chart"><img alt="Top improvement choices: verifiable sources 28, accuracy 26, coverage 13, guidance 11 and workflow integration 8 of 107." src="assets/analysis-charts/priorities-n107.png"/><figcaption><strong>Figure 4.</strong> Five leading options among nine possible top choices, n=107.</figcaption></figure><figure class="data-chart"><img alt="Among 64 never-users, 30 said external AI met their needs, 24 did not know suitable tasks, 24 lacked a trial opportunity, 22 did not know access and 16 had accuracy or source concerns." src="assets/analysis-charts/nonusers-n107.png"/><figcaption><strong>Figure 5.</strong> Five most selected non-use reasons, n=64; multiple selections.</figcaption></figure></div></div>
+<div class="finding-block"><div><p class="mini-label">RQ1 / Adoption</p><h3>Four contact states reveal different routes to non-use</h3><p>Forty-three respondents had ever used LibAI: 31 had used it within the previous six months (29.0% of the sample), and 12 had used it earlier (11.2%). The other 64 had never used it (59.8%). Among these never-users, 38 had heard of LibAI and 26 had not. Overall, 81 respondents (75.7%) had heard of it. Awareness is not the only adoption barrier.</p><p>Among 97 respondents who had used AI recently, literature search/screening and reading/summarising were each selected by 61 people (62.9%). These are general AI-task reports, not LibAI-specific performance claims; they justify the experiment's task choice.</p></div><div class="finding-aside"><p class="mini-label">Main AI tool</p><p>Among the 97 recent AI users, 32 named ChatGPT, 31 DeepSeek and two LibAI as their most-used AI. The comparators reflect reported alternatives, while LibAI was rarely the default.</p></div></div>
+<div class="finding-block reverse"><div><p class="mini-label">RQ2 / Improvement priorities</p><h3>Sources and accuracy account for half of first choices</h3><p>Twenty-eight respondents selected verifiable sources and evidence as their single top improvement (26.2%); 26 selected accuracy and fewer fabricated answers (24.3%). Together they account for 54 of 107 choices (50.5%). Database coverage followed with 13 choices (12.1%), then clearer guidance with 11 (10.3%). Speed and stability were selected by six respondents (5.6%).</p><p>This forced top choice is separate from the item-by-item importance ratings. It identifies what respondents would prioritise first; it does not establish that LibAI currently fails on those features.</p></div><div class="finding-aside"><p class="mini-label">RQ1 / Non-use reasons</p><p>Among 64 never-users, 30 said external AI already met their literature needs (46.9%). Twenty-four did not know suitable academic tasks (37.5%), 24 lacked a practical chance to try it (37.5%), and 22 did not know how to access it (34.4%). Respondents could select several reasons.</p></div></div>
+<p class="small muted">The survey describes this sample's awareness, reported behaviour and preferences. It does not measure output accuracy or prove why an individual continues or stops using LibAI.</p>
+</div></section>
+<section class="section alt" id="experiment"><div class="wrap">
+<div class="section-heading"><p class="section-label">06 / Task experiment</p><h2>LibAI matched GPT-6 Luna on retrieval in this test</h2></div>
+<p class="lead-paragraph">The clearest task difference was in literature retrieval: LibAI and GPT-6 Luna averaged 19.30/20, while DeepSeek averaged 13.75/20. This supports LibAI's performance on the tested prompt, not broad superiority across topics or users.</p>
+<div class="score-summary"><div><strong>20</strong><span>participants completed six system-by-task trials; 120 answers were scored</span></div><div><strong>15</strong><span>participants had complete post-task satisfaction and expectation ratings</span></div></div>
+<div class="table-wrap"><table><caption>Table 2. Mean answer quality and full-mark counts in the reported task sample</caption><thead><tr><th>System</th><th>Retrieval mean (SD)</th><th>Retrieval full marks</th><th>Comprehension mean (SD)</th><th>Comprehension full marks</th></tr></thead><tbody><tr><th scope="row">DeepSeek</th><td>13.75 (1.83)</td><td>0 / 20</td><td>19.50 (0.69)</td><td>12 / 20</td></tr><tr><th scope="row">GPT-6 Luna (ChatGPT)</th><td>19.30 (1.63)</td><td>14 / 20</td><td>19.90 (0.45)</td><td>19 / 20</td></tr><tr><th scope="row">LibAI</th><td>19.30 (0.86)</td><td>11 / 20</td><td>19.85 (0.49)</td><td>18 / 20</td></tr></tbody></table></div>
+<div class="chart-overview"><div class="chart-overview-head"><div><p class="mini-label">Task evidence</p><h3>Quality and user ratings</h3></div><p>Quality scores cover all 20 participants. Experience ratings use 15 complete cases. No comparable timing data were available.</p></div><div class="chart-mosaic"><figure class="primary-chart"><img alt="Mean quality out of 20: retrieval DeepSeek 13.75, GPT-6 Luna 19.30, LibAI 19.30; comprehension 19.50, 19.90 and 19.85." class="chart-image" src="assets/experiment-charts/mean-quality.png"/><figcaption><strong>Figure 6.</strong> Mean blinded quality score, n=20 per system and task.</figcaption></figure><figure class="primary-chart"><img alt="Retrieval source verifiability averages: DeepSeek 2.20/4, GPT-6 Luna 3.75/4, LibAI 3.75/4; completeness averages 2.25, 3.80 and 3.95." class="chart-image" src="assets/experiment-charts/retrieval-dimensions.png"/><figcaption><strong>Figure 7.</strong> Source verifiability and completeness scores.</figcaption></figure><figure class="primary-chart"><img alt="Full-mark rates: retrieval 0% DeepSeek, 70% GPT-6 Luna and 55% LibAI; comprehension 60%, 95% and 90%." class="chart-image" src="assets/experiment-charts/perfect-scores.png"/><figcaption><strong>Figure 8.</strong> Full-mark rates; comprehension clusters near the ceiling.</figcaption></figure><figure class="primary-chart"><img alt="Mean satisfaction and expectation ratings across two tasks for the three systems, based on 15 participants." class="chart-image" src="assets/experiment-charts/user-experience.png"/><figcaption><strong>Figure 9.</strong> Satisfaction and expectation ratings, n=15.</figcaption></figure></div></div>
+<div class="finding-block"><div><p class="mini-label">Retrieval</p><h3>Large paired difference from DeepSeek</h3><p>The overall within-participant comparison differed across systems (Friedman Q=33.74, Kendall's W=.84, adjusted p&lt;.001). LibAI and GPT-6 Luna each averaged 5.55 points above DeepSeek; both paired comparisons had adjusted p&lt;.001. LibAI and GPT-6 Luna tied in 11 of 20 participant comparisons (adjusted p=1.000). Their source-verifiability means were both 3.75/4; DeepSeek's was 2.20/4.</p></div><div class="finding-aside"><p class="mini-label">Comprehension</p><h3>Scores clustered near full marks</h3><p>Forty-nine of 60 answers received full marks. The overall test detected a smaller system difference (Friedman Q=8.00, W=.20, adjusted p=.0119), but none of the pairwise comparisons was significant. This ceiling limits the task's ability to distinguish systems.</p></div></div>
+<div class="finding-block reverse"><div><p class="mini-label">User experience</p><h3>Ratings add context, not objective quality</h3><p>Among 15 complete cases, retrieval satisfaction differed across systems (Friedman Q=18.55, W=.62, adjusted p&lt;.001), as did ratings against expectations (Q=18.62, W=.62, adjusted p&lt;.001). GPT-6 Luna had the highest retrieval satisfaction mean (6.13/7); LibAI had the highest retrieval expectation rating (6.20/7). Comprehension ratings did not differ significantly.</p></div><div class="finding-aside"><p class="mini-label">Missing timing evidence</p><h3>No speed ranking is possible</h3><p>The records do not contain comparable response or time-to-useful-answer measurements. Interview comments about waiting are qualitative context, not timed performance. The protocol's speed-related hypothesis could not be tested.</p></div></div>
+<div class="limitations"><h3>Limits that affect interpretation</h3><ul><li>The sample was 20, below the planned minimum of 24; precision and generalisability are limited.</li><li>The search task used one topic; the comprehension task used one synthetic abstract, not a real paper.</li><li>Actual system/task order was not recorded, and score increments differed between rater batches.</li><li>Interview material included structured summaries, so themes are contextual, not individual-level quotations.</li></ul></div>
+</div></section>
+<section class="section" id="discussion"><div class="wrap">
+<div class="section-heading"><p class="section-label">07 / Discussion, limitations and recommendations</p><h2>Make trust visible and give non-users a reason to try</h2></div>
+<p>The survey records what students want; the task comparison shows performance on two controlled tasks. Sources and accuracy led survey priorities, yet LibAI scored strongly on source verifiability and retrieval quality in the tested topic. Make this capability visible and validate it more broadly; do not claim a proven general accuracy defect.</p>
+<div class="recommendation-grid"><article class="recommendation-card"><p class="card-kicker">Priority 1 / Product experience</p><h3>Expose the source trail in the answer</h3><p>Show title, authors, year, DOI and a working source link together, and make the evidence behind a claim easy to inspect. This responds to the survey's leading priorities; the task study scored LibAI 3.75/4 for source verifiability. Preserve this tested strength and validate it on more topics before proposing a system-wide quality fix.</p></article><article class="recommendation-card"><p class="card-kicker">Priority 2 / Adoption</p><h3>Offer a task-based first-use path</h3><p>Give students a clear entry route and a low-risk demonstration for finding and checking a paper. This addresses 22 respondents who did not know how to access LibAI, 24 who did not know suitable tasks and 24 who lacked a chance to try it. Since 30 never-users said external AI met their needs, explain LibAI's library-specific value rather than promising generic AI features.</p></article><article class="recommendation-card"><p class="card-kicker">Priority 3 / Coverage</p><h3>Audit retrieval across disciplines</h3><p>Coverage was a top improvement choice for 13 respondents. The experiment's one search topic cannot measure database coverage across subjects. Compare LibAI with a human-checked reference set for several disciplines and report missed relevant records as well as correct returns.</p></article><article class="recommendation-card"><p class="card-kicker">Priority 4 / Next evaluation</p><h3>Measure usable speed before optimising it</h3><p>Only six respondents chose speed/stability as their top improvement, and this experiment has no timing data. A follow-up should record time to a usable, verified answer, preserve system order and have independent raters score overlapping answers. Do not rank speed from interview impressions.</p></article></div>
+<div class="evidence-key"><strong>Evidence status:</strong> Priority 1 combines survey demand with a measured score on one retrieval task. Priority 2 is survey-based. Priority 3 is a requested feature that the experiment cannot validate. Priority 4 is a measurement recommendation, not a claim that speed is poor.</div>
+<div class="limitations"><h3>Study limits</h3><ul><li>The voluntary sample is non-probability; proportions describe respondents, not all XJTLU postgraduates.</li><li>Survey awareness and use are self-reported; no LibAI usage logs were collected.</li><li>The task sample was below target, actual order was unavailable, and raters used different score increments across batches.</li><li>One retrieval topic and one synthetic abstract cannot establish broad coverage or long-term usefulness.</li><li>No comparable timing data were available; speed hypotheses remain unanswered.</li></ul></div>
+<p class="small muted">The strongest next step is a wider, reproducible task evaluation paired with a small onboarding pilot. No recommendation is validated across all users.</p>
+</div></section>
+<section class="section alt" id="transparency"><div class="wrap">
+<div class="section-heading"><p class="section-label">08 / Transparency and references</p><h2>Materials, contributors and evidence limits</h2></div>
+<div class="two-col transparency-top"><div><h3>Data and materials</h3><p>This page contains aggregate results only; the cleaned workbook, raw export, consent forms, interviews and trial-level scores are not included. The 8 November manual is the pre-experiment plan; the later study had 20 participants and lacks order and timing records.</p><p>The earlier n=94 survey report is superseded by the current cleaned n=107 file and is no longer linked from this page. Short-duration and straight-line-rating flags remain in the cleaned sample.</p></div><div><h3>Contributions</h3><p>Fengyi Guo, Jingyu Li, Liyutong Gao and Yuyang Long shared study design, questionnaire logic, data interpretation, report review and experiment planning, according to the group contribution record. All members remain responsible for checking the analysis and final report.</p><h3>Ethics and AI-use statement</h3><p>Participation was voluntary and consent-based; experiment recording required separate consent. The supplied materials do not show an ethics approval reference or retention schedule; add verified details before submission. OpenAI Codex assisted with report restructuring, evidence-linked drafting and web formatting. The coursework sheet limits AI to non-substantive use; the group must confirm this scope with the module leader before submission and follow the required disclosure rule.</p></div></div>
+<h3>References</h3><ol class="refs"><li>W. H. Walters and E. I. Wilder, "Fabrication and errors in the bibliographic citations generated by ChatGPT," <em>Scientific Reports</em>, vol. 13, art. 14045, 2023. <a href="https://doi.org/10.1038/s41598-023-41032-5">doi:10.1038/s41598-023-41032-5</a>.</li><li>O. Lau and S. Golder, "Comparison of Elicit AI and Traditional Literature Searching in Evidence Syntheses Using Four Case Studies," <em>Cochrane Evidence Synthesis and Methods</em>, 2025. <a href="https://doi.org/10.1002/cesm.70050">doi:10.1002/cesm.70050</a>.</li><li>M. Lagisz et al., "Using Elicit AI research assistant for data extraction in systematic reviews: A feasibility study across environmental and life sciences," <em>Research Synthesis Methods</em>, online 29 May 2026. <a href="https://doi.org/10.1017/rsm.2026.10080">doi:10.1017/rsm.2026.10080</a>.</li><li>ADS401 Group J, <em>LibAI Questionnaire: Bilingual Implementation and Coding Guide</em> and <em>LibAI questionnaire cleaned data, 107 eligible cases</em>, 2026.</li><li>ADS401 Group J, <em>LibAI Comparative Evaluation Experiment: Design and Implementation Manual</em>, version 1.0, 8 November 2026.</li><li>XJTLU ADS401, <em>Coursework Sheet: Report</em>, version 1.0, September 2026.</li></ol>
+<p class="small muted">Trial-level data were not available in the supplied files for independent recalculation of the reported experiment results.</p>
+</div></section>
 </main>
-
 <footer class="site-footer">
-  <div class="wrap footer-inner">
-    <div>
-      <p class="footer-title">ADS401 Evaluation Methods and Statistics</p>
-      <p>Group J &middot; <span id="year">2026</span> &middot; XJTLU</p>
-    </div>
-    <p class="footer-note">Single-page web report covering the survey and completed task experiment.</p>
-  </div>
+<div class="wrap footer-inner">
+<div>
+<p class="footer-title">ADS401 Evaluation Methods and Statistics</p>
+<p>Group J · <span id="year">2026</span> · XJTLU</p>
+</div>
+<p class="footer-note">Single-page web report covering the survey and completed task experiment.</p>
+</div>
 </footer>
-
-<button class="to-top" type="button" aria-label="Back to top">&uarr;</button>
+<button aria-label="Back to top" class="to-top" type="button">↑</button>
 <script src="assets/app.js"></script>
 </body>
 </html>

@@ -605,3 +605,5 @@ summary:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
   .chart-library > summary { padding: 0.95rem 1rem; }
   .chart-gallery { padding: 0.85rem; }
 }
+
+.data-chart-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}.data-chart{margin:0;padding:.7rem;background:#fff;border:1px solid var(--line);box-shadow:0 1px 2px rgba(20,33,61,.05)}.data-chart img{display:block;width:100%;height:auto}.data-chart figcaption{padding:.2rem .3rem .3rem}.data-chart strong{color:var(--ink)}@media(max-width:620px){.data-chart-grid{grid-template-columns:1fr}}
