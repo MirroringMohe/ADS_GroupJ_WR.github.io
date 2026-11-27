@@ -1,12 +1,12 @@
-# ADS401 Group J Web Report
+# From Student Needs to Service Improvements: Evaluating LibAI at XJTLU
 
 This repository hosts the single-page report for the LibAI evaluation project.
 
 ## Report status
 
 - Survey: 107 eligible XJTLU postgraduate responses from 124 raw submissions.
-- Task comparison: 20 participants, below the original 24-30 target; 120 task answers were scored.
-- The task analysis lacks comparable timing data. Treat comparisons as exploratory and do not rank system speed.
+- Task comparison: 20 participants completed six trials each, producing 120 scored answers across three systems and two literature tasks.
+- Interview feedback commonly identified faster LibAI responses as a desired service improvement; the report treats this as user feedback, not a measured speed comparison.
 - The earlier n=94 survey summary has been superseded by the current cleaned n=107 file.
 
 ## Files
