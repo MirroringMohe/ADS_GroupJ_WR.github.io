@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="直播美妆商品比价原型：把到手价、规格、赠品、运费和直播机制放在同一张清单里。"
+    />
+    <title>LIVE OFFSET｜直播美妆比价</title>
+    <link rel="stylesheet" href="./styles.css?v=20261124-8" />
+  </head>
+  <body>
+    <a class="skip-link" href="#offers">跳到直播货架</a>
+
+    <svg class="svg-defs" aria-hidden="true" focusable="false">
+      <defs>
+        <linearGradient id="glassShine" x1="0" x2="1" y1="0" y2="1">
+          <stop offset="0" stop-color="#fff" stop-opacity=".82" />
+          <stop offset=".45" stop-color="#fff" stop-opacity=".08" />
+          <stop offset="1" stop-color="#fff" stop-opacity=".34" />
+        </linearGradient>
+        <linearGradient id="metal" x1="0" x2="1">
+          <stop offset="0" stop-color="#7a726b" />
+          <stop offset=".25" stop-color="#f8f0e5" />
+          <stop offset=".55" stop-color="#9f9287" />
+          <stop offset=".8" stop-color="#fff7ed" />
+          <stop offset="1" stop-color="#6f665f" />
+        </linearGradient>
+      </defs>
+
+      <symbol id="art-jar" viewBox="0 0 220 280">
+        <ellipse cx="110" cy="255" rx="73" ry="13" fill="#17224d" opacity=".14" />
+        <rect x="34" y="93" width="152" height="139" rx="27" fill="currentColor" />
+        <rect x="34" y="93" width="152" height="139" rx="27" fill="url(#glassShine)" />
+        <rect x="31" y="50" width="158" height="69" rx="20" fill="url(#metal)" />
+        <ellipse cx="110" cy="60" rx="75" ry="19" fill="#fff8ee" opacity=".62" />
+        <rect x="57" y="138" width="106" height="62" rx="7" fill="#fff8ed" opacity=".94" />
+        <text x="110" y="158" text-anchor="middle" font-size="10" font-weight="800" fill="#17224d">POWER CREAM</text>
+        <path d="M71 169h78M79 181h62M88 193h44" stroke="#17224d" stroke-width="3" opacity=".55" />
+      </symbol>
+
+      <symbol id="art-eye-cream" viewBox="0 0 220 280">
+        <ellipse cx="110" cy="256" rx="54" ry="11" fill="#17224d" opacity=".13" />
+        <path d="M69 77h82l15 154c1 13-9 24-22 24H76c-13 0-23-11-22-24L69 77Z" fill="currentColor" />
+        <path d="M69 77h82l15 154c1 13-9 24-22 24H76c-13 0-23-11-22-24L69 77Z" fill="url(#glassShine)" />
+        <rect x="76" y="31" width="68" height="51" rx="11" fill="url(#metal)" />
+        <path d="M87 47h46" stroke="#fff" stroke-width="5" stroke-linecap="round" opacity=".65" />
+        <rect x="55" y="137" width="110" height="73" rx="10" fill="#fff8ed" />
+        <text x="110" y="161" text-anchor="middle" font-size="11" font-weight="800" fill="#17224d">EYE CREAM</text>
+        <path d="M75 177h70M85 190h50" stroke="#17224d" stroke-width="3" opacity=".5" />
+        <circle cx="151" cy="214" r="21" fill="#fff8ed" />
+        <text x="151" y="218" text-anchor="middle" font-size="9" font-weight="900" fill="#17224d">40ml</text>
+      </symbol>
+
+      <symbol id="art-hair" viewBox="0 0 220 280">
+        <ellipse cx="110" cy="255" rx="48" ry="10" fill="#17224d" opacity=".13" />
+        <path d="M65 83h90v127c0 28-18 44-45 44s-45-16-45-44V83Z" fill="currentColor" />
+        <path d="M65 83h90v127c0 28-18 44-45 44s-45-16-45-44V83Z" fill="url(#glassShine)" />
+        <rect x="83" y="26" width="54" height="65" rx="8" fill="#1f2c55" />
+        <path d="M95 38h30" stroke="#d9b76f" stroke-width="5" stroke-linecap="round" />
+        <rect x="64" y="132" width="92" height="76" rx="6" fill="#f7ead2" />
+        <text x="110" y="151" text-anchor="middle" font-size="9" font-weight="900" fill="#17224d">GOLD OIL</text>
+        <path d="M80 165h60M88 178h44M96 191h28" stroke="#17224d" stroke-width="3" opacity=".5" />
+      </symbol>
+
+      <symbol id="art-palette" viewBox="0 0 220 280">
+        <ellipse cx="110" cy="250" rx="81" ry="14" fill="#17224d" opacity=".14" />
+        <rect x="24" y="62" width="172" height="174" rx="13" fill="currentColor" />
+        <path d="M40 87c22-18 132-18 145 5v121c-16 20-128 20-148 2V86Z" fill="#f4eef6" opacity=".93" />
+        <circle cx="80" cy="128" r="22" fill="#d99cb6" />
+        <circle cx="132" cy="128" r="22" fill="#b9c8e8" />
+        <circle cx="80" cy="177" r="22" fill="#f0cf8a" />
+        <circle cx="132" cy="177" r="22" fill="#cba7d8" />
+        <path d="M59 50h102v22H59z" fill="#17224d" />
+        <text x="110" y="65" text-anchor="middle" font-size="9" font-weight="900" fill="#fff">SNOW FAIRY</text>
+        <path d="m165 40 7 14-15 2 8-16Z" fill="#fff" />
+      </symbol>
+
+      <symbol id="art-cushion" viewBox="0 0 220 280">
+        <ellipse cx="110" cy="250" rx="73" ry="14" fill="#17224d" opacity=".14" />
+        <ellipse cx="110" cy="157" rx="76" ry="82" fill="currentColor" />
+        <ellipse cx="110" cy="145" rx="76" ry="68" fill="url(#metal)" />
+        <ellipse cx="110" cy="142" rx="61" ry="53" fill="#f9eee8" opacity=".9" />
+        <circle cx="110" cy="142" r="37" fill="#17224d" />
+        <text x="110" y="147" text-anchor="middle" font-size="14" font-weight="900" fill="#fff">C</text>
+        <rect x="60" y="205" width="100" height="29" rx="14.5" fill="#fff8ed" />
+        <text x="110" y="224" text-anchor="middle" font-size="10" font-weight="900" fill="#17224d">CUSHION</text>
+      </symbol>
+
+      <symbol id="art-foundation" viewBox="0 0 220 280">
+        <ellipse cx="110" cy="254" rx="51" ry="11" fill="#17224d" opacity=".13" />
+        <path d="M69 64h82l12 162c1 16-10 28-26 28H83c-16 0-27-12-26-28L69 64Z" fill="currentColor" />
+        <path d="M69 64h82l12 162c1 16-10 28-26 28H83c-16 0-27-12-26-28L69 64Z" fill="url(#glassShine)" />
+        <rect x="77" y="29" width="66" height="47" rx="8" fill="url(#metal)" />
+        <rect x="62" y="128" width="96" height="81" rx="8" fill="#fff8ed" />
+        <text x="110" y="149" text-anchor="middle" font-size="10" font-weight="900" fill="#17224d">BASE FIX</text>
+        <text x="110" y="180" text-anchor="middle" font-size="24" font-weight="900" fill="#17224d">16H</text>
+        <path d="M80 194h60" stroke="#17224d" stroke-width="3" opacity=".45" />
+      </symbol>
+
+      <symbol id="art-perfume" viewBox="0 0 220 280">
+        <ellipse cx="110" cy="255" rx="53" ry="11" fill="#17224d" opacity=".13" />
+        <rect x="62" y="83" width="96" height="164" rx="12" fill="currentColor" />
+        <rect x="62" y="83" width="96" height="164" rx="12" fill="url(#glassShine)" />
+        <rect x="90" y="37" width="40" height="52" rx="6" fill="#17224d" />
+        <rect x="80" y="23" width="60" height="22" rx="5" fill="url(#metal)" />
+        <rect x="47" y="143" width="126" height="59" rx="2" fill="#fff8ed" />
+        <text x="110" y="164" text-anchor="middle" font-size="12" font-weight="900" fill="#17224d">LIBRE</text>
+        <text x="110" y="183" text-anchor="middle" font-size="8" letter-spacing="2" fill="#17224d">EAU DE PARFUM</text>
+        <path d="M78 229h64" stroke="#fff" stroke-width="4" opacity=".55" />
+      </symbol>
+
+      <symbol id="art-powder" viewBox="0 0 220 280">
+        <ellipse cx="110" cy="248" rx="78" ry="14" fill="#17224d" opacity=".14" />
+        <ellipse cx="110" cy="164" rx="82" ry="65" fill="currentColor" />
+        <ellipse cx="110" cy="142" rx="82" ry="64" fill="url(#metal)" />
+        <ellipse cx="110" cy="137" rx="65" ry="49" fill="#f8f3e8" />
+        <circle cx="110" cy="137" r="41" fill="#17224d" />
+        <path d="M94 143c9-16 23-23 38-22-4 16-13 27-28 32 5-5 8-11 9-17-6 7-11 13-19 18Z" fill="#f6d96f" />
+        <rect x="61" y="202" width="98" height="31" rx="15.5" fill="#fff8ed" />
+        <text x="110" y="222" text-anchor="middle" font-size="10" font-weight="900" fill="#17224d">GOOD COLOR</text>
+      </symbol>
+    </svg>
+
+    <header class="site-header">
+      <a class="wordmark" href="#top" aria-label="LIVE OFFSET 首页">
+        <span class="wordmark-main">LIVE<br />OFFSET</span>
+        <span class="wordmark-sub">直播比价研究所</span>
+      </a>
+      <p class="snapshot-pill" role="status">
+        <span class="pulse-dot" aria-hidden="true"></span>
+        历史快照 · 2026.11.18
+      </p>
+      <nav class="main-nav" aria-label="主要导航">
+        <a href="#offers">今晚货架</a>
+        <a href="#mechanism">同款机制</a>
+        <a href="#method">怎么比</a>
+        <button class="compare-launch" type="button" data-open-compare>
+          比价清单
+          <span class="compare-count" data-compare-count aria-label="已选择 0 件">0</span>
+        </button>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span>BEAUTY LIVE / 01</span> 别让倒计时替你算账</p>
+          <h1 id="hero-title">
+            先看清
+            <span class="hero-italic">怎么减</span>
+            <span class="hero-outline">再下单</span>
+          </h1>
+          <p class="hero-lede">
+            把直播价、券、规格、赠品和运费放进同一张清单。美妆直播比价，不只看谁喊得大声。
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#offers">
+              逛今晚直播货架
+              <span aria-hidden="true">↘</span>
+            </a>
+            <button class="text-button" type="button" data-open-compare>
+              先看我的比价清单
+              <span aria-hidden="true">→</span>
+            </button>
+          </div>
+          <dl class="hero-stats" aria-label="数据集概况">
+            <div><dt>192</dt><dd>条报价</dd></div>
+            <div><dt>05</dt><dd>个直播间</dd></div>
+            <div><dt>123</dt><dd>条含赠品</dd></div>
+          </dl>
+        </div>
+
+        <div class="hero-collage reveal" data-draggable-stage aria-label="可拖动的美妆样品陈列">
+          <div class="collage-backdrop" aria-hidden="true">
+            <span class="collage-word">LIVE</span>
+            <span class="collage-sun"></span>
+            <span class="collage-grid"></span>
+          </div>
+
+          <div class="hero-product-grid">
+            <figure class="hero-product compact-product" tabindex="0" data-drag-item aria-label="Byredo Super Cedar 香水，可拖动；聚焦后使用方向键移动">
+              <img class="hero-photo" src="./assets/hero-products/Byredo_SuperCedar.webp" alt="Byredo Super Cedar 香水" width="607" height="900" draggable="false" />
+            </figure>
+            <figure class="hero-product compact-product" tabindex="0" data-drag-item aria-label="Acqua di Parma Oud and Spice 香水，可拖动；聚焦后使用方向键移动">
+              <img class="hero-photo" src="./assets/hero-products/AcquaDiParma_OudSpice.webp" alt="Acqua di Parma Oud and Spice 香水" width="451" height="900" draggable="false" />
+            </figure>
+            <figure class="hero-product compact-product" tabindex="0" data-drag-item aria-label="Celine Reptile 香水，可拖动；聚焦后使用方向键移动">
+              <img class="hero-photo" src="./assets/hero-products/Celine_Reptile.webp" alt="Celine Reptile 香水" width="405" height="900" draggable="false" />
+            </figure>
+            <figure class="hero-product compact-product" tabindex="0" data-drag-item aria-label="Le Labo The Noir 29 香水，可拖动；聚焦后使用方向键移动">
+              <img class="hero-photo" src="./assets/hero-products/LeLabo_TheNoir29.webp" alt="Le Labo The Noir 29 香水" width="400" height="900" draggable="false" />
+            </figure>
+            <figure class="hero-product compact-product" tabindex="0" data-drag-item aria-label="Polo Earth Ralph Lauren 香水，可拖动；聚焦后使用方向键移动">
+              <img class="hero-photo" src="./assets/hero-products/PoloEarth_RalphLauren.webp" alt="Polo Earth Ralph Lauren 香水" width="447" height="900" draggable="false" />
+            </figure>
+            <figure class="hero-product compact-product" tabindex="0" data-drag-item aria-label="Estée Lauder Futurist 妆前乳，可拖动；聚焦后使用方向键移动">
+              <img class="hero-photo" src="./assets/hero-products/EsteeLauder_Futurist_Primer.webp" alt="Estée Lauder Futurist 妆前乳" width="261" height="900" draggable="false" />
+            </figure>
+            <figure class="hero-product compact-product" tabindex="0" data-drag-item aria-label="YSL 黑色气垫，可拖动；聚焦后使用方向键移动">
+              <img class="hero-photo" src="./assets/hero-products/YSL_Black_Cushion.webp" alt="YSL 黑色气垫" width="720" height="729" draggable="false" />
+            </figure>
+            <figure class="hero-product compact-product" tabindex="0" data-drag-item aria-label="YSL 粉色气垫，可拖动；聚焦后使用方向键移动">
+              <img class="hero-photo" src="./assets/hero-products/YSL_Pink_Cushion.webp" alt="YSL 粉色气垫" width="720" height="864" draggable="false" />
+            </figure>
+            <figure class="hero-product compact-product" tabindex="0" data-drag-item aria-label="Bobbi Brown 唇釉，可拖动；聚焦后使用方向键移动">
+              <img class="hero-photo" src="./assets/hero-products/BobbiBrown_Lip.webp" alt="Bobbi Brown 唇釉" width="196" height="900" draggable="false" />
+            </figure>
+            <figure class="hero-product compact-product" tabindex="0" data-drag-item aria-label="NARS 唇膏，可拖动；聚焦后使用方向键移动">
+              <img class="hero-photo" src="./assets/hero-products/NARS_Lipstick.webp" alt="NARS 唇膏" width="157" height="900" draggable="false" />
+            </figure>
+            <figure class="hero-product compact-product" tabindex="0" data-drag-item aria-label="兰蔻唇膏，可拖动；聚焦后使用方向键移动">
+              <img class="hero-photo" src="./assets/hero-products/Lancome_Lipstick.webp" alt="兰蔻唇膏" width="354" height="900" draggable="false" />
+            </figure>
+            <figure class="hero-product compact-product" tabindex="0" data-drag-item aria-label="YSL 心形唇膏，可拖动；聚焦后使用方向键移动">
+              <img class="hero-photo" src="./assets/hero-products/YSL_Heart_Lipstick.webp" alt="YSL 心形唇膏" width="320" height="900" draggable="false" />
+            </figure>
+            <figure class="hero-product compact-product" tabindex="0" data-drag-item aria-label="CPB 遮瑕笔，可拖动；聚焦后使用方向键移动">
+              <img class="hero-photo" src="./assets/hero-products/CPB_Concealer.webp" alt="CPB 遮瑕笔" width="178" height="900" draggable="false" />
+            </figure>
+            <figure class="hero-product compact-product" tabindex="0" data-drag-item aria-label="NARS 调色隔离，可拖动；聚焦后使用方向键移动">
+              <img class="hero-photo" src="./assets/hero-products/NARS_ToneUp_Veil.webp" alt="NARS 调色隔离" width="207" height="900" draggable="false" />
+            </figure>
+          </div>
+
+          <p class="drag-hint">
+            <span aria-hidden="true">✥</span>
+            拖一拖，换个摆法
+          </p>
+        </div>
+      </section>
+
+      <div class="ticker" aria-hidden="true">
+        <div class="ticker-track">
+          <span>券后价 ≠ 最终价</span><i>✦</i>
+          <span>先统一规格</span><i>✦</i>
+          <span>再比较赠品</span><i>✦</i>
+          <span>最后核对运费</span><i>✦</i>
+          <span>券后价 ≠ 最终价</span><i>✦</i>
+          <span>先统一规格</span><i>✦</i>
+          <span>再比较赠品</span><i>✦</i>
+          <span>最后核对运费</span><i>✦</i>
+        </div>
+      </div>
+
+      <section class="catalog" id="offers" aria-labelledby="offers-title">
+        <header class="section-heading reveal">
+          <div>
+            <p class="eyebrow">LIVE SHELF / 02</p>
+            <h2 id="offers-title">今晚的直播货架</h2>
+          </div>
+          <p class="section-intro">
+            从货架挑 2–3 件放进比价清单。低价会被看见，缺失的信息也不会藏起来。
+          </p>
+        </header>
+
+        <div class="filter-shell reveal">
+          <label class="search-field">
+            <span>搜索品牌 / 商品 / 直播间</span>
+            <input
+              id="offerSearch"
+              type="search"
+              placeholder="例如：面霜、兰蔻、李佳琦"
+              autocomplete="off"
+              data-testid="offer-search"
+            />
+          </label>
+          <div class="category-filter" role="group" aria-label="按品类筛选">
+            <button class="filter-chip is-active" type="button" data-category="全部" aria-pressed="true">全部</button>
+            <button class="filter-chip" type="button" data-category="护肤" aria-pressed="false">护肤</button>
+            <button class="filter-chip" type="button" data-category="彩妆" aria-pressed="false">彩妆</button>
+            <button class="filter-chip" type="button" data-category="香氛" aria-pressed="false">香氛</button>
+            <button class="filter-chip" type="button" data-category="护发" aria-pressed="false">护发</button>
+          </div>
+          <label class="select-field">
+            <span>平台</span>
+            <select id="platformFilter" data-testid="platform-filter">
+              <option>全部平台</option>
+              <option>淘宝</option>
+              <option>抖音</option>
+            </select>
+          </label>
+          <label class="select-field">
+            <span>排序</span>
+            <select id="sortFilter">
+              <option value="heat">热度优先</option>
+              <option value="priceAsc">到手价从低到高</option>
+              <option value="savingDesc">价差从高到低</option>
+            </select>
+          </label>
+        </div>
+
+        <p class="result-line" role="status" aria-live="polite">
+          找到 <strong id="resultCount">9</strong> 件商品
+          <span class="result-note">数据为历史快照，不代表当前可成交价格</span>
+        </p>
+
+        <div class="catalog-layout catalog-layout--single">
+          <div class="product-grid" id="productGrid" aria-busy="false"></div>
+
+          <aside class="compare-receipt reveal" aria-labelledby="receipt-title" hidden>
+            <div class="receipt-paper">
+              <header class="receipt-title-row">
+                <div>
+                  <p class="receipt-overline">COMPARE RECEIPT</p>
+                  <h3 id="receipt-title">我的比价小票</h3>
+                </div>
+                <span class="receipt-number">#A1122</span>
+              </header>
+              <p class="receipt-date-line">
+                <span>数据快照日</span><time datetime="2026-11-18">2026.11.18</time>
+              </p>
+              <div class="receipt-items" id="receiptItems" tabindex="-1"></div>
+              <div class="receipt-summary" id="receiptSummary"></div>
+              <button class="receipt-action" type="button" data-open-compare disabled>
+                展开完整比价
+                <span aria-hidden="true">↗</span>
+              </button>
+              <p class="receipt-disclaimer">
+                * 这里的数字用于辅助阅读机制，不构成购买建议。
+              </p>
+              <div class="receipt-barcode receipt-barcode--large" aria-hidden="true"></div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="mechanism-section" id="mechanism" aria-labelledby="mechanism-title">
+        <header class="mechanism-heading reveal">
+          <div>
+            <p class="eyebrow">SAME ITEM / LIVE</p>
+            <h2 id="mechanism-title">同款机制小票</h2>
+          </div>
+          <label class="mechanism-select">
+            <span>商品</span>
+            <select id="mechanismProduct"></select>
+          </label>
+        </header>
+        <div id="mechanismReceipt" class="mechanism-receipt" aria-live="polite"></div>
+      </section>
+
+      <section class="method" id="method" aria-labelledby="method-title">
+        <header class="method-heading reveal">
+          <p class="eyebrow">HOW TO OFFSET / 03</p>
+          <h2 id="method-title">最低价之前，还有三道题。</h2>
+        </header>
+        <div class="method-grid">
+          <article class="method-card reveal">
+            <span class="method-index">01</span>
+            <h3>规格一样吗？</h3>
+            <p>30ml 的精华和 50ml 的精华，不该只比两个大数字。能统一的商品，直接看每毫升 / 每克成本。</p>
+          </article>
+          <article class="method-card reveal">
+            <span class="method-index">02</span>
+            <h3>赠品能估价吗？</h3>
+            <p>数量多不等于价值高。未知容量、随机色号和空包装都应被标记，而不是自动加进“已省”。</p>
+          </article>
+          <article class="method-card reveal">
+            <span class="method-index">03</span>
+            <h3>条件够得着吗？</h3>
+            <p>会员价、首单资格、限时券和运费险都可能改变到手成本。资格不明确时，保留问号。</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>LIVE OFFSET / 直播美妆比价实验</p>
+      <p>
+        数据来自历史直播快照，商品图来自公开商品图检索并人工核对；购买前请复核最新商品页与订单页。
+      </p>
+      <a href="#top">回到顶部 ↑</a>
+    </footer>
+
+    <dialog class="modal modal--offer" id="offerDialog" aria-labelledby="offerDialogTitle">
+      <div class="modal-shell" id="offerDialogContent"></div>
+    </dialog>
+
+    <dialog class="modal modal--compare" id="compareDialog" aria-labelledby="compareDialogTitle">
+      <div class="modal-shell modal-shell--wide">
+        <div class="modal-header">
+          <div>
+            <p class="eyebrow">FINAL CHECK / 04</p>
+            <h2 id="compareDialogTitle">完整比价清单</h2>
+          </div>
+          <button class="icon-button" type="button" data-close-dialog aria-label="关闭比价清单">×</button>
+        </div>
+        <div id="compareDialogBody"></div>
+      </div>
+    </dialog>
+
+    <div class="toast-region" aria-live="polite" aria-atomic="true" id="toastRegion"></div>
+    <div class="cursor-follower" aria-hidden="true"><span>拖 / 看</span></div>
+
+    <script src="./assets/data-v4.js"></script>
+    <script type="module" src="./mechanism.js"></script>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
