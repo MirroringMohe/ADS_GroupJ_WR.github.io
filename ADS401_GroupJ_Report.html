@@ -21,6 +21,19 @@
 .map-caption{margin:1rem 0 0;color:#53677b;font-size:.88rem;font-style:italic}
 @media(max-width:700px){.map-row{grid-template-columns:1fr;gap:.25rem}.map-arrow{transform:rotate(90deg);height:24px}.survey-experiment-map{padding:1rem}}
 </style>
+<style id="experiment-process-style">
+#experiment .experiment-process{margin:1.5rem 0 2rem;padding:1.25rem 0;border-top:1px solid #d4e0e5;border-bottom:1px solid #d4e0e5;color:#19324d}
+#experiment .experiment-process>h3{margin:0 0 1rem;color:#19324d;font-family:Georgia,serif;font-size:1.35rem}
+#experiment ol.experiment-steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1.4rem;margin:0;padding:0;list-style:none}
+#experiment .experiment-steps li{position:relative;display:flex;gap:.75rem;align-items:flex-start;min-width:0;margin:0;padding:.9rem;background:#f4f8f9;border-top:3px solid #2a7f83;list-style:none}
+#experiment .experiment-steps li:not(:last-child)::after{content:"→";position:absolute;right:-1.2rem;top:50%;transform:translate(50%,-50%);color:#2878a0;font-size:1.25rem;font-weight:700}
+#experiment .process-number{display:grid;flex:0 0 1.8rem;place-items:center;width:1.8rem;height:1.8rem;border-radius:50%;background:#2a7f83;color:#fff;font-size:.9rem;font-weight:700}
+#experiment .experiment-steps h4{margin:0 0 .35rem;color:#19324d;font-size:.96rem}
+#experiment .experiment-steps p{margin:0;color:#53677b;font-size:.84rem;line-height:1.5}
+#experiment .process-note{margin:.85rem 0 0;color:#53677b;font-size:.82rem;line-height:1.5}
+@media(max-width:800px){#experiment ol.experiment-steps{grid-template-columns:repeat(2,minmax(0,1fr));gap:.8rem}#experiment .experiment-steps li::after{display:none}}
+@media(max-width:520px){#experiment ol.experiment-steps{grid-template-columns:1fr}#experiment .experiment-steps li{padding:.8rem}}
+</style>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to main content</a>
