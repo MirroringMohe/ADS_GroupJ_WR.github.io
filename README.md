@@ -6,7 +6,7 @@ This repository hosts the single-page report for the LibAI evaluation project.
 
 - Survey: 107 eligible XJTLU postgraduate responses from 124 raw submissions.
 - Task comparison: 20 participants completed six trials each, producing 120 scored answers across three systems and two literature tasks.
-- Interview feedback commonly identified faster LibAI responses as a desired service improvement; the report treats this as user feedback, not a measured speed comparison.
+- Complete seven-point experience ratings are reported for all 20 experiment participants. Genuine interview records include feedback about response speed as well as source reliability and accuracy.
 - The earlier n=94 survey summary has been superseded by the current cleaned n=107 file.
 
 ## Files
